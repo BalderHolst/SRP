@@ -1,0 +1,14 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'SRP.blg'
+[79] biber:340> INFO - === Fri Mar 18, 2022, 14:10:15
+[93] Biber.pm:415> INFO - Reading 'SRP.bcf'
+[203] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[220] Biber.pm:4340> INFO - Processing section 0
+[233] Biber.pm:4531> INFO - Looking for bibtex format file 'backend/kilder.bib' for section 0
+[234] bibtex.pm:1689> INFO - LaTeX decoding ...
+[237] bibtex.pm:1494> INFO - Found BibTeX data source 'backend/kilder.bib'
+[252] UCollate.pm:68> INFO - Overriding locale 'da-DK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[253] UCollate.pm:68> INFO - Overriding locale 'da-DK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[253] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'da-DK'
+[259] bbl.pm:654> INFO - Writing 'SRP.bbl' with encoding 'UTF-8'
+[260] bbl.pm:757> INFO - Output to SRP.bbl

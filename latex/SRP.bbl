@@ -1,0 +1,57 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{aogd}{book}{}
+      \name{author}{2}{}{%
+        {{hash=b3729237385542cc130552f38ee83186}{%
+           family={Dietzfelbinger},
+           familyi={D\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c2f239e3cf9c48b72ce5f4ca9b5e478e}{%
+           family={Mehlhorn},
+           familyi={M\bibinitperiod},
+           given={Kurt},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{19a5d08e2b4e0f8781ec27b189be47fd}
+      \strng{fullhash}{19a5d08e2b4e0f8781ec27b189be47fd}
+      \strng{bibnamehash}{19a5d08e2b4e0f8781ec27b189be47fd}
+      \strng{authorbibnamehash}{19a5d08e2b4e0f8781ec27b189be47fd}
+      \strng{authornamehash}{19a5d08e2b4e0f8781ec27b189be47fd}
+      \strng{authorfullhash}{19a5d08e2b4e0f8781ec27b189be47fd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Grundværktøjerne (i uddrag, kladde)}
+      \field{title}{Algoritmer og datastrukturer}
+      \verb{urlraw}
+      \verb https://github.com/thorehusfeldt/algoritmer-og-datastrukturer/blob/master/ad-book.pdf
+      \endverb
+      \verb{url}
+      \verb https://github.com/thorehusfeldt/algoritmer-og-datastrukturer/blob/master/ad-book.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
