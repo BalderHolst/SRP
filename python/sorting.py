@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 import sys
-sys.path.insert(1, 'python/algoritmer')
+sys.path.insert(1, 'algoritmer')
 from mergesort import *
 from insertionsort import *
 
@@ -89,6 +89,7 @@ def fullTest(functions):
 
 if __name__ == "__main__":
 	functions = [mergesort,insertionsort]
-
-	
-	fullTest(functions)
+	print("hello")
+	print("helo")
+	#fullTest(functions)
+	print("hello")
