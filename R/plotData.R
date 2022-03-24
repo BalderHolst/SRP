@@ -2,7 +2,7 @@ library(ggplot2)
 #library(tikzDevice)
 
 #working dir
-setwd("/home/Balder/Documents/Skole/Gym/SRP/data/1")
+setwd("/home/Balder/Documents/Skole/Gym/SRP/data/5")
 
 
 #import data

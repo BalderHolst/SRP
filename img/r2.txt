@@ -1,3 +1,0 @@
-Algorithm	R2
-mergesort	0.966554895518376
-insertionsort	0.934446848309373

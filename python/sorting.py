@@ -44,14 +44,11 @@ def fullTest(functions):
 
 	trials = 10	 # hvor mange datapunkter pr. n-værdir
 
-	data_dir = "data/"
+	data_dir = "../data/"
 	version_number = newVersionNumber(data_dir,"")
 
-
 	seed = time.time()
-
-
-	print(seed)
+	print(f"Seed: {seed}")
 
 	for function in functions:
 
@@ -98,4 +95,4 @@ if __name__ == "__main__":
 
 	print("hello")	
 
-	#fullTest(functions)
+	fullTest(functions)
