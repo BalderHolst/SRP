@@ -21,4 +21,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Den Hurtigste Køretid}{7}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Konklusion}{8}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Kapittel}{8}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Dette er en underdeling}{8}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Konklusion}{9}{chapter.7}%

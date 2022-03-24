@@ -4,14 +4,12 @@ import pandas as pd
 import os
 
 import sys
-sys.path.insert(1, 'algoritmer')
+sys.path.insert(1, './algoritmer')
 from mergesort import *
 from insertionsort import *
 
 def test(fun,l):
 	start_time = time.perf_counter()
-
-
 
 	fun(l)
 
@@ -44,27 +42,35 @@ def newVersionNumber(dir_path,extention):
 
 def fullTest(functions):
 
-	trials = 10
+	trials = 10	 # hvor mange datapunkter pr. n-værdir
 
 	data_dir = "data/"
 	version_number = newVersionNumber(data_dir,"")
 
+
+	seed = time.time()
+
+
+	print(seed)
+
 	for function in functions:
 
-		ns = []
-		times = []
+		ns = []	 # i denne liste gemmes antallet af elementer at den liste som algoritmen sorterer for hvert datapunkt.
+		times = []  # i denne liste gennes den tid det tager at sorterer listen med n elementer
+	
+		random.seed(seed) # Bruger det samme frø til test at hver algoritme. På den måde er det de samme pseudo-tilfældige liste som algoritmerne sorterer
 
-		for trial in range(0,trials):
+		for trial in range(0,trials):   # Vi laver testen et antal (trials) gange pr. n-værdi
 
-			for i in range(0,80):
-				n = round(pow(1.1,i))
+			for i in range(0,80):	   # En lykke der køre et abitrært antal gange (jo højere en i-værdi jo højere maks antal elementer i listen)
+				n = round(pow(1.1,i))   # Jeg bruger en potensfunktion til at få flere datapunker tættere på y-aksen og færre lange oberationer (pga. lange liste)
 
-				print(f"function=\"{function.__name__}\":   Trial: [{trial+1}/{trials}]    {i=},{n=}")
+				print(f"function=\"{function.__name__}\":   Trial: [{trial+1}/{trials}]	{i=},{n=}")  # lidt feedback
 
-				l = createRandomList(n)
+				l = createRandomList(n)		 # gennererer en tilfældig liste
 
-				ns.append(n)
-				times.append(test(function,l))
+				ns.append(n)					# gem størrelsen af listen der skal sorteres
+				times.append(test(function,l))  # gen den tid det tager at sortere listen
 
 
 
@@ -89,7 +95,7 @@ def fullTest(functions):
 
 if __name__ == "__main__":
 	functions = [mergesort,insertionsort]
-	print("hello")
-	print("helo")
+
+	print("hello")	
+
 	#fullTest(functions)
-	print("hello")
