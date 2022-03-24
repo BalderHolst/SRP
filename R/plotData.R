@@ -42,10 +42,10 @@ model_insertion = nls(t~a*n^2 + b*n + c, data=m_insertion, start=list(a=1,b=1,c=
 # Sætter ny path til hvor outputtet skal være
 setwd("/home/Balder/Documents/Skole/Gym/SRP/img")
 
-# gemmer r²-værdierne i to filer
+# gemmer r2-værdierne i to filer
 writeLines(toString(round(with(m_merge,cor(t,n)),digits=3)),"r2-merge.txt")
 writeLines(toString(round(with(m_insertion,cor(t,n)),digits=3)),"r2-insertion.txt")
-print("r² saved to files")
+print("r2 saved to files")
 
 
 # laver modelerede v?rdier for hver n
@@ -64,9 +64,7 @@ summary(M)
 ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
 	geom_point(size=1.5,alpha=0.1,shape=19) +
 	geom_line(aes(x=n, y=model,color=Algorithm), size=2, alpha=0.6) +
-	#  geom_smooth() +
 	labs(title="To Sorteringsalgoritmer") +
-	#  facet_wrap(~algorithm) +
 	theme(legend.position = c(.9, .9)) + # virker ikke!!
 	guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
 	theme_bw()
@@ -75,14 +73,10 @@ ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
 
 	ggplot(M, aes(x=log10(model), y=residual, colour=Algorithm)) +
 		geom_point(size=1.5,alpha=0.1,shape=19) +
-		#geom_smooth(color="orange") +
 		labs(title="Residualer") +
 		facet_wrap(~algorithm,scales="free",ncol=1) +
 		theme_bw() +
-		#theme_minimal() +
 		theme(legend.position="none")
-	#guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
-
 	ggsave("toAlgoritmerResidual.png")
 
 	C = data.frame(
