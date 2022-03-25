@@ -24,30 +24,52 @@ Herfra vil jeg kun forholde mig til sortering af lister med tal, og sortere dem 
 
 Insertionsort er en af de mere simple sorteringsalgoritmer. Dette er pseudokode for algoritmen \cite[s. 104]{aogd}.
 
-\begin{lstlisting}
-	function insertionsort(liste) {
-		for i = 1 til i = n {					# her er n længden af listen
+\begin{figure}
+	\begin{center}
+
+		\begin{lstlisting}
+		funktion insertionsort(liste) {
+			for i = 1 til i = n {					# her er n længden af listen
 			e = liste[i]	 						# dette er elementet i listen
 
 			if e < liste[0] {						# hvis elementet er større end det første element i listen
-				for j = j til j = 0{ 
-					liste[j] = liste[j-1]		# ryk elementerne på pladserne 0 til j, et tak frem
-				}
-				liste[0] = e 						# sætter dette element forrest i listen
+			for j = j til j = 0{ 
+			liste[j] = liste[j-1]		# ryk elementerne på pladserne 0 til j, et tak frem
+			}
+			liste[0] = e 						# sætter dette element forrest i listen
 			}
 			else{
 				j = i 								# j er en nu tæller der starter på i
 				while liste[j-1] > e {			# kør mens liste[j-1] er størren end elementet
-					liste[j] = liste[j - 1] # ryk liste[j] et tak til højre
-					j -= 1
+				liste[j] = liste[j - 1] # ryk liste[j] et tak til højre
+				j -= 1
 				}
 				l[j] = element						# indsæt elementet hvor det passer ind
 			}
-		}			
-		return(liste)								# returnerer den sorterede liste
-	}
-	
-\end{lstlisting}
+			}			
+			return(liste)								# returnerer den sorterede liste
+		}
+
+		\end{lstlisting}
+	\end{center}
+	\caption{Pseudokode til insertionsort}
+	\label{fig:Pseudokode til insertionsort}
+\end{figure}
+
+
+Det er ikke en tilfældighed at denne algoritme hedder insertionsort. Den fungerer nemlig ved at gennemgå gennemgå hvert element i listen, og placere det hvor det passer ind i de elementer der allerede er sorterede. Dette er nok til dels den måde man f.eks. ville sortere sin hånd i Uno eller 500. At algoritmen gennemgår alle elementerne i listen kronologisk kan vi se allerede i linje 2, da algoritmen her begynder med en for-lykke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar sættes elementet som algoritmen er nået til ind i variablen e i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen se figur \ref{fig:Indsæt element først i listen}
+
+\blue{balder}
+
+\begin{figure}
+	\begin{center}
+		$$[\blue{5},\blue{7},\blue{9},\red{4},10,6,2]$$
+		$$[\blue{5},\blue{5},\blue{7},\blue{9},10,6,2]$$
+		$$[\red{4},\blue{5},\blue{7},\blue{9},10,6,2]$$
+	\end{center}
+	\caption{Indsæt element først i listen}
+	\label{fig:Indsæt element først i listen}
+\end{figure}
 
 
 (se afsnit \ref{sec:Analyse af Insertionsort} for store-O analysen)
