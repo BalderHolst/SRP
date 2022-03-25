@@ -1,8 +1,18 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {danish}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Indledning}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Indledning}{3}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Resume}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Sorteringsalgoritmer}{4}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Konklusion}{4}{chapter.3}%
+\contentsline {section}{\numberline {2.1}Hvad er sortering?}{4}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Insertionsort}{5}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Mergesort}{5}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Analyse af Insertionsort}{5}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Resume}{6}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Konklusion}{7}{chapter.4}%
