@@ -5,16 +5,18 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Eksempel på sortering af en liste\relax }}{4}{figure.caption.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Pseudokode til insertionsort \cite [s. 104]{aogd}.\relax }}{5}{figure.caption.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Procedure for at indsætte element først i listen. Elementet er markeret med \color {red}rød\color {black} , og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black} . Linjer refererer til koden i figur \ref {fig:Pseudokode til insertionsort}.\relax }}{6}{figure.caption.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med \color {red}rød\color {black} , og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black} . Linjer refererer til figur \ref {fig:Pseudokode til insertionsort}.\relax }}{6}{figure.caption.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{7}{figure.caption.7}%
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Eksempel på sortering af en liste\relax }}{5}{figure.caption.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Procedure for at indsætte element først i listen. Elementet er markeret med \color {red}rød\color {black} , og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black} . Linjer refererer til koden i figur \ref {fig:Pseudokode til insertionsort}.\relax }}{6}{figure.caption.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med \color {red}rød\color {black} , og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black} . Linjer refererer til figur \ref {fig:Pseudokode til insertionsort}.\relax }}{6}{figure.caption.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Pseudokode til insertionsort \cite [s. 104]{aogd}.\relax }}{7}{figure.caption.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Eksempel med delfunktionen \emph {merge} i mergesort. Her kalder vi merge($[4,6,1]$, $[5,3,7,5]$)\relax }}{7}{figure.caption.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{8}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
