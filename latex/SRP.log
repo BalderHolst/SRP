@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.6)  26 MAR 2022 10:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.6)  26 MAR 2022 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -100,6 +100,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/share/texmf/tex/was/icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
@@ -762,7 +765,14 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count455
 \l__pdf_internal_box=\box57
 )
-(./SRP.aux)
+(./SRP.aux
+
+LaTeX Warning: Label `sub:Algoritmens Procedure' multiply defined.
+
+
+LaTeX Warning: Label `fig:Pseudokode til insertionsort' multiply defined.
+
+)
 \openout1 = `SRP.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -922,7 +932,7 @@ Package biblatex Info: Reference segment=0 on input line 4.
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=44, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=48, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf  used on input line 7.
@@ -943,7 +953,7 @@ ound PDF version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=47, page=1, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=51, page=1, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf, page 1>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf , page1 used on input line
@@ -1027,39 +1037,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 [4
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+5.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 [5]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 110.
- (../python/algoritmer/mergesort.py))
-(./dele/Implementering af Algoritmerne.tex) (./dele/Binære Træer)
-(./dele/Store-O og bedste tilfælde.tex) (./dele/resume.tex [6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]) (./dele/Implementering af Algoritmerne.tex) (./dele/Binære Træer)
+(./dele/Store-O og bedste tilfælde.tex) (./dele/resume.tex [7]
 Kapitel 3.
-) (./dele/konklusion.tex [7
+) (./dele/konklusion.tex [8
 
 ]
 Kapitel 4.
-) [8
+) [9
 
-] (./bilag/bilag.tex [9
+] (./bilag/bilag.tex [10
 
-] (../python/algoritmer/insertionsort.py)
-(../python/algoritmer/mergesort.py) (../python/sorting.py [10
+]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 6.
+ (../python/algoritmer/insertionsort.py)
+(../python/algoritmer/mergesort.py) [11
 
-] [11]) [12]
+] (../python/sorting.py [12]) [13]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -1069,22 +1082,25 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
-(../R/plotData.R [13
+(../R/plotData.R [14
 
 ])) 
 AED: lastpage setting LastPage
-[14] (./SRP.aux)
+[15] (./SRP.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `SRP.out' has not changed.
-(rerunfilecheck)             Checksum: F4960BBCEE38817246CA82B9FE368244;1322.
+(rerunfilecheck)             Checksum: D400D901516431FA48B1603721D36853;1492.
 Package logreq Info: Writing requests to 'SRP.run.xml'.
 \openout1 = `SRP.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24662 strings out of 480806
- 397991 string characters out of 5905152
- 1202563 words of memory out of 6000000
- 41333 multiletter control sequences out of 15000+600000
+ 24709 strings out of 480806
+ 398740 string characters out of 5905152
+ 1201918 words of memory out of 6000000
+ 41368 multiletter control sequences out of 15000+600000
  439018 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,17n,79p,1498b,3126s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1102,10 +1118,10 @@ sr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on SRP.pdf (16 pages, 417700 bytes).
+Output written on SRP.pdf (17 pages, 419277 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 536 compressed objects within 6 object streams
- 304 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 558 compressed objects within 6 object streams
+ 314 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -22,10 +22,16 @@ Herfra vil jeg kun forholde mig til sortering af lister med tal, og sortere dem 
 \section{Insertionsort}
 \label{sec:Insertionsort}
 
+Insertionsort er en af de mere simple sorteringsalgoritmer. Pseudokoden til algoritmen kan ses i figur \ref{fig:Pseudokode til insertionsort}
+
+
+Det er ikke en tilfældighed at denne algoritme hedder insertionsort. Den fungerer nemlig ved at gennemgå gennemgå hvert element i listen, og placere det hvor det passer ind i de elementer der allerede er sorterede. Dette er nok til dels den måde man f.eks. ville sortere sin hånd i Uno eller 500. 
+
+\subsection{Algoritmens Procedure}%
+\label{sub:Algoritmens Procedure}
 
 \begin{figure}[h]
 	\begin{center}
-
 		\begin{lstlisting}
 		funktion insertionsort(liste) {
 			for i = 1 til i = n {				# her er n længden af listen
@@ -33,7 +39,7 @@ Herfra vil jeg kun forholde mig til sortering af lister med tal, og sortere dem 
 
 			if e < liste[0] {						# hvis elementet er større end det første element i listen
 				for j = j til j = 0{ 
-					liste[j] = liste[j-1]		# ryk elementerne på pladserne 0 til j, et tak frem
+					liste[j] = liste[j-1]		# ryk elementerne på pladserne 0 til j et tak frem
 				}
 			liste[0] = e 							# sætter dette element forrest i listen
 			}
@@ -43,25 +49,18 @@ Herfra vil jeg kun forholde mig til sortering af lister med tal, og sortere dem 
 				liste[j] = liste[j-1] 			# ryk liste[j] et tak til højre
 				j -= 1
 				}
-				l[j] = element						# indsæt elementet hvor det passer ind
+				liste[j] = element				# indsæt elementet hvor det passer ind
 			}
 			}			
 			return(liste)							# returnerer den sorterede liste
 		}
 		\end{lstlisting}
 	\end{center}
-	\vspace{-7mm}
+	\vspace{-5mm}
 	\caption{Pseudokode til insertionsort \cite[s. 104]{aogd}.}
 	\label{fig:Pseudokode til insertionsort}
 \end{figure}
 
-Insertionsort er en af de mere simple sorteringsalgoritmer. Pseudokoden til algoritmen kan ses i figur \ref{fig:Pseudokode til insertionsort}
-
-
-Det er ikke en tilfældighed at denne algoritme hedder insertionsort. Den fungerer nemlig ved at gennemgå gennemgå hvert element i listen, og placere det hvor det passer ind i de elementer der allerede er sorterede. Dette er nok til dels den måde man f.eks. ville sortere sin hånd i Uno eller 500. 
-
-\subsection{Algoritmens Procedure}%
-\label{sub:Algoritmens Procedure}
 
 At algoritmen gennemgår alle elementerne i listen kronologisk kan vi se allerede i linje 2, da algoritmen her begynder med en for-lykke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar sættes elementet som algoritmen er nået til ind i variablen e i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen (se figur \ref{fig:Indsæt element først i listen}). Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første element i listen sker følgende (se figur \ref{fig:Indsæt element hvor det passer i listen}): Algoritmen ser på tallet før elementet og spørger: "er dette tal større end elementet". Hvis det er, rykkes det hen på elementets plads. Herefter stiller algoritmen samme spørgsmål, til tallet to pladser før elementet. Hvis dette tal er mindre and elementet placerer algoritmen elementet efter dette tal, hvis ikke stiller den samme spørgsmål til tallet 3 pladser før elementet og så videre. Det er vigtigt at pointere, at der altid vil være et tal der er mindre end elementet, da elementet ellers ville være blevet placeret først i liste af den første del af algoritmenen (linje $5$-$10$).\\
 
@@ -104,12 +103,53 @@ Insertionsort er en god sorteringsalgoritme, idet at proceduren er forholdsvis n
 	\label{fig:Indsæt element hvor det passer i listen}
 \end{figure}
 
-
 \section{Mergesort}
 \label{sec:Mergesort}
-\lstinputlisting[language=Python]{../python/algoritmer/mergesort.py}
 
 Hvor insertionsort er en lykke-baseret algoritme, er mergesort en rekursiv algoritme. Det begyder at algoritmen indeholder en funktion der kalder sig selv. 
+
+\subsection{Algoritmens Procedure}%
+\label{sub:Algoritmens Procedure}
+
+
+\begin{figure}[h]
+	\begin{center}
+		\begin{lstlisting}
+			funktion mergesort(liste) {
+				if liste.length == 1{
+					return(liste)
+				}
+				else {
+					return(merge(liste[0 ... n/2],liste[n/2 + 1 ... n]))	
+				}
+			}
+
+			funktion merge(a,b) {
+				c = []
+				if a.length == 0 {
+					return(c + b)
+				}
+				elif b.length == 0 {
+					return(c + a)
+				}
+				elif a[0] <= b[0] {
+					tilføj a[0] til c
+					fjern a[0] fra a
+				}
+				else {
+					tilføj b[0] til c
+					fjern b[0] fra b
+				}
+			}
+
+		\end{lstlisting}
+	\end{center}
+	\vspace{-5mm}
+	\caption{Pseudokode til Mergesort \cite[s. 106]{aogd}.}
+	\label{fig:Pseudokode til insertionsort}
+\end{figure}
+
+
 
 
 \section{Analyse af Insertionsort}

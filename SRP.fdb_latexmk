@@ -1,0 +1,10 @@
+# Fdb version 3
+["latex"] 1648292490 "latex/SRP.tex" "SRP.dvi" "SRP" 1648292490
+  "/home/Balder/.texlive2021/texmf-var/web2c/pdftex/latex.fmt" 1646324146 1343008 639860f4aec380b02d33db793d576116 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1642002331 40136 b05acc85e8425979e52682d98a2bcacf ""
+  "SRP.aux" 1648292490 32 3985256e7290058c681f74d7a3565a19 ""
+  "backend/setup.tex" 0 -1 0 ""
+  "latex/SRP.tex" 1648213824 592 80e1d40c62b93fa806b1f6c1676b8139 ""
+  (generated)
+  "SRP.dvi"
+  "SRP.log"

@@ -128,6 +128,17 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/share/texmf/tex/was/icomma.sty
 INPUT /usr/share/texmf/tex/was/icomma.sty
 INPUT /usr/share/texmf/tex/was/icomma.sty
@@ -831,6 +842,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+INPUT ./backend/macros.tex
+INPUT backend/macros.tex
+INPUT ./backend/macros.tex
+INPUT backend/macros.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
@@ -977,6 +992,7 @@ INPUT SRP.bbl
 INPUT ./SRP.bbl
 INPUT ./SRP.bbl
 INPUT SRP.bbl
+OUTPUT SRP.dvi
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1bch.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1bch.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1bch.fd
@@ -1012,7 +1028,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT SRP.dvi
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8t.tfm
 INPUT ./SRP.toc
@@ -1028,6 +1043,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 OUTPUT SRP.toc
+INPUT ./SRP.lof
+INPUT SRP.lof
+INPUT SRP.lof
+OUTPUT SRP.lof
 INPUT ./dele/indledning.tex
 INPUT ./dele/indledning.tex
 INPUT ./dele/indledning.tex
@@ -1035,88 +1054,107 @@ INPUT dele/indledning.tex
 INPUT ./dele/indledning.tex
 INPUT ./dele/indledning.tex
 INPUT dele/indledning.tex
-INPUT ./dele/resume.tex
-INPUT ./dele/resume.tex
-INPUT ./dele/resume.tex
-INPUT dele/resume.tex
-INPUT ./dele/resume.tex
-INPUT ./dele/resume.tex
-INPUT dele/resume.tex
-INPUT ./dele/store-o-notation.tex
-INPUT ./dele/store-o-notation.tex
-INPUT ./dele/store-o-notation.tex
-INPUT dele/store-o-notation.tex
-INPUT ./dele/store-o-notation.tex
-INPUT ./dele/store-o-notation.tex
-INPUT dele/store-o-notation.tex
-INPUT ./dele/deToAlgoritmer.tex
-INPUT ./dele/deToAlgoritmer.tex
-INPUT ./dele/deToAlgoritmer.tex
-INPUT dele/deToAlgoritmer.tex
-INPUT ./dele/deToAlgoritmer.tex
-INPUT ./dele/deToAlgoritmer.tex
-INPUT dele/deToAlgoritmer.tex
+INPUT ./dele/Store-O-notation og Kompleksitetsklasser.tex
+INPUT ./dele/Store-O-notation og Kompleksitetsklasser.tex
+INPUT ./dele/Store-O-notation og Kompleksitetsklasser.tex
+INPUT dele/Store-O-notation og Kompleksitetsklasser.tex
+INPUT ./dele/Store-O-notation og Kompleksitetsklasser.tex
+INPUT ./dele/Store-O-notation og Kompleksitetsklasser.tex
+INPUT dele/Store-O-notation og Kompleksitetsklasser.tex
+INPUT ./dele/Sortering.tex
+INPUT ./dele/Sortering.tex
+INPUT ./dele/Sortering.tex
+INPUT dele/Sortering.tex
+INPUT ./dele/Sortering.tex
+INPUT ./dele/Sortering.tex
+INPUT dele/Sortering.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt0900.tfm
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
-INPUT ../python/algoritmer/mergesort.py
-INPUT ../python/algoritmer/mergesort.py
-INPUT ../python/algoritmer/mergesort.py
-INPUT ../python/algoritmer/mergesort.py
-INPUT ../python/algoritmer/mergesort.py
-INPUT ../python/algoritmer/mergesort.py
-INPUT ../img/toAlgoritmer.png
-INPUT ../img/toAlgoritmer.png
-INPUT ../img/toAlgoritmer.png
-INPUT ../img/toAlgoritmer.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT ../img/r2-insertion.txt
-INPUT ../img/r2-insertion.txt
-INPUT ../img/r2-insertion.txt
-INPUT ../img/r2-insertion.txt
-INPUT ../img/r2-insertion.txt
-INPUT ../img/r2-insertion.txt
-INPUT ../img/r2-insertion.txt
-INPUT ../img/r2-insertion.txt
-INPUT ./dele/bevis.tex
-INPUT ./dele/bevis.tex
-INPUT ./dele/bevis.tex
-INPUT dele/bevis.tex
-INPUT ./dele/bevis.tex
-INPUT ./dele/bevis.tex
-INPUT dele/bevis.tex
-INPUT ./dele/konklusion.tex
-INPUT ./dele/konklusion.tex
-INPUT ./dele/konklusion.tex
-INPUT dele/konklusion.tex
-INPUT ./dele/konklusion.tex
-INPUT ./dele/konklusion.tex
-INPUT dele/konklusion.tex
-INPUT ./bilag/bilag.tex
-INPUT bilag/bilag.tex
-INPUT ./bilag/bilag.tex
-INPUT bilag/bilag.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT dele/Implementering af Algoritmerne.tex
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT dele/Implementering af Algoritmerne.tex
+INPUT ./dele/Binære Træer
+INPUT ./dele/Binære Træer
+INPUT dele/Binære Træer
+INPUT ./dele/Binære Træer
+INPUT dele/Binære Træer
+INPUT ./dele/Store-O og bedste tilfælde.tex
+INPUT ./dele/Store-O og bedste tilfælde.tex
+INPUT ./dele/Store-O og bedste tilfælde.tex
+INPUT dele/Store-O og bedste tilfælde.tex
+INPUT ./dele/Store-O og bedste tilfælde.tex
+INPUT ./dele/Store-O og bedste tilfælde.tex
+INPUT dele/Store-O og bedste tilfælde.tex
+INPUT ./dele/resume.tex
+INPUT ./dele/resume.tex
+INPUT ./dele/resume.tex
+INPUT dele/resume.tex
+INPUT ./dele/resume.tex
+INPUT ./dele/resume.tex
+INPUT dele/resume.tex
+INPUT ./dele/konklusion.tex
+INPUT ./dele/konklusion.tex
+INPUT ./dele/konklusion.tex
+INPUT dele/konklusion.tex
+INPUT ./dele/konklusion.tex
+INPUT ./dele/konklusion.tex
+INPUT dele/konklusion.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
+INPUT ./bilag/bilag.tex
+INPUT bilag/bilag.tex
+INPUT ./bilag/bilag.tex
+INPUT bilag/bilag.tex
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/insertionsort.py
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/mergesort.py
+INPUT ../python/algoritmer/mergesort.py
+INPUT ../python/algoritmer/mergesort.py
+INPUT ../python/algoritmer/mergesort.py
+INPUT ../python/algoritmer/mergesort.py
+INPUT ../python/algoritmer/mergesort.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+INPUT ../R/plotData.R
+INPUT ../R/plotData.R
+INPUT ../R/plotData.R
+INPUT ../R/plotData.R
+INPUT ../R/plotData.R
+INPUT ../R/plotData.R
 INPUT SRP.aux
 INPUT ./SRP.out
 INPUT ./SRP.out
