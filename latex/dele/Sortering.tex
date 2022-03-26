@@ -44,7 +44,7 @@ At algoritmen gennemgår alle elementerne i listen kronologisk kan vi se allered
 		\end{tabular}
 	\end{center}
 	\vspace{-3mm}
-	\caption{Procedure for at indsætte element først i listen. Elementet er markeret med\red{rød}, og tal der på allerede er sorterede er markeret med\blue{blå}. Linjer refererer til koden i figur \ref{fig:Pseudokode til insertionsort}.}
+	\caption{Procedure for at indsætte element først i listen. Elementet er markeret med \red{rød}, og tal der på allerede er sorterede er markeret med \blue{blå}. Linjer refererer til koden i figur \ref{fig:Pseudokode til insertionsort}.}
 	\label{fig:Indsæt element først i listen}
 \end{figure}
 
@@ -65,7 +65,7 @@ Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første ele
 		\end{tabular}
 	\end{center}
 	\vspace{-3mm}
-	\caption{Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med\red{rød}, og tal der på allerede er sorterede er markeret med\blue{blå}. Linjer refererer til figur \ref{fig:Pseudokode til insertionsort}.}
+	\caption{Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med \red{rød}, og tal der på allerede er sorterede er markeret med \blue{blå}. Linjer refererer til figur \ref{fig:Pseudokode til insertionsort}.}
 	\label{fig:Indsæt element hvor det passer i listen}
 \end{figure}
 
@@ -73,25 +73,25 @@ Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første ele
 	\begin{center}
 		\begin{lstlisting}
 		funktion insertionsort(liste) {
-			for i = 1 til i = n {				# her er n længden af listen
-			e = liste[i]	 						# dette er elementet i listen
+			for i = 1 til i = n {					# her er n længden af listen
+			e = liste[i]	 							# dette er elementet i listen
 
-			if e < liste[0] {						# hvis elementet er større end det første element i listen
-				for j = j til j = 0{ 
-					liste[j] = liste[j-1]		# ryk elementerne på pladserne 0 til j et tak frem
+				if e < liste[0] {						# hvis elementet er større end det første element i listen
+					for j = j til j = 0{ 
+						liste[j] = liste[j-1]		# ryk elementerne på pladserne 0 til j et tak frem
+					}
+				liste[0] = e 							# sætter dette element forrest i listen
 				}
-			liste[0] = e 							# sætter dette element forrest i listen
-			}
-			else{
-				j = i 								# j er en nu tæller der starter på i
-				while liste[j-1] > e {			# kør mens liste[j-1] er størren end elementet
-				liste[j] = liste[j-1] 			# ryk liste[j] et tak til højre
-				j -= 1
+				else{
+					j = i 								# j er en nu tæller der starter på i
+					while liste[j-1] > e {			# kør mens liste[j-1] er størren end elementet
+						liste[j] = liste[j-1] 		# ryk liste[j] et tak til højre
+						j -= 1
+					}
+					liste[j] = element				# indsæt elementet hvor det passer ind
 				}
-				liste[j] = element				# indsæt elementet hvor det passer ind
-			}
 			}			
-			return(liste)							# returnerer den sorterede liste
+			return(liste)								# returnerer den sorterede liste
 		}
 		\end{lstlisting}
 	\end{center}
@@ -129,16 +129,16 @@ Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen \ver
 			Forklaring & $a$ & $b$ & $c$ & Linje\\
 			\hline
 			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{4},6,1]$ & $[\red{5},3,7,5]$ & [\:] & $18$-$21$\\
-			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},1]$ & $[\red{5},3,7,5]$ & [\color{red}4\color{black}] & $22$-$25$\\
-			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},1]$ & $[\red{3},7,5]$ & $[\blue{4},\red{5}]$ & $22$-$25$\\
-			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6},1]$ & $[\red{7},5]$ & $[\blue{4},\blue{5},\red{3}]$ & $18$-$21$\\
-			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{1}]$ & $[\red{7},5]$ & $[\blue{4},\blue{5},\blue{3},\red{6}]$ & $18$-$21$\\
-			 Da $a.length = 0$ føjes $b$ til $c$ & $\red{[\:]}$ & $[7,5]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\red{1}]$ & $12$-$14$\\
-			 Returnerer $c$ & $[\:]$ & $[\:]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\blue{1},\red{7},\red{5}]$ & $13$\\
+			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},1]$ & $[\red{5},3,7,5]$ & $[\violet{4}]$ & $22$-$25$\\
+			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},1]$ & $[\red{3},7,5]$ & $[\blue{4},\violet{5}]$ & $22$-$25$\\
+			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6},1]$ & $[\red{7},5]$ & $[\blue{4},\blue{5},\violet{3}]$ & $18$-$21$\\
+			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{1}]$ & $[\red{7},5]$ & $[\blue{4},\blue{5},\blue{3},\violet{6}]$ & $18$-$21$\\
+			 Da $a.length = 0$ føjes $b$ til $c$ & $\red{[\:]}$ & $[7,5]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\violet{1}]$ & $12$-$14$\\
+			 Returnerer $c$ & $[\:]$ & $[\:]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\blue{1},\violet{7},\violet{5}]$ & $13$\\
 		\end{tabular}
 	\end{center}
-	\caption{Eksempel med delfunktionen \emph{merge} i mergesort. Her kalder vi merge($[4,6,1]$, $[5,3,7,5]$)}
-	\label{fig:}
+	\caption{Eksempel med delfunktionen \emph{merge} i mergesort. Her kalder vi merge($[4,6,1]$, $[5,3,7,5]$). I hvert trin sammenlignes de \red{røde } tal. \blue{Blå }tal er en del af den færdige $c$ liste, og \violet{lilla } tal er de tal der sidst blev føjet til $c$. Linjer refererer til figur \ref{fig:Pseudokode til mergesort}.}
+	\label{fig:merge i mergesort}
 \end{figure}
 
 
