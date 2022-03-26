@@ -22,62 +22,95 @@ Herfra vil jeg kun forholde mig til sortering af lister med tal, og sortere dem 
 \section{Insertionsort}
 \label{sec:Insertionsort}
 
-Insertionsort er en af de mere simple sorteringsalgoritmer. Dette er pseudokode for algoritmen \cite[s. 104]{aogd}.
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{center}
 
 		\begin{lstlisting}
 		funktion insertionsort(liste) {
-			for i = 1 til i = n {					# her er n længden af listen
+			for i = 1 til i = n {				# her er n længden af listen
 			e = liste[i]	 						# dette er elementet i listen
 
 			if e < liste[0] {						# hvis elementet er større end det første element i listen
-			for j = j til j = 0{ 
-			liste[j] = liste[j-1]		# ryk elementerne på pladserne 0 til j, et tak frem
-			}
-			liste[0] = e 						# sætter dette element forrest i listen
+				for j = j til j = 0{ 
+					liste[j] = liste[j-1]		# ryk elementerne på pladserne 0 til j, et tak frem
+				}
+			liste[0] = e 							# sætter dette element forrest i listen
 			}
 			else{
 				j = i 								# j er en nu tæller der starter på i
 				while liste[j-1] > e {			# kør mens liste[j-1] er størren end elementet
-				liste[j] = liste[j - 1] # ryk liste[j] et tak til højre
+				liste[j] = liste[j-1] 			# ryk liste[j] et tak til højre
 				j -= 1
 				}
 				l[j] = element						# indsæt elementet hvor det passer ind
 			}
 			}			
-			return(liste)								# returnerer den sorterede liste
+			return(liste)							# returnerer den sorterede liste
 		}
-
 		\end{lstlisting}
 	\end{center}
-	\caption{Pseudokode til insertionsort}
+	\vspace{-7mm}
+	\caption{Pseudokode til insertionsort \cite[s. 104]{aogd}.}
 	\label{fig:Pseudokode til insertionsort}
 \end{figure}
 
+Insertionsort er en af de mere simple sorteringsalgoritmer. Pseudokoden til algoritmen kan ses i figur \ref{fig:Pseudokode til insertionsort}
 
-Det er ikke en tilfældighed at denne algoritme hedder insertionsort. Den fungerer nemlig ved at gennemgå gennemgå hvert element i listen, og placere det hvor det passer ind i de elementer der allerede er sorterede. Dette er nok til dels den måde man f.eks. ville sortere sin hånd i Uno eller 500. At algoritmen gennemgår alle elementerne i listen kronologisk kan vi se allerede i linje 2, da algoritmen her begynder med en for-lykke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar sættes elementet som algoritmen er nået til ind i variablen e i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen se figur \ref{fig:Indsæt element først i listen}
 
-\blue{balder}
+Det er ikke en tilfældighed at denne algoritme hedder insertionsort. Den fungerer nemlig ved at gennemgå gennemgå hvert element i listen, og placere det hvor det passer ind i de elementer der allerede er sorterede. Dette er nok til dels den måde man f.eks. ville sortere sin hånd i Uno eller 500. 
 
-\begin{figure}
-	\begin{center}
-		$$[\blue{5},\blue{7},\blue{9},\red{4},10,6,2]$$
-		$$[\blue{5},\blue{5},\blue{7},\blue{9},10,6,2]$$
-		$$[\red{4},\blue{5},\blue{7},\blue{9},10,6,2]$$
-	\end{center}
-	\caption{Indsæt element først i listen}
-	\label{fig:Indsæt element først i listen}
-\end{figure}
+\subsection{Algoritmens Procedure}%
+\label{sub:Algoritmens Procedure}
 
+At algoritmen gennemgår alle elementerne i listen kronologisk kan vi se allerede i linje 2, da algoritmen her begynder med en for-lykke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar sættes elementet som algoritmen er nået til ind i variablen e i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen (se figur \ref{fig:Indsæt element først i listen}). Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første element i listen sker følgende (se figur \ref{fig:Indsæt element hvor det passer i listen}): Algoritmen ser på tallet før elementet og spørger: "er dette tal større end elementet". Hvis det er, rykkes det hen på elementets plads. Herefter stiller algoritmen samme spørgsmål, til tallet to pladser før elementet. Hvis dette tal er mindre and elementet placerer algoritmen elementet efter dette tal, hvis ikke stiller den samme spørgsmål til tallet 3 pladser før elementet og så videre. Det er vigtigt at pointere, at der altid vil være et tal der er mindre end elementet, da elementet ellers ville være blevet placeret først i liste af den første del af algoritmenen (linje $5$-$10$).\\
+
+\subsection{Egenskaber af Insertionsort}%
+\label{sub:Egenskaber af Insertionsort}
+Insertionsort er en god sorteringsalgoritme, idet at proceduren er forholdsvis nem at forstå, men også at listen til venstre for det element algoritmen er nået til, altid vil være sorteret. Hvis man stopper en insertionsort-algoritme halvvejs gennem dens køretid, vil man altid have en liste hvor den første halvdel er sorteret og den anden halvdel usorteret. Dette er ikke en egenskal i den næste algoritme.\\
 
 (se afsnit \ref{sec:Analyse af Insertionsort} for store-O analysen)
 
+\begin{figure}
+	\begin{center}
+		\padtable
+		\begin{tabular}{l|c|c}
+			Forklaring & Eksempel & Linje \\
+			\hline
+			Liste hvor \verb|e < liste[0]| & $[\blue{5},\blue{7},\blue{9},\red{4},6,5,2]$ & $5$ \\
+			Rykker til venstre & $[\blue{5},\blue{5},\blue{7},\blue{9},6,5,2]$ & $6$-$8$\\
+			Sætter elementet ind først  & $[\red{4},\blue{5},\blue{7},\blue{9},6,5,2]$ & $9$
+		\end{tabular}
+	\end{center}
+	\vspace{-3mm}
+	\caption{Procedure for at indsætte element først i listen. Elementet er markeret med\red{rød}, og tal der på allerede er sorterede er markeret med\blue{blå}. Linjer refererer til koden i figur \ref{fig:Pseudokode til insertionsort}.}
+	\label{fig:Indsæt element først i listen}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\padtable
+		\begin{tabular}{l|c|c}
+			Forklaring & Eksempel & Linje\\
+			\hline
+			Liste hvor \verb|e >= liste[0]| & $[\blue{4},\blue{5},\blue{7},\blue{9},\red{6},5,2]$ &$11$\\
+			Da $9 \geq 6$ rykkes tallet til højre & $[\blue{4},\blue{5},\blue{7},\blue{9},\blue{9},5,2]$ & $13$-$14$\\
+			Da $7 \geq 6$ rykkes tallet til højre & $[\blue{4},\blue{5},\blue{7},\blue{7},\blue{9},5,2]$ & $13$-$14$\\
+			Da $5 \ngeq 6$ sættes elementet ind efter $5$ & $[\blue{4},\blue{5},\red{6},\blue{7},\blue{9},5,2]$ & $13$ og $17$
+		\end{tabular}
+	\end{center}
+	\vspace{-3mm}
+	\caption{Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med\red{rød}, og tal der på allerede er sorterede er markeret med\blue{blå}. Linjer refererer til figur \ref{fig:Pseudokode til insertionsort}.}
+	\label{fig:Indsæt element hvor det passer i listen}
+\end{figure}
+
+
 \section{Mergesort}
 \label{sec:Mergesort}
+\lstinputlisting[language=Python]{../python/algoritmer/mergesort.py}
 
-%\lstinputlisting[language=Python]{../python/algoritmer/mergesort.py}
+Hvor insertionsort er en lykke-baseret algoritme, er mergesort en rekursiv algoritme. Det begyder at algoritmen indeholder en funktion der kalder sig selv. 
+
 
 \section{Analyse af Insertionsort}
 \label{sec:Analyse af Insertionsort}
