@@ -120,7 +120,18 @@ Hvor insertionsort er en lykke-baseret algoritme, er mergesort rekursiv idet at 
 
 Pseudokode til denne algoritme kan findes i figur \ref{fig:Pseudokode til mergesort}.\\
 
-Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen \verb|merge|, da det er den mest simple. Funktionen tager to lister (\verb|a| og \verb|b|) som argumenter, og fletter dem sammen til en tredje liste (\verb|c|).
+Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen $merge$, da det er den mest simple. Funktionen tager to lister ($a$ og $b$) som argumenter, og fletter dem sammen til en tredje liste ($c$). Denne $c$ liste er delvist sorteret, og består af flere små sorterede dele. Eksempelvis kunne dette være en returneret liste:
+
+$$merge([1,2,4,8],[9,5,6,4,7]) \longrightarrow [\orange{1}, \orange{2}, \orange{4}, \orange{8}, \orange{9}, \blue{5}, \blue{6}, \violet{4}, \violet{7}]$$
+
+
+
+En vigtig egenskab af $merge$ er at, den kan flette to sorterede lister sammen, til én samlet liste. Det kunne for eksempel være i dette tilfælde:
+
+
+$$merge([1,3,4,8],[2,3,6,7,7]) \longrightarrow [1, 2, 3, 3, 4, 6, 7, 7, 8]$$
+
+
 
 \begin{figure}
 	\begin{center}
@@ -151,25 +162,28 @@ Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen \ver
 					return(liste)
 				}
 				else {
-					return(merge(mergesort(liste[0 ... n/2]), mergesort(liste[n/2 + 1 ... n])))	
+					return(merge(mergesort(liste[0 ... n/2]), mergesort(liste[n/2 + 1 ... n])))
 				}
 			}
 
 			funktion merge(a,b) {
 				c = []
-				if a.length == 0 {
-					return(c + b)
-				}
-				elif b.length == 0 {
-					return(c + a)
-				}
-				elif a[0] <= b[0] {
-					tilføj a[0] til c
-					fjern a[0] fra a
-				}
-				else {
-					tilføj b[0] til c
-					fjern b[0] fra b
+
+				while(true) {
+					if a.length == 0 {
+						return(c + b)
+					}
+					elif b.length == 0 {
+						return(c + a)
+					}
+					elif a[0] <= b[0] {
+						tilføj a[0] til c
+						fjern a[0] fra a
+					}
+					else {
+						tilføj b[0] til c
+						fjern b[0] fra b
+					}
 				}
 			}
 
@@ -179,8 +193,6 @@ Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen \ver
 	\caption{Pseudokode til Mergesort \cite[s. 106]{aogd}.}
 	\label{fig:Pseudokode til mergesort}
 \end{figure}
-
-
 
 
 \section{Analyse af Insertionsort}
