@@ -17,6 +17,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Eksempel med delfunktionen \emph {merge} i mergesort. Her kalder vi merge($[4,6,1]$, $[5,3,7,5]$). I hvert trin sammenlignes de \color {red}røde \color {black} tal. \color {blue}Blå \color {black}tal er en del af den færdige $c$ liste, og \color {violet}lilla \color {black} tal er de tal der sidst blev føjet til $c$. Linjer refererer til figur \ref {fig:Pseudokode til mergesort}.\relax }}{8}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Hvordan $mergesort$ først splitter listen op, og derefter samler den med $merge$ (se figur \ref {fig:merge i mergesort}). Farver indikerer de par af lister der sættes ind i $merge$-funktionen.\relax }}{8}{figure.caption.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{9}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
