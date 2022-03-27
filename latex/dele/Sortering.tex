@@ -120,14 +120,11 @@ Hvor insertionsort er en lykke-baseret algoritme, er mergesort rekursiv idet at 
 
 Pseudokode til denne algoritme kan findes i figur \ref{fig:Pseudokode til mergesort}.\\
 
-Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen $merge$, da det er den mest simple. Funktionen tager to lister ($a$ og $b$) som argumenter, og fletter dem sammen til en tredje liste ($c$). Denne $c$ liste er delvist sorteret, og består af flere små sorterede dele. Eksempelvis kunne dette være en returneret liste:
+Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen $merge$, da det er den mest simple. Funktionen tager to lister ($a$ og $b$) som argumenter, og fletter dem sammen til en tredje liste ($c$) (se figur \ref{fig:merge i mergesort}). Denne $c$ liste dog ikke altid sorteret. Eksempelvis kunne dette være en returneret liste:
 
 $$merge([1,2,4,8],[9,5,6,4,7]) \longrightarrow [\orange{1}, \orange{2}, \orange{4}, \orange{8}, \orange{9}, \blue{5}, \blue{6}, \violet{4}, \violet{7}]$$
 
-
-
-Altså kan vi ikke nøjes med $merge$ for at sortere en liste. En vigtig egenskab af $merge$ er at, den kan flette to sorterede lister sammen, til én samlet liste. Det kunne for eksempel være i dette tilfælde:
-
+Her er resultatet en delvist sorteret liste bestående af flere sorterede dele. Altså kan vi ikke nøjes med $merge$ for at sortere en liste. En vigtig egenskab af $merge$ er at, den kan flette to sorterede lister sammen, til én samlet liste. Det kunne for eksempel være i dette tilfælde:
 
 $$merge([1,3,4,8],[2,3,6,7,7]) \longrightarrow [1, 2, 3, 3, 4, 6, 7, 7, 8]$$
 
@@ -141,20 +138,22 @@ Her er begge argumenter ($a$ og $b$) sorterede lister, der flettes sammen til é
 		\begin{tabular}{l|c|c|c|c}
 			Forklaring & $a$ & $b$ & $c$ & Linje\\
 			\hline
-			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{4},6,1]$ & $[\red{5},3,7,5]$ & [\:] & $18$-$21$\\
-			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},1]$ & $[\red{5},3,7,5]$ & $[\violet{4}]$ & $22$-$25$\\
-			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},1]$ & $[\red{3},7,5]$ & $[\blue{4},\violet{5}]$ & $22$-$25$\\
-			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6},1]$ & $[\red{7},5]$ & $[\blue{4},\blue{5},\violet{3}]$ & $18$-$21$\\
-			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{1}]$ & $[\red{7},5]$ & $[\blue{4},\blue{5},\blue{3},\violet{6}]$ & $18$-$21$\\
-			 Da $a.length = 0$ føjes $b$ til $c$ & $\red{[\:]}$ & $[7,5]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\violet{1}]$ & $12$-$14$\\
-			 Returnerer $c$ & $[\:]$ & $[\:]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\blue{1},\violet{7},\violet{5}]$ & $13$\\
+			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{3},6,6]$ & $[\red{4},5,7,9]$ & [\:] & $18$-$21$\\
+			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},6]$ & $[\red{4},5,7,9]$ & $[\violet{3}]$ & $22$-$25$\\
+			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},6]$ & $[\red{5},7,9]$ & $[\blue{3},\violet{4}]$ & $22$-$25$\\
+			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6},6]$ & $[\red{7},9]$ & $[\blue{3},\blue{4},\violet{5}]$ & $18$-$21$\\
+			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6}]$ & $[\red{7},9]$ & $[\blue{3},\blue{4},\blue{5},\violet{6}]$ & $18$-$21$\\
+			 Da $a.length = 0$ føjes $b$ til $c$ & $\red{[\:]}$ & $[7,9]$ & $[\blue{3},\blue{4},\blue{5},\blue{6},\violet{6}]$ & $12$-$14$\\
+			 Returnerer $c$ & $[\:]$ & $[\:]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\blue{1},\violet{7},\violet{9}]$ & $13$\\
 		\end{tabular}
 	\end{center}
-	\caption{Eksempel med delfunktionen \emph{merge} i mergesort. Her kalder vi merge($[4,6,1]$, $[5,3,7,5]$). I hvert trin sammenlignes de \red{røde } tal. \blue{Blå }tal er en del af den færdige $c$ liste, og \violet{lilla } tal er de tal der sidst blev føjet til $c$. Linjer refererer til figur \ref{fig:Pseudokode til mergesort}.}
+	\caption{Eksempel med delfunktionen \emph{merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \red{røde } tal. \blue{Blå }tal er en del af den færdige $c$ liste, og \violet{lilla } tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref{fig:Pseudokode til mergesort}.}
 	\label{fig:merge i mergesort}
 \end{figure}
 
-Mergesorts kompleksitet kommer dog først rigtigt til udtryk når vi tager hele algoritmen i betragtning. Mergesortfunktionen tager en enkel liste som argument, og checker først om listen kun indeholet ét element. Hvis den gør, så returnerer den bare listen uændret. Dette giver intuitivt mening, da en liste med et enkelt element altid vil være sorteret. Hvis listen er \emph{mere} end $1$ lang, gør den det, som får hele algoritmen til at fungere: den deler listen på i to, og kalder sig selv på hver halvdel. Herefter sættes de to dele sammen igen af $merge$-funktionen. Det er dog ikke helt så enkelt som det lyder, idet at $mergesort$ rekursivt kalder sig selv. Det leder til at algoritmen splitter listen op igen og igen, indtil der kun er et element i de mange lister. Herefter samler $merge$ alle de små lister til en stor liste, hvor $merge$ løbende sørger for at de lister den samler er sorterede. De lister der er samlet af $merge$, vil altid være sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-element-lister samles af $merge$ til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede lister. $merge$ får altså i altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som output.
+Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele algoritmen i betragtning. Mergesortfunktionen tager en enkel liste som argument, og checker først om listen kun indeholet ét element. Hvis den gør, så returnerer den bare listen uændret. Dette giver intuitivt mening, da en liste med et enkelt element altid vil være sorteret. Hvis listen er \emph{mere} end $1$ lang, gør den det, som får hele algoritmen til at fungere: den deler listen på i to, og kalder sig selv på hver halvdel. Herefter sættes de to dele sammen igen af $merge$-funktionen. Det er dog ikke helt så enkelt som det lyder, idet at $mergesort$ rekursivt kalder sig selv. Det leder til at algoritmen splitter listen op igen og igen, indtil der kun er et element i de mange lister. Herefter samler $merge$ alle de små lister til en stor liste, hvor $merge$ løbende sørger for at de lister den samler er sorterede. De lister der er samlet af $merge$, vil altid være sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-element-lister samles af $merge$ til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede lister. $merge$ får altså i altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som output.
+
+\red{tilfælde hvor med en liste med ulige længde?}
 
 \begin{figure}
 	\begin{center}

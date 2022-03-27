@@ -1,0 +1,27 @@
+\chapter{Algoritmers Udførelsestid}
+\label{ch:Algoritmers Udførelsestid}
+
+\section{Tid som Funktion af Argumentets Kardinalitet}
+\label{sec:Tid som Funktion af Argumentets Kardinalitet}
+
+Dette afsnit bygger primært på side $24$ og $25$ i bogen \emph{"Algoritmer og Datastrukturer"} \cite{aogd}.\\
+
+Når vi analyserer algoritmer, er det primære formål at skabe udsagn, der kort og præcist beskriver algoritmers opførsel. I vores tilfælde er vi interesserede i algoritmens udførselsestid. Vi lader $\I _n$ være mængden af mulige argumenter til algoritmen, $n$ være størrelsen af $\I _n$ og $I$ være en instans af $\I$ (altså $I \in \I$). Vi kan 
+
+\begin{figure}
+	\begin{center}
+		\padtable
+		\begin{tabular}{l}
+			\hline
+			$O(f(n)) = {g(n): \exists c > 0: \exists n_0 \in \N_+: \forall n \geq n_0: g(n) \leq c \cdot f(n)}$\\
+			$\Omega (f(n)) = {g(n): \exists c > 0: \exists n_0 \in \N_+: \forall n \geq n_0: g(n) \geq c \cdot f(n)}$\\
+			$\Theta (f(n)) = O(f(n)) \cup \Omega (f(n))$\\
+			\hline
+		\end{tabular}
+	\end{center}
+	%\vspace{-3mm}
+	\caption{Definition af $O(f(x))$, $\Omega (f(x))$ og $\Theta (f(x))$ \cite[s. 26]{aogd}.}
+	\label{fig:Store-O definition}
+\end{figure}
+
+

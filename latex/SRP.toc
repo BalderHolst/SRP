@@ -5,20 +5,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Resume}{4}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Sorteringsalgoritmer}{5}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Algoritmers Udførelsestid}{5}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Hvad er sortering?}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Tid som Funktion af Argumentets Kardinalitet}{5}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Insertionsort}{6}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Sorteringsalgoritmer}{6}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Insertionsort Procedure}{6}{subsection.3.2.1}%
+\contentsline {section}{\numberline {4.1}Hvad er sortering?}{6}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Egenskaber af Insertionsort}{6}{subsection.3.2.2}%
+\contentsline {section}{\numberline {4.2}Insertionsort}{7}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Mergesort}{7}{section.3.3}%
+\contentsline {subsection}{\numberline {4.2.1}Insertionsort Procedure}{7}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Mergesort Procedure}{7}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {4.2.2}Egenskaber af Insertionsort}{7}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Analyse af Insertionsort}{9}{section.3.4}%
+\contentsline {section}{\numberline {4.3}Mergesort}{8}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Konklusion}{10}{chapter.4}%
+\contentsline {subsection}{\numberline {4.3.1}Mergesort Procedure}{8}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Analyse af Insertionsort}{10}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Binære Træer}{11}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Store-O og Bedste Tiilfælde}{12}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Implementering og test af Algoritmerne}{13}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Konklusion}{14}{chapter.8}%
