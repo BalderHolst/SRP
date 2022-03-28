@@ -7,23 +7,25 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Definition af $O(f(x))$, $\Omega (f(x))$ og $\Theta (f(x))$ \cite [s. 26]{aogd}.\relax }}{5}{figure.caption.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Definition af $O(f(n))$, $\Omega (f(n))$ og $\Theta (f(n))$ \cite [s. 26]{aogd}.\relax }}{6}{figure.caption.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Her ses skæringspunktet $n_0$, hvorefter $cg(n)$ altid er højere end $f(n)$. Altså vækstraten af $cg(n)$ højere end vækstraten af $f(n)$ \cite {n0}.\relax }}{7}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Eksempel på sortering af en liste\relax }}{6}{figure.caption.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Eksempel på sortering af en liste\relax }}{8}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Procedure for at indsætte element først i listen. Elementet er markeret med \color {red}rød\color {black}, og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black}. Linjer refererer til koden i figur \ref {fig:Pseudokode til insertionsort}.\relax }}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Procedure for at indsætte element først i listen. Elementet er markeret med \color {red}rød\color {black}, og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black}. Linjer refererer til koden i figur \ref {fig:Pseudokode til insertionsort}.\relax }}{9}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med \color {red}rød\color {black}, og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black}. Linjer refererer til figur \ref {fig:Pseudokode til insertionsort}.\relax }}{7}{figure.caption.6}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med \color {red}rød\color {black}, og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black}. Linjer refererer til figur \ref {fig:Pseudokode til insertionsort}.\relax }}{9}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Pseudokode til insertionsort \cite [s. 104]{aogd}.\relax }}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pseudokode til insertionsort \cite [s. 104]{aogd}.\relax }}{10}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Eksempel med delfunktionen \emph {merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \color {red}røde \color {black} tal. \color {blue}Blå \color {black}tal er en del af den færdige $c$ liste, og \color {violet}lilla \color {black} tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref {fig:Pseudokode til mergesort}.\relax }}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Eksempel med delfunktionen \emph {merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \color {red}røde \color {black} tal. \color {blue}Blå \color {black}tal er en del af den færdige $c$ liste, og \color {violet}lilla \color {black} tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref {fig:Pseudokode til mergesort}.\relax }}{11}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Hvordan $mergesort$ først splitter listen op, og derefter samler den med $merge$ (se figur \ref {fig:merge i mergesort}). Farver indikerer de par af lister der sættes ind i $merge$-funktionen.\relax }}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Hvordan $mergesort$ først splitter listen op, og derefter samler den med $merge$ (se figur \ref {fig:merge i mergesort}). Farver indikerer de par af lister der sættes ind i $merge$-funktionen.\relax }}{11}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{12}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
