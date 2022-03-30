@@ -4,8 +4,9 @@ import sys
 sys.path.insert(1, './algoritmer')
 
 from mergesort import *
-from mergesort_optimized import *
+from hybrid_1 import *
+from hybrid_2 import *
 
 
 #tester algoritmerne
-fullTest([mergesort_optimized,mergesort])
+fullTest([hybrid_1,hybrid_2,mergesort])
