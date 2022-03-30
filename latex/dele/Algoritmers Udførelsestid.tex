@@ -35,6 +35,9 @@ $\Omega (f(n))$ indeholder modsat $O(f(n))$ alle funktioner der vokser mindst li
 
 Der er dog en vækstrate som både $O(f(n))$ og $\Omega (f(n))$ indeholder: nemlig vækstraten af $f(n)$.For at beskrive \emph{præcis} denne mængde funktioner bruger vi $\Theta (n)$. Hvis en algoritme er $\Theta (n^3)$ betyder det altså at $T(n)$ \emph{altid} vil have samme vækstrate som $n^3$. Det ville også betyde at alle input af samme kardinalitet vil resultere lige lang udførselsestid.
 
+\section{Kompleksetetsklasser}
+\label{sec:Kompleksetetsklasser}
+
 
 %Grunden til dette, er at algoritmeoptimering (hvor man bruger meget algoritmeanalyse) netop har størst effekt hvis algoritmens input har en høj kardinalitet.
 
@@ -56,9 +59,21 @@ Der er dog en vækstrate som både $O(f(n))$ og $\Omega (f(n))$ indeholder: neml
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.5]{../img/Store-o og n0.png}
+		\begin{tikzpicture}[domain=0:7,range=0:3,scale=1.1] 
+			\normalsize
+			\coordinate (I) at (2.5,2.5);
+			\coordinate (I0) at (2.5,0);
+			\draw[very thin,color=lightgray] (-0.5,-0.5) grid (6.7,6.7);
+			\draw[thick,->] (-0.5,0) -- (7.2,0) node[right] {$n$}; \draw[thick,->] (0,-0.5) -- (0,7.2) node[above] {$T$};
+			\draw[thick,color=blue, samples=150,domain=0:5.5]	plot (\x,{\x})	node[right] {$T(n) \in O(n)$}; 
+			\draw[thick,color=violet, samples=150,domain=0:3.73]	plot (\x,{0.4*\x^2})	node[above] {$T(n) \in O(n^2)$}; 
+			\large
+			\draw[dashed] (I) -- (I0) node[below] {$n_0$};
+		\end{tikzpicture}
+		%\includegraphics[scale=0.5]{../img/Store-o og n0.png}
 	\end{center}
-	\caption{Her ses skæringspunktet $n_0$, hvorefter $cg(n)$ altid er højere end $f(n)$. Altså vækstraten af $cg(n)$ højere end vækstraten af $f(n)$ \cite{n0}.}
+	\caption{Her ses skæringspunktet $n_0$, hvorefter $g(n)$ altid er højere end $f(n)$. Altså vækstraten af $g(n)$ højere end vækstraten af $f(n)$.}
+	%  \cite{n0}
 	\label{fig:Store-o og n2}
 \end{figure}
 

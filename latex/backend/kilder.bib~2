@@ -1,0 +1,19 @@
+@book{aogd,
+	author = {Dietzfelbinger, Martin and Mehlhorn, Kurt},
+	series = {Grundv{\ae}rkt{\o}jerne (i uddrag, kladde)},
+	title = {Algoritmer og datastrukturer},
+	url = {https://github.com/thorehusfeldt/algoritmer-og-datastrukturer/blob/master/ad-book.pdf}
+}
+
+@article{n0,
+	author = {Admin},
+	publisher = {NotesforMSc},
+	title = {Algorithms Order Of Growth},
+	url = {https://notesformsc.org/algorithms-order-of-growth}
+}
+
+@article{what-is-python,
+	title = {What is Python? Executive Summary},
+	url = {https://www.python.org/doc/essays/blurb}
+}
+

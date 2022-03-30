@@ -1,0 +1,60 @@
+
+\begin{tikzpicture}[scale=2]
+	\coordinate (off) at (0.4,0.15);
+	\coordinate (O) at (0,0);
+	\coordinate (A) at (3.5,-0.5);
+	\coordinate (AB) at ($(A) + (-1,-1.0)$);
+	\coordinate (AA) at ($(A) + (1,-1.0)$);
+	\coordinate (AAB) at ($(AA) + (-0.5,-1.1)$);
+	\coordinate (AAA) at ($(AA) + (0.5,-1.1)$);
+	\coordinate (ABB) at ($(AB) + (-0.5,-1.1)$);
+	\coordinate (ABA) at ($(AB) + (0.5,-1.1)$);
+
+	\coordinate (B) at (-3.5,-0.5);
+	\coordinate (BB) at ($(B) + (-1,-1.0)$);
+	\coordinate (BA) at ($(B) + (1,-1.0)$);
+	\coordinate (BAB) at ($(BA) + (-0.5,-1.1)$);
+	\coordinate (BAA) at ($(BA) + (0.5,-1.1)$);
+	\coordinate (BBB) at ($(BB) + (-0.5,-1.1)$);
+	\coordinate (BBA) at ($(BB) + (0.5,-1.1)$);
+
+	\draw[->] (O) -- (A);
+	\draw[->] (A) -- (AB);
+	\draw[->] (A) -- (AA);
+	\draw[->] (AA) -- (AAB);
+	\draw[->] (AA) -- (AAA);
+	\draw[->] (AB) -- (ABA);
+	\draw[->] (AB) -- (ABB);
+
+	\draw[->] (O) -- (B);
+	\draw[->] (B) -- (BB);
+	\draw[->] (B) -- (BA);
+	\draw[->] (BA) -- (BAB);
+	\draw[->] (BA) -- (BAA);
+	\draw[->] (BB) -- (BBA);
+	\draw[->] (BB) -- (BBB);
+
+
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(O) - (off)$) rectangle ($(O) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(A) - (off)$) rectangle ($(A) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(AB) - (off)$) rectangle ($(AB) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(AA) - (off)$) rectangle ($(AA) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(AAA) - (off)$) rectangle ($(AAA) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(AAB) - (off)$) rectangle ($(AAB) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(ABA) - (off)$) rectangle ($(ABA) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(ABB) - (off)$) rectangle ($(ABB) + (off)$) {};
+
+
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(B) - (off)$) rectangle ($(B) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(BB) - (off)$) rectangle ($(BB) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(BA) - (off)$) rectangle ($(BA) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(BAA) - (off)$) rectangle ($(BAA) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(BAB) - (off)$) rectangle ($(BAB) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(BBA) - (off)$) rectangle ($(BBA) + (off)$) {};
+	\filldraw[fill=blue!10!white, draw=black,rounded corners=2ex] ($(BBB) - (off)$) rectangle ($(BBB) + (off)$) {};
+
+	\draw (O) node {$e_2 \:?\: e_3$};
+
+
+
+\end{tikzpicture}

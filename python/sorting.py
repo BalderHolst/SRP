@@ -43,12 +43,14 @@ def newVersionNumber(dir_path,extention):
 # Dette er funktionen der tester en liste med funktioner og gemmer deres køretider
 def fullTest(functions):
 
-	# hvor mange datapunkter pr. n-værdi
-	trials = 10	
 
 	data_dir = "../data/"
 	version_number = newVersionNumber(data_dir,"")
 
+	# hvor mange datapunkter pr. n-værdi
+	trials = 15	
+
+	# Bruger tidspunkt som frø til pseudotilfældige tal.
 	seed = time.time()
 	print(f"Seed: {seed}")
 
@@ -59,7 +61,7 @@ def fullTest(functions):
 		# i denne liste gennes den tid det tager at sorterer listen med n elementer
 		times = [] 
 	
-		# Bruger det samme seed til test at hver algoritme. på den made er det de samme pseudo-tilfældige liste som algoritmerne sorterer
+		# Bruger det samme seed til test at hver algoritme. på den måde er det de samme pseudo-tilfældige liste som algoritmerne sorterer
 		random.seed(seed) 
 
 		# Vi laver testen et antal (trials) gange pr. n-værdi
@@ -68,20 +70,22 @@ def fullTest(functions):
 			# En lykke der køre et abitrært antal gange (jo højere en i-værdi jo højere maks antal elementer i listen)
 			for i in range(0,80):	   
 
-                # Jeg bruger en potensfunktion til at fa flere datapunker tættere på y-aksen og færre lange oberationer (pga. lange liste)
+        	# Jeg bruger en potensfunktion til at fa flere datapunker tættere på y-aksen og færre lange oberationer (pga. lange liste)
 				n = round(pow(1.1,i))   
 
-				print(f"function=\"{function.__name__}\":   Trial: [{trial+1}/{trials}]	{i=},{n=}")  # lidt feedback
+				# lidt feedback
+				print(f"function=\"{function.__name__}\":   Trial: [{trial+1}/{trials}]	{i=},{n=}")  
 
-				# gennererer en tilfældig liste
+				# gennererer en tilfældig liste med længden n
 				l = createRandomList(n)		
 
 				# gem størrelsen af listen der skal sorteres
 				ns.append(n)				
-				# gen den tid det tager at sortere listen
+				# gem den tid det tager at sortere listen
 				times.append(test(function,l))  
 
 				
+            # gemmer data
 			data = {
 				"n": ns,
 				"t": times

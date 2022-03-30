@@ -78,6 +78,33 @@
       \verb https://github.com/thorehusfeldt/algoritmer-og-datastrukturer/blob/master/ad-book.pdf
       \endverb
     \endentry
+    \entry{python-random}{article}{}
+      \list{publisher}{1}{%
+        {Python Software Foundation}%
+      }
+      \field{sortinit}{r}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{title}
+      \field{title}{random --- Generate pseudo-random numbers}
+      \verb{urlraw}
+      \verb https://docs.python.org/3/library/random.html
+      \endverb
+      \verb{url}
+      \verb https://docs.python.org/3/library/random.html
+      \endverb
+    \endentry
+    \entry{what-is-python}{article}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{What is Python? Executive Summary}
+      \verb{urlraw}
+      \verb https://www.python.org/doc/essays/blurb
+      \endverb
+      \verb{url}
+      \verb https://www.python.org/doc/essays/blurb
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

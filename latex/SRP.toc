@@ -11,6 +11,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}\color {red}Store-O-Analyse\color {black}}{6}{section.3.2}%
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Kompleksetetsklasser}{6}{section.3.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Sorteringsalgoritmer}{8}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Hvad er sortering?}{8}{section.4.1}%
@@ -25,12 +27,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Mergesort Procedure}{10}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Analyse af Insertionsort}{12}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Store-O-Analyse af Insertionsort}{12}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Binære Træer}{13}{chapter.5}%
+\contentsline {subsection}{\numberline {4.4.1}Insertionsort i Værste Tilfælde}{12}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Store-O og Bedste Tiilfælde}{14}{chapter.6}%
+\contentsline {chapter}{\numberline {5}Binære Træer}{14}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Implementering og test af Algoritmerne}{15}{chapter.7}%
+\contentsline {chapter}{\numberline {6}Store-O og Bedste Tiilfælde}{15}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Konklusion}{16}{chapter.8}%
+\contentsline {chapter}{\numberline {7}Implementering og Test}{16}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Python}{16}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Implementering}{16}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Test af Sorteringsalgoritmer}{17}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}De Reelle Køretider}{19}{section.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.1}Store-O er Værste Tilfælde}{19}{subsection.7.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.2}Optimering af Mergesort}{19}{subsection.7.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Konklusion}{21}{chapter.8}%

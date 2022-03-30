@@ -30,7 +30,7 @@ Det er ikke en tilfældighed at denne algoritme hedder insertionsort. Den funger
 \subsection{Insertionsort Procedure}%
 \label{sub:Insertionsort Procedure}
 
-At algoritmen gennemgår alle elementerne i listen kronologisk kan vi se allerede i linje 2, da algoritmen her begynder med en for-lykke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar sættes elementet som algoritmen er nået til ind i variablen e i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen (se figur \ref{fig:Indsæt element først i listen}).
+At algoritmen gennemgår alle elementerne i listen kronologisk kan vi se allerede i linje 2, da algoritmen her begynder med en for-løkke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar sættes elementet som algoritmen er nået til ind i variablen e i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen (se figur \ref{fig:Indsæt element først i listen}).
 
 \begin{figure}[h]
 	\begin{center}
@@ -113,7 +113,7 @@ Insertionsort er en god sorteringsalgoritme, idet at proceduren er forholdsvis n
 \section{Mergesort}
 \label{sec:Mergesort}
 
-Hvor insertionsort er en lykke-baseret algoritme, er mergesort rekursiv idet at den ikke benytter en lykke til at gentage instruktioner, men kalder sig selv i stedet. Dette leder til en fraktallignende sorteringsmetode, der deler problemet i mindre og mindre bidder. 
+Hvor insertionsort er en løkke-baseret algoritme, er mergesort rekursiv idet at den ikke benytter en løkke til at gentage instruktioner, men kalder sig selv i stedet. Dette leder til en fraktallignende sorteringsmetode, der deler problemet i mindre og mindre bidder. 
 
 \subsection{Mergesort Procedure}%
 \label{sub:Mergesort Procedure}
@@ -217,7 +217,65 @@ Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele
 \end{figure}
 
 
-\section{Analyse af Insertionsort}
+\section{Store-O-Analyse af Insertionsort}
 \label{sec:Analyse af Insertionsort}
 
+\subsection{Insertionsort i Værste Tilfælde}%
+\label{sub:Insertionsort i Værste Tilfælde}
+
+
+\cite[s. 42]{aogd}\\
+
+I dette afsnit gør vi brug af tidligere definerede begreber fra afsnittet "Algoritmer Udførelsestid" på side \pageref{ch:Algoritmers Udførelsestid}.
+
+Når man analyserer en algoritme teoretisk handler det ikke om den faktiske udførelsestig, men nærmere hvor mange operationer computeren skal køre, for at fuldføre algoritmen. På den måde kan man abstrahere helt væk fra fysisk tid, og regne med teoretiske operationer, hvis reelle udførelsestid ikke har nogen indflydelse. Den eneste faktor for antallet af operationer er kardinaliteten af instansen algoritmen udføres på. Dette gør det muligt at beskrive antallet af operationer (der er propportionalt med udførelsestiden) udelukkende som funktion af $n$ (instansens kardinalitet).\\
+
+Insertionsort består af to løkker: en indre og en ydre. Den ydre løkke kører fra $i = 2$ til $i = n$. Altså kører koden inde i løkken $n - 1$ gange. Den indre løkke kører i værste tilfælde fra $j = i$ til $j = 1$ for hver $i$ værdi fra den ydre løkke. Det betyder at operationerne, som den indre løkke udfører, stiger sammen med $i$ (se figur \ref{fig:Insertionsort Operationer i løkker}). Vi ænder med at kunne beskrive det totale antal gange som koden i den indre kører, som summen af alle $i$-værdierne, som den ydre løkke gennemgår.
+
+$$\sum_{i=2}^{n}i-1$$
+
+Den indre løkkes kode køres $i-1$ gange, da løkken gennemgår fra $j=i$ til og \emph{uden} $j=1$, altså kører løkken $i-1$ gange. Vi kan nu omskrive summen således:
+
+$$\sum_{i=1}^{n-1}i$$
+
+For at simplificere udtrykket endnu mere kan vi bruge reglen at en sum som $1 + \dots + n -1$ kan omskrives på denne måde. \red{[Bevis??]}
+
+$$\sum_{i=1}^{n-1}i \s=\s \frac{n(n-1)}{2} \s=\s \frac{1}{2}\cdot  n^2 - \frac{1}{2}\cdot  n$$
+
+Dette er altså et udtryk for hvor mange gange koden i den indre løkke kører, som funktion af kardinaliteten af algoritmens input. Vi kunne nu begynde at gange denne funktion med hvor mange operationer der sker inde i den indre løkke, og lægge operationerne der sker $n$ gange fordi de er med i den ydre løkke. Til sidst kunne vi lægge de operationer der kun sker én gang til, og resultatet ville se nogenlunde sådan ud:
+
+$$a \cdot \frac{1}{2} \cdot n^2 - a \cdot \frac{1}{2} \cdot n + b \cdot n + c$$
+
+Her er $a$ antallet af operationer i den indre løkke, $b$ er antallet af operationer kun i den ydre løkke, og $c$ er operationerne som er uden for begge løkker. Det smarte ved store-O-notation er at vi faktisk ikke behøver at kende de reelle værdier for $a$, $b$ og $c$, da de alle er konstanter, og derfor ikke har nogen indflydelse på algoritmens vækstrate. Selv ikke udførelsestiden for hver at disse operationer, har nogen indflydelse på vækstraten. Vi kan derfor sige at algoritmens udførelsestid er $O(n^2)$.
+
+$$T_{insertionsort}(n) \in O(n^2)$$
+
+Med det menes der at udførelsestiden i værste tilfælde stiger med vækstraten $\Theta (n^2)$.
+
+
+\begin{figure}[b]
+	\begin{center}
+		\padtable
+		\begin{tabular}{ c|c|c }
+			i & j & køringer i $j$ løkken\\
+			\hline
+			$2$ & $2 \dots 1$ & $1$\\
+			$3$ & $3 \dots 1$ & $2$\\
+			$4$ & $4 \dots 1$ & $3$\\
+			$5$ & $5 \dots 1$ & $4$\\
+			\vdots & \vdots & \vdots\\
+			$n$ & $n \dots 1$ & $(n-1)$\\
+		\end{tabular}
+		$\s\s \Longrightarrow \s\s $	
+		\begin{tabular}{c}
+			Total antal køringer i $j$-løkken:\\
+			%\hline
+			\vspace{-4mm}
+			\\
+			$\displaystyle\sum_{i=1}^{n-1}i=\frac{n(n-1)}{2}$
+		\end{tabular}
+	\end{center}
+	\caption{Insertionsort: Antal køringer af koden i den indre $j$-løkke, hvis inputlisten har kardinaliteten $n$}
+	\label{fig:Insertionsort Operationer i løkker}
+\end{figure}
 
