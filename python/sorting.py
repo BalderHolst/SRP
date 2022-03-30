@@ -3,10 +3,6 @@ import time
 import pandas as pd
 import os
 
-import sys
-sys.path.insert(1, './algoritmer')
-from mergesort import *
-from insertionsort import *
 
 # Denne funktion timer køretiden af en funktion med input l og returnerer funktionen køretid i milisekunder
 def test(fun,l):

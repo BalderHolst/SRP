@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  30 MAR 2022 12:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  30 MAR 2022 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1345,7 +1345,7 @@ Package biblatex Info: Reference segment=0 on input line 4.
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=107, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=115, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf  used on input line 6.
@@ -1366,7 +1366,7 @@ ound PDF version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=110, page=1, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=118, page=1, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf, page 1>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf , page1 used on input line
@@ -1572,13 +1572,13 @@ LaTeX Warning: Reference `ch:Algoritmers' on page 17 undefined on input line 28
 (../python/sorting.py
 consecutive:
 ) [17] [18]
-<../img/toAlgoritmer.png, id=481, 505.6491pt x 505.6491pt>
+<../img/toAlgoritmer.png, id=491, 505.6491pt x 505.6491pt>
 File: ../img/toAlgoritmer.png Graphic file (type png)
 <use ../img/toAlgoritmer.png>
 Package pdftex.def Info: ../img/toAlgoritmer.png  used on input line 64.
 (pdftex.def)             Requested size: 209.97983pt x 209.97934pt.
  (../img/r2-insertion.txt) (../img/r2-insertion.txt)
-<../img/toAlgoritmerResidual.png, id=482, 505.6491pt x 505.6491pt>
+<../img/toAlgoritmerResidual.png, id=492, 505.6491pt x 505.6491pt>
 File: ../img/toAlgoritmerResidual.png Graphic file (type png)
 <use ../img/toAlgoritmerResidual.png>
 Package pdftex.def Info: ../img/toAlgoritmerResidual.png  used on input line 71
@@ -1613,11 +1613,8 @@ AED: lastpage setting LastPage
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `SRP.out' has not changed.
-(rerunfilecheck)             Checksum: F9D173EE8EDE9C7868D9626EC3EA7008;4026.
+(rerunfilecheck)             Checksum: E1325E24F0E97BE02EA440948FE47D36;4503.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                SRP
@@ -1628,10 +1625,10 @@ Package logreq Info: Writing requests to 'SRP.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45907 strings out of 480806
- 978662 string characters out of 5905151
- 1835978 words of memory out of 6000000
- 62096 multiletter control sequences out of 15000+600000
+ 45904 strings out of 480806
+ 978613 string characters out of 5905151
+ 1835967 words of memory out of 6000000
+ 62097 multiletter control sequences out of 15000+600000
  448532 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  89i,17n,86p,2638b,3126s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1660,10 +1657,10 @@ re/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on SRP.pdf (29 pages, 1131879 bytes).
+Output written on SRP.pdf (29 pages, 1131955 bytes).
 PDF statistics:
- 937 PDF objects out of 1000 (max. 8388607)
- 843 compressed objects within 9 object streams
- 405 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 941 PDF objects out of 1000 (max. 8388607)
+ 847 compressed objects within 9 object streams
+ 401 named destinations out of 1000 (max. 500000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 

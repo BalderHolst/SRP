@@ -50,3 +50,7 @@
 \contentsline {subsection}{\numberline {7.4.2}Optimering af Mergesort}{19}{subsection.7.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Konklusion}{21}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nameref {ch:Bilag 1}}{23}{chapter*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nameref {ch:Bilag 2}}{26}{chapter*.19}%
