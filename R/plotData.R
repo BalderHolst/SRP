@@ -4,10 +4,6 @@ library(ggplot2)
 #working dir
 setwd("/home/Balder/Documents/Skole/Gym/SRP/data/10")
 
-
-#import data
-dataset <- read.csv("mergesort/0.csv",header=TRUE,sep=",")
-
 #dir = "1"
 algorithm_dirs = list.files()
 
@@ -30,7 +26,7 @@ for (j in 1:length(algorithm_dirs)){
 M$algorithm = factor(M$Algorithm)
 summary(M)
 
-# punktm?ngder for hver algoritme
+# punktmængder for hver algoritme
 m_merge = subset(M,M$algorithm=="mergesort")
 m_insertion = subset(M,M$algorithm=="insertionsort")
 
@@ -83,6 +79,16 @@ ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
 		       Algorithm = unique(M$Algorithm),
 		       R2 = c(with(m_merge, cor(t,n)), with(m_insertion, cor(t,n)))
 	)
+	
+	ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
+	  geom_point(size=1.5,alpha=0.1,shape=19) +
+	  geom_line(aes(x=n, y=model,color=Algorithm), size=2, alpha=0.6) +
+	  labs(title="To Sorteringsalgoritmer") +
+	  theme(legend.position = c(.9, .9)) + # virker ikke!!
+	  guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
+	  theme_bw()
+	
+	ggsave("toAlgoritmerZoomed.png")
 
 	write.table(C, "r2.txt", quote=FALSE,sep="\t", row.names=FALSE)
 

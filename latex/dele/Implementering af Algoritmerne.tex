@@ -40,21 +40,56 @@ For at teste sorteringsalgoritmerne fra afsnit \ref{ch:Sorteringsalgoritmer}, og
 
 
 
-\section{De Reelle Køretider}
+\section{De Reelle Udførelsestider}
 \label{sec:De Reelle Køretider}
 
-Se figur \ref{fig:plot - to algoritmer}
+Algoritmernes udførelsestider er plottet i figur \ref{fig:plot - to algoritmer}.
 
 \subsection{Store-O er Værste Tilfælde}%
 \label{sub:Store-O er Værste Tilfælde}
 
+...grunden til at bruge algoritmens gennemsnitlige udførelsestid er...
+
+% Plot gennemsnit for hvert n
+
 % mergesort kører altid med store Theta(n)
 
-\subsection{Optimering af Mergesort}%
+\section{Optimering af Mergesort}%
 \label{sub:Optimering af Mergesort}
 
+Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ved små $n$ kan vi også se at insertionsort, ikke er langt bagefter. Faktisk er den \emph{gennemsnitlige} sortering hurtigere eller nogenlunde egens før $n = \red{15}$. Dette punkt er hvad svarer til $n_0$ fra afsnit \ref{ch:Algoritmers Udførelsestid}. At insertionsort faktisk normalt er hurtigere end mergesort hvis $n < n_0$, betyder at den mest hurtigste måde at sortere en liste afhænger af listens længde: Her listen på under $n_0$ elementer? så brug insertionsort. Er listen over $n_0$ elementer? så er mergesort gennemsnitligt hurtigere. Dette kunne lede os til at lave en ny sorteringsalgoritmerne således:
+
+\begin{figure}[h]
+	\begin{center}
+		\begin{lstlisting}
+		def sort(liste) {
+			if liste.length <= 15 {
+				return(insertionsort(liste))
+			}
+			return(mergesort(liste))
+		}
+		\end{lstlisting}
+	\end{center}
+	\vspace{-6mm}
+	\caption{Algoritme der bruger insertionsort hvis inputlisten er kortere end $15$, og ellers mergesort.}
+	\label{fig:hybridalgoritme1}
+\end{figure}
 
 
+Her bruger vi insertionsort hvis listens længde er under eller lig $15$, og mergesort hvis ikke. Det er en forbedrig af algoritmen. Dog er der en endnu mere snedig måde at inkorporere denne ide. Hvis vi tænker tilbage på mergesorts procedure fra afsnit \ref{ch:Sorteringsalgoritmer}, ved vi at algoritmen deler en usorterede liste op indtil der kun er lister med enkle elementer tilbage. Funktionen $merge$ sætter herefter listerne sammen igen, og sørger for at den samlede liste altid vil være sorteret, da den altid for sorterede lister som input. Vi ved dog nu at denne process, ikke er effektiv ved $n$-værdier under \red{15 }. Det er derfor en smart ide at bruge insertionsort til at sortere listerne når mergesort har opdelt listen i tilstrækkeligt små bidder. Koden for denne hybridalgoritme kan ses på figur \ref{fig:hybridalgoritme2}. I stedet for at opdele listen helt til der kun er et enkelt element i hver delliste, stopper denne algoritme opdelingen så snart insertionsort kan sortere listen hurtigere.
+
+\subsection{Sammenligning af Optimerede Algoritmer}%
+\label{sub:Sammenligning af Optimerede Algoritmer}
+
+
+
+\begin{figure}
+	\begin{center}
+		\lstinputlisting[lastline=23]{../python/algoritmer/mergesort_optimized.py}
+	\end{center}
+	\caption{Mergesort hvor lister mindre end \red{15 } sorteres effektivt af insertionsort}
+	\label{fig:hybridalgoritme2}
+\end{figure}
 
 
 
@@ -68,7 +103,7 @@ Se figur \ref{fig:plot - to algoritmer}
 	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{../img/toAlgoritmerResidual}
+		\includegraphics[width=\textwidth]{../img/toAlgoritmerZoomed}
 		\caption{$y=3sinx$}
 		\label{fig:residualplot}
 	\end{subfigure}

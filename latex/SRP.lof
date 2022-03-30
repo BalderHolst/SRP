@@ -41,6 +41,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).\relax }}{18}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Sammenligning af insertionsort og mergesort\relax }}{20}{figure.caption.16}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $15$, og ellers mergesort.\relax }}{19}{figure.caption.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Mergesort hvor lister mindre end \color {red}15 \color {black} sorteres effektivt af insertionsort\relax }}{20}{figure.caption.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Sammenligning af insertionsort og mergesort\relax }}{20}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
