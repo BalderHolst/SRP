@@ -44,7 +44,7 @@ def fullTest(functions):
 	version_number = newVersionNumber(data_dir,"")
 
 	# hvor mange datapunkter pr. n-værdi
-	trials = 15	
+	trials = 10	
 
 	# Bruger tidspunkt som frø til pseudotilfældige tal.
 	seed = time.time()
@@ -95,8 +95,3 @@ def fullTest(functions):
 
 			pd.DataFrame(data).to_csv(full_path,index = False)
 
-
-if __name__ == "__main__":
-	functions = [mergesort,insertionsort]
-
-	fullTest(functions)
