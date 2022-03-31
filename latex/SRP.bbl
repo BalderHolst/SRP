@@ -19,33 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{n0}{article}{}
-      \name{author}{1}{}{%
-        {{hash=e3afed0047b08059d0fada10f400c1e5}{%
-           family={Admin},
-           familyi={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {NotesforMSc}%
-      }
-      \strng{namehash}{e3afed0047b08059d0fada10f400c1e5}
-      \strng{fullhash}{e3afed0047b08059d0fada10f400c1e5}
-      \strng{bibnamehash}{e3afed0047b08059d0fada10f400c1e5}
-      \strng{authorbibnamehash}{e3afed0047b08059d0fada10f400c1e5}
-      \strng{authornamehash}{e3afed0047b08059d0fada10f400c1e5}
-      \strng{authorfullhash}{e3afed0047b08059d0fada10f400c1e5}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Algorithms Order Of Growth}
-      \verb{urlraw}
-      \verb https://notesformsc.org/algorithms-order-of-growth
-      \endverb
-      \verb{url}
-      \verb https://notesformsc.org/algorithms-order-of-growth
-      \endverb
-    \endentry
     \entry{aogd}{book}{}
       \name{author}{2}{}{%
         {{hash=b3729237385542cc130552f38ee83186}{%
@@ -76,6 +49,34 @@
       \endverb
       \verb{url}
       \verb https://github.com/thorehusfeldt/algoritmer-og-datastrukturer/blob/master/ad-book.pdf
+      \endverb
+    \endentry
+    \entry{binaert-trae}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a03f086b109d375feae775189761aa71}{%
+           given={nathan},
+           giveni={n\bibinitperiod},
+           prefix={leclaire\bibnamedelima nathan},
+           prefixi={l\bibinitperiod\bibinitdelim n\bibinitperiod}}}%
+      }
+      \strng{namehash}{a03f086b109d375feae775189761aa71}
+      \strng{fullhash}{a03f086b109d375feae775189761aa71}
+      \strng{bibnamehash}{a03f086b109d375feae775189761aa71}
+      \strng{authorbibnamehash}{a03f086b109d375feae775189761aa71}
+      \strng{authornamehash}{a03f086b109d375feae775189761aa71}
+      \strng{authorfullhash}{a03f086b109d375feae775189761aa71}
+      \field{sortinit}{l}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Build a Linked List For Each Layer in a Binary Tree}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://nathanleclaire.com/blog/2014/03/01/build-a-linked-list-for-each-layer-in-a-binary-tree
+      \endverb
+      \verb{url}
+      \verb https://nathanleclaire.com/blog/2014/03/01/build-a-linked-list-for-each-layer-in-a-binary-tree
       \endverb
     \endentry
     \entry{python-random}{article}{}

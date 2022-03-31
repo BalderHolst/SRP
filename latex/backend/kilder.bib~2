@@ -17,3 +17,9 @@
 	url = {https://www.python.org/doc/essays/blurb}
 }
 
+@article{New1,
+	publisher = {Python Software Foundation},
+	title = {random --- Generate pseudo-random numbers},
+	url = {https://docs.python.org/3/library/random.html}
+}
+

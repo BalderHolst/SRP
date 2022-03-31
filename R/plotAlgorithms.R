@@ -1,4 +1,5 @@
 library(ggplot2)
+library(plyr)
 #library(tikzDevice)
 
 #working dir
@@ -79,13 +80,22 @@ ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
 		       R2 = c(with(m_merge, cor(t,n)), with(m_insertion, cor(t,n)))
 	)
 	
+f = function(x) {
+  data.frame(
+    t = mean(x$t)
+  )
+}
+
+gns = ddply(subset(M,n <= 100), .(Algorithm, n), f)	
+	
+	
 	ggplot(subset(M,n <= 100), aes(x=n, y=t, colour=Algorithm)) +
 	  geom_point(size=1.5,alpha=0.08,shape=19) +
+	  geom_line (size=1.5, data=gns) +
 	  guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
 	  theme_bw()
 	
 	ggsave("toAlgoritmerZoomed.png")
 
-	write.table(C, "r2.txt", quote=FALSE,sep="\t", row.names=FALSE)
 
 
