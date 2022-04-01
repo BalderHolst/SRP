@@ -1,11 +1,27 @@
 \chapter{Binære Træer}
 \label{ch:Binære Træer}
 
-Træer som vi kender dem, har en stamme hvorfra grene springer ud. Fra grenene springer mindre grene, og på den måde ender træet med at have mange små grene, som stammer fra samme stamme, der ender hver sit sted. Binære træer er ikke langt fra denne forståelse af træer generelt: Binære træer har også en rod (eller stamme), hvorfra hele træet forgr\red{e}ner sig. Man tegner normalt binære træer som på figur \ref{fig:Eksempel på binært træ} bestående af knudepunkter og forbindelser mellem dem. Det specielle ved \emph{binære} træer, er at hvert knudepunkt højst må forgrene sig to gange (altså binært).
 
-\section{Højden af et Binært Træ}
-\label{sec:Højden af et Binært Træ}
-Binære træers højde måles på hvor mange forgreninger, skal til for at nå det yderste blad.
+\section{Hvad er et Træ}
+\label{sec:Hvad er et Træ}
+
+
+Træer som vi kender dem, har en stamme hvorfra grene springer ud. Fra grenene springer mindre grene, og på den måde ender træet med at have mange små grene, som stammer fra samme stamme. Informatikkens træer er ikke langt fra denne forståelse. I informatik er træer en datastruktur. Det er et netværk af knudepunkter forbundet af kanter. Træet starter med roden, der typisk er tegnet øverst (se figur \ref{fig:Eksempel på træ.}). En rod er hvor træet begynder, og har ingen forældre \cite{trees}. Fra roden forgrener træet sig i flere, børn der også kan have flere børn. Træstrukturen er sådan at man altid kan vælge et knudepunkt, og lave et subtræ med kudepunktet som rod. Knudepunkterne hvor træet ender kalder man blade.
+
+\section{Et Binært Træ}
+\label{sec:Et Binært Træ}
+
+
+Man tegner normalt binære træer som på figur \ref{fig:Eksempel på binært træ} bestående af knudepunkter og forbindelser mellem dem. Det specielle ved \emph{binære} træer, er at hvert knudepunkt højst må forgrene sig to gange (altså binært). Denne lille specialisering er brugbar i mange sammenhænge som f.eks. som datastruktur til søgealgoritmer \red{[kilde]}, men det viser sig også at være en snedig vej til at beskrive sorteringsalgoritmers opførsel.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.35]{../img/tree.png}
+	\end{center}
+	\caption{Eksempel på træ.}
+	\label{fig:Eksempel på træ.}
+\end{figure}
+
 
 
 \begin{figure}
@@ -14,7 +30,53 @@ Binære træers højde måles på hvor mange forgreninger, skal til for at nå d
 	\end{center}
 	\caption{Eksempel på binært træ. Træets balde er markeret med \green{grøn}, og roden med \red{rød}. \cite{binaert-trae}}
 	\label{fig:Eksempel på binært træ}
-\end{figure}
+\end{figure} 
+\section{Højden af et Binært Træ}
+\label{sec:Højden af et Binært Træ}
+
+Dette bevis er basseret på kilden \cite[s. 109]{aogd}.\\
+
+
+Betragt et sammenligningstræ for en sorteringsalgoritme med input længden $n$. $\pi$ og $\sigma$ er permutationer af listen $\{1 \dots n\}$, og de svarer til to forskellige blade på sammenligningstræet ($l_{\pi}$ og $l_{\sigma}$).\\
+
+Dette er et \red{modsætningsbevis}, hvilket betyder, at vi starter med at antage det modsatte, af det vi prøver at bevise: vi antager altså at $\pi$ og $\sigma$, leder til samme blad i sammenligningstræet; $l_{\pi}$ og $l_{\sigma}$ er ens.\\
+
+Under denne antagelse kan to forskellige lister $\{e_1 \dots e_n\}$ og $\{e_1' \dots e_n'\}$, gennemgå de \emph{præcis} samme operationer og derved sortere listen. Dette er en modstrid, da man aldrig vil kunne benytte præcis de samme operationer, til at sortere to forskellige permutationer af $\{1 \dots n\}$. \qed\\
+
+
+Alle permutationer af listen ${1 \dots n}$ har altså et tilsvarende blad, derfor må sammenligningstræet have mindst $n!$, da der skal være et for hver permutation.\\
+
+Antallet af balde på et binært træ er $2^d$, hvor $d$ er træets dybde. Vi kan nu opstille denne ligning:
+
+
+$$2^d \geq n! \s\Leftrightarrow\s d \geq \log n!$$
+
+Vi kan nu bruge regnereglen $n! \geq \left( \frac{n}{e} \right)^n$ til at bygge videre:
+
+$$d \geq \log n! \geq \log \left(\left(\frac{n}{e}\right)^n\right)$$
+
+Ved hjælp af logaritmeregneregler kan vi omskrive udtrykket længst til højre således:
+
+$$\log \left(\left(\frac{n}{e}\right)^n\right) = n \cdot \log \left(\frac{n}{e} \right) = n \cdot \log n - n \cdot \log e$$
+
+Dette er altså et udtryk for højden af et sammenligningstræ:
+
+$$d \geq n \cdot \log n - n \cdot \log e$$
+
+Da $d$ er træets dybde, der det også det maksimale antal sammenligninger der skal til, for at sortere en given liste. Udtrykket siger at den nedre grænse for $d$ er $n \cdot \log n - n \cdot \log e$. Det er altså ikke muligt at sortere en liste med færre sammenligninger. Den nedre grænse for antallet af sammenligninger (højre del af ligningen), og da antallet af sammenligninger er proportionalt med algoritmens udførelsestid, må det være sandt at alle sorteringsalgoritmer har en nedre vækstrategrænse på $n \cdot \log n$.
+
+$$T(n) \in \Omega (n \cdot \log n)$$
+
+Her er $T(n)$ en vilkårlig sorteringsalgoritmes køretid som funktion af inputtets størrelse. Udtrukket betyder at en hvilken som helst sortieringsalgoritme, der fungerer ved hjælp af sammenligninger, har en nedre vækstrategrænse på $n \cdot \log n$.
+
+
+
+
+%Binære træers højde måles på hvor mange forgreninger, skal til for at nå det yderste blad.
+
+
+
+
 
 \section{Binære Træer og Sorteringsalgoritmer}
 \label{sec:Binære Træer og Sorteringsalgoritmer}

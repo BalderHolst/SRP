@@ -31,22 +31,24 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksempel på binært træ. Træets balde er markeret med \color {green}grøn\color {black}, og roden med \color {red}rød\color {black}. \cite {binaert-trae}\relax }}{14}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksempel på træ.\relax }}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Binært Træ. \cite [s. 109]{aogd}\relax }}{15}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Eksempel på binært træ. Træets balde er markeret med \color {green}grøn\color {black}, og roden med \color {red}rød\color {black}. \cite {binaert-trae}\relax }}{15}{figure.caption.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Binært Træ. \cite [s. 109]{aogd}\relax }}{16}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Insertionsort i Python\relax }}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Insertionsort i Python\relax }}{19}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).\relax }}{19}{figure.caption.16}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).\relax }}{20}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $15$, og ellers mergesort.\relax }}{20}{figure.caption.17}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $15$, og ellers mergesort.\relax }}{21}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Mergesort hvor lister mindre end \color {red}15 \color {black} sorteres effektivt af insertionsort\relax }}{21}{figure.caption.18}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Mergesort hvor lister mindre end \color {red}15 \color {black} sorteres effektivt af insertionsort\relax }}{22}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Sammenligning af insertionsort og mergesort\relax }}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Sammenligning af insertionsort og mergesort\relax }}{22}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  31 MAR 2022 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  1 APR 2022 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -101,12 +101,24 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks27
+)
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
+\KV@toks@=\toks28
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
@@ -114,12 +126,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count267
 \calc@Adimen=\dimen148
 \calc@Bdimen=\dimen149
-\calc@Askip=\skip52
-\calc@Bskip=\skip53
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count268
-\calc@Cskip=\skip54
+\calc@Cskip=\skip57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
@@ -130,7 +142,7 @@ LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \g_MT_multlinerow_int=\count269
 \l_MT_multwidth_dim=\dimen150
-\origjot=\skip55
+\origjot=\skip58
 \l_MT_shortvdotswithinadjustabove_dim=\dimen151
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen152
 \l_MT_above_intertext_sep=\dimen153
@@ -204,9 +216,9 @@ File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count270
 \AM@pagebox=\box50
-\AM@global@opts=\toks23
+\AM@global@opts=\toks29
 \AM@pagecnt=\count271
-\AM@toc@title=\toks24
+\AM@toc@title=\toks30
 \c@AM@survey=\count272
 \AM@templatesizebox=\box51
 )
@@ -230,7 +242,7 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutheight=\dimen170
 \Gm@layouthoffset=\dimen171
 \Gm@layoutvoffset=\dimen172
-\Gm@dimlist=\toks25
+\Gm@dimlist=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
@@ -258,7 +270,7 @@ Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks26
+\pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen180
 \pgfutil@tempdimb=\dimen181
 
@@ -277,12 +289,12 @@ Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
 Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks27
-\pgfkeys@temptoks=\toks28
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks29
+\pgfkeys@tmptoks=\toks35
 ))
 \pgf@x=\dimen182
 \pgf@y=\dimen183
@@ -300,9 +312,9 @@ ex
 \c@pgf@countb=\count281
 \c@pgf@countc=\count282
 \c@pgf@countd=\count283
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
 \pgf@sys@id@count=\count284
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
@@ -336,9 +348,9 @@ Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 \pgfmath@dimen=\dimen192
 \pgfmath@count=\count287
 \pgfmath@box=\box53
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -482,8 +494,8 @@ Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen275
 \pgffor@skip=\dimen276
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
@@ -529,9 +541,9 @@ Package: pgfplots 2021/05/08 v1.18 Data Visualization (1.18)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks38
-\t@pgfplots@tokb=\toks39
-\t@pgfplots@tokc=\toks40
+\t@pgfplots@toka=\toks44
+\t@pgfplots@tokb=\toks45
+\t@pgfplots@tokc=\toks46
 \pgfplots@tmpa=\dimen286
 \c@pgfplots@coordindex=\count301
 \c@pgfplots@scanlineindex=\count302
@@ -558,7 +570,7 @@ x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
 \c@pgfplotstable@counta=\count304
-\t@pgfplotstable@a=\toks41
+\t@pgfplotstable@a=\toks47
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
 .code.tex)
@@ -642,9 +654,9 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \col@sep=\dimen300
 \ar@mcellbox=\box64
 \extrarowheight=\dimen301
-\NC@list=\toks42
-\extratabsurround=\skip56
-\backup@length=\skip57
+\NC@list=\toks48
+\extratabsurround=\skip59
+\backup@length=\skip60
 \ar@cellbox=\box65
 ) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
@@ -802,7 +814,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip58
+\Hy@SectionHShift=\skip61
 )
 (/usr/share/texmf/tex/lastpage/lastpage.sty
 Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
@@ -810,30 +822,30 @@ Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
-\f@nch@headwidth=\skip59
-\f@nch@O@elh=\skip60
-\f@nch@O@erh=\skip61
-\f@nch@O@olh=\skip62
-\f@nch@O@orh=\skip63
-\f@nch@O@elf=\skip64
-\f@nch@O@erf=\skip65
-\f@nch@O@olf=\skip66
-\f@nch@O@orf=\skip67
+\f@nch@headwidth=\skip62
+\f@nch@O@elh=\skip63
+\f@nch@O@erh=\skip64
+\f@nch@O@olh=\skip65
+\f@nch@O@orh=\skip66
+\f@nch@O@elf=\skip67
+\f@nch@O@erf=\skip68
+\f@nch@O@olf=\skip69
+\f@nch@O@orf=\skip70
 )
 (/usr/share/texmf/tex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen306
 \WF@size=\dimen307
 \c@WF@wrappedlines=\count336
 \WF@box=\box66
-\WF@everypar=\toks43
+\WF@everypar=\toks49
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count337
-\float@exts=\toks44
+\float@exts=\toks50
 \float@box=\box67
-\@float@everytoks=\toks45
+\@float@everytoks=\toks51
 \@floatcapt=\box68
 )
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
@@ -842,11 +854,11 @@ Package: placeins 2005/04/18  v 2.2
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box69
-\beforetitleunit=\skip68
-\aftertitleunit=\skip69
+\beforetitleunit=\skip71
+\aftertitleunit=\skip72
 \ttl@plus=\dimen308
 \ttl@minus=\dimen309
-\ttl@toksa=\toks46
+\ttl@toksa=\toks52
 \titlewidth=\dimen310
 \titlewidthlast=\dimen311
 \titlewidthfirst=\dimen312
@@ -891,7 +903,7 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \csq@qlevel=\count344
 \csq@maxlvl=\count345
 \csq@tshold=\count346
-\csq@ltx@everypar=\toks47
+\csq@ltx@everypar=\toks53
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
@@ -905,7 +917,7 @@ File: csquotes.cfg
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count347
 \lst@gtempboxa=\box70
-\lst@token=\toks48
+\lst@token=\toks54
 \lst@length=\count348
 \lst@currlwidth=\dimen314
 \lst@column=\count349
@@ -982,14 +994,14 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@sectionciteorder@0=\count395
 \blx@entrysetcounter=\count396
 \blx@biblioinstance=\count397
-\labelnumberwidth=\skip70
-\labelalphawidth=\skip71
-\biblabelsep=\skip72
-\bibitemsep=\skip73
-\bibnamesep=\skip74
-\bibinitsep=\skip75
-\bibparsep=\skip76
-\bibhang=\skip77
+\labelnumberwidth=\skip73
+\labelalphawidth=\skip74
+\biblabelsep=\skip75
+\bibitemsep=\skip76
+\bibnamesep=\skip77
+\bibinitsep=\skip78
+\bibparsep=\skip79
+\bibhang=\skip80
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language4
@@ -1074,20 +1086,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count466
 \c@pageref=\count467
 \c@savedpageref=\count468
-\shorthandwidth=\skip78
-\shortjournalwidth=\skip79
-\shortserieswidth=\skip80
-\shorttitlewidth=\skip81
-\shortauthorwidth=\skip82
-\shorteditorwidth=\skip83
-\locallabelnumberwidth=\skip84
-\locallabelalphawidth=\skip85
-\localshorthandwidth=\skip86
-\localshortjournalwidth=\skip87
-\localshortserieswidth=\skip88
-\localshorttitlewidth=\skip89
-\localshortauthorwidth=\skip90
-\localshorteditorwidth=\skip91
+\shorthandwidth=\skip81
+\shortjournalwidth=\skip82
+\shortserieswidth=\skip83
+\shorttitlewidth=\skip84
+\shortauthorwidth=\skip85
+\shorteditorwidth=\skip86
+\locallabelnumberwidth=\skip87
+\locallabelalphawidth=\skip88
+\localshorthandwidth=\skip89
+\localshortjournalwidth=\skip90
+\localshortserieswidth=\skip91
+\localshorttitlewidth=\skip92
+\localshortauthorwidth=\skip93
+\localshorteditorwidth=\skip94
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1207,12 +1219,12 @@ LaTeX Font Info:    ... okay on input line 4.
 \scratchbox=\box73
 \nofMPsegments=\count486
 \nofMParguments=\count487
-\everyMPshowfont=\toks49
+\everyMPshowfont=\toks55
 \MPscratchCnt=\count488
 \MPscratchDim=\dimen319
 \MPnumerator=\count489
 \makeMPintoPDFobject=\count490
-\everyMPtoPDFconversion=\toks50
+\everyMPtoPDFconversion=\toks56
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -1345,7 +1357,7 @@ Package biblatex Info: Reference segment=0 on input line 4.
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=127, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=139, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf  used on input line 6.
@@ -1366,7 +1378,7 @@ ound PDF version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=130, page=1, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=142, page=1, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf, page 1>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf , page1 used on input line
@@ -1551,52 +1563,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
 [12]) (./dele/Binære Træer.tex [13]
 Kapitel 5.
-<../img/binary_tree.png, id=431, 196.93575pt x 114.4275pt>
+
+LaTeX Warning: Citation 'trees' on page 14 undefined on input line 9.
+
+<../img/tree.png, id=449, 477.28313pt x 300.3722pt>
+File: ../img/tree.png Graphic file (type png)
+<use ../img/tree.png>
+Package pdftex.def Info: ../img/tree.png  used on input line 19.
+(pdftex.def)             Requested size: 167.05159pt x 105.13184pt.
+<../img/binary_tree.png, id=451, 196.93575pt x 114.4275pt>
 File: ../img/binary_tree.png Graphic file (type png)
 <use ../img/binary_tree.png>
-Package pdftex.def Info: ../img/binary_tree.png  used on input line 12.
+Package pdftex.def Info: ../img/binary_tree.png  used on input line 29.
 (pdftex.def)             Requested size: 196.93524pt x 114.42722pt.
 [14
 
- <../img/binary_tree.png>]
+ <../img/tree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+[15 <../img/binary_tree.png>]
 Missing character: There is no ; in font nullfont!
-) (./dele/Store-O og bedste tilfælde.tex [15]
+) (./dele/Store-O og bedste tilfælde.tex [16]
 Kapitel 6.
-) (./dele/Implementering af Algoritmerne.tex [16
+) (./dele/Implementering af Algoritmerne.tex [17
 
 ]
 Kapitel 7.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 19.
-(../python/algoritmer/insertionsort.py) [17
+(../python/algoritmer/insertionsort.py) [18
 
 ] (../python/sorting.py
 consecutive:
-) [18] [19] (../python/algoritmer/hybrid_2.py)
-<../img/toAlgoritmer.png, id=530, 651.8754pt x 418.4433pt>
+) [19] [20] (../python/algoritmer/hybrid.py)
+<../img/toAlgoritmer.png, id=556, 651.8754pt x 418.4433pt>
 File: ../img/toAlgoritmer.png Graphic file (type png)
 <use ../img/toAlgoritmer.png>
 Package pdftex.def Info: ../img/toAlgoritmer.png  used on input line 99.
 (pdftex.def)             Requested size: 209.97983pt x 134.7857pt.
  (../img/r2-insertion.txt)
 (../img/r2-insertion.txt)
-<../img/toAlgoritmerZoomed.png, id=531, 651.8754pt x 418.4433pt>
+<../img/toAlgoritmerZoomed.png, id=557, 651.8754pt x 418.4433pt>
 File: ../img/toAlgoritmerZoomed.png Graphic file (type png)
 <use ../img/toAlgoritmerZoomed.png>
 Package pdftex.def Info: ../img/toAlgoritmerZoomed.png  used on input line 106.
 
 (pdftex.def)             Requested size: 209.97983pt x 134.7857pt.
-) (./dele/konklusion.tex [20] [21 <../img/toAlgoritmer.png (PNG copy)> <../img/
+) (./dele/konklusion.tex [21] [22 <../img/toAlgoritmer.png (PNG copy)> <../img/
 toAlgoritmerZoomed.png (PNG copy)>]
 Kapitel 8.
-) [22
+) [23
 
-] (./bilag/bilag.tex [23
+] (./bilag/bilag.tex [24
 
 ] (../python/algoritmer/insertionsort.py)
-(../python/algoritmer/mergesort.py) [24
+(../python/algoritmer/mergesort.py) [25
 
-] (../python/sorting.py [25]) [26]
+] (../python/sorting.py [26]) [27]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -1606,66 +1651,62 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
-(../R/plotAlgorithms.R [27
+(../R/plotAlgorithms.R [28
 
 ])) 
 AED: lastpage setting LastPage
-[28] (./SRP.aux)
+[29] (./SRP.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
+Package rerunfilecheck Info: File `SRP.out' has not changed.
+(rerunfilecheck)             Checksum: 764934C24D675B4D240FB0FEC99CC9FF;5733.
 
-Package rerunfilecheck Warning: File `SRP.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                SRP
+(biblatex)                and rerun LaTeX afterwards.
 
-Package rerunfilecheck Info: Checksums for `SRP.out':
-(rerunfilecheck)             Before: 0ABC99ABBCF922AB5D97D196E919808D;5273
-(rerunfilecheck)             After:  958F5242C68D7E044AD05F489EFF374B;5464.
 Package logreq Info: Writing requests to 'SRP.run.xml'.
 \openout1 = `SRP.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45974 strings out of 480806
- 980041 string characters out of 5905151
- 1848605 words of memory out of 6000000
- 62118 multiletter control sequences out of 15000+600000
+ 46050 strings out of 480806
+ 981058 string characters out of 5905151
+ 1851161 words of memory out of 6000000
+ 62186 multiletter control sequences out of 15000+600000
  448532 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 89i,17n,86p,2652b,3126s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.5.1.1} has been referenced but does no
-t exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/s
-hare/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-d
-ist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-bitstrea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-su
-per/sfbx0900.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfb
-x1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/cm-super/sftt1000.pfb>
-Output written on SRP.pdf (30 pages, 974786 bytes).
+ 89i,17n,86p,2652b,3127s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr
+/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf
+-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/bitstrea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-
+super/sfbx0900.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/s
+fbx1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on SRP.pdf (31 pages, 992931 bytes).
 PDF statistics:
- 1028 PDF objects out of 1200 (max. 8388607)
- 930 compressed objects within 10 object streams
- 446 named destinations out of 1000 (max. 500000)
- 288 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1054 PDF objects out of 1200 (max. 8388607)
+ 953 compressed objects within 10 object streams
+ 449 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
