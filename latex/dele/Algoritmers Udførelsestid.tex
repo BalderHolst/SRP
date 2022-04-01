@@ -38,6 +38,16 @@ Der er dog en vækstrate som både $O(f(n))$ og $\Omega (f(n))$ indeholder: neml
 \section{Kompleksetetsklasser}
 \label{sec:Kompleksetetsklasser}
 
+Med denne definition af store-O kan vi klassificere algoritmer i forhold til deres værste-tilfælde-vækstrate. Disse klasser kaldes kompleksitetsklasser. \red{klassen for alle algoritmer der i værste tilfælde har samme vækstrate som $n^2$ hedder $O(n^2)$}. Man siger at algoritmen er $O(n^2)$. Det kunne også være at algoritmen var $O(n)$, altså har den en lineær vækstrate, og hvis en algoritme har konstant vækstrate, er den del af kompleksitetsklassen $O(1)$. Det er vigtigt at huske at disse kompleksitetsklasser ikke kun betegner vækstraten i værste, men at de også indeholder alle bedre vækstrater. Det vil altså sige at alle kompleksitetsklasser med en bestemt værste-vækstrate, også indeholder alle kompleksitetsklasser med lavere værste-vækstrate. 
+
+\begin{figure}
+	\begin{center}
+		$$O(1) \:\:\subset\:\: O(n) \:\:\subset\:\: O(n \cdot \log n) \:\:\subset\:\: O(n^2) \:\:\subset\:\: O(n!)$$
+	\end{center}
+	\caption{Eksemplel på hvordan kompleksitetsklasserne indeholder hinanden}
+	\label{fig:kompleksitetsklasserne-indeholder-hinanden}
+\end{figure}
+
 
 %Grunden til dette, er at algoritmeoptimering (hvor man bruger meget algoritmeanalyse) netop har størst effekt hvis algoritmens input har en høj kardinalitet.
 
@@ -78,4 +88,6 @@ Der er dog en vækstrate som både $O(f(n))$ og $\Omega (f(n))$ indeholder: neml
 \end{figure}
 
 
+\section{Store-O er Værste Tilfælde}
+\label{sec:Store-O er Værste Tilfælde}
 

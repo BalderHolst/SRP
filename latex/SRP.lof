@@ -7,50 +7,52 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Definition af $O(f(n))$, $\Omega (f(n))$ og $\Theta (f(n))$ \cite [s. 26]{aogd}.\relax }}{6}{figure.caption.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Eksemplel på hvordan kompleksitetsklasserne indeholder hinanden\relax }}{6}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Her ses skæringspunktet $n_0$, hvorefter $g(n)$ altid er højere end $f(n)$. Altså vækstraten af $g(n)$ højere end vækstraten af $f(n)$.\relax }}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Definition af $O(f(n))$, $\Omega (f(n))$ og $\Theta (f(n))$ \cite [s. 26]{aogd}.\relax }}{7}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Eksempel på sortering af en liste\relax }}{8}{figure.caption.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Procedure for at indsætte element først i listen. Elementet er markeret med \color {red}rød\color {black}, og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black}. Linjer refererer til koden i figur \ref {fig:Pseudokode til insertionsort}.\relax }}{9}{figure.caption.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med \color {red}rød\color {black}, og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black}. Linjer refererer til figur \ref {fig:Pseudokode til insertionsort}.\relax }}{9}{figure.caption.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Pseudokode til insertionsort \cite [s. 104]{aogd}.\relax }}{10}{figure.caption.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Eksempel med delfunktionen \emph {merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \color {red}røde \color {black} tal. \color {blue}Blå \color {black}tal er en del af den færdige $c$ liste, og \color {violet}lilla \color {black} tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref {fig:Pseudokode til mergesort}.\relax }}{11}{figure.caption.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Hvordan mergesort først opdeler, og derefter samler listen med $merge$. \cite [s. 106]{aogd}\relax }}{11}{figure.caption.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{12}{figure.caption.11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Insertionsort: Antal køringer af koden i den indre $j$-løkke, hvis inputlisten har kardinaliteten $n$\relax }}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Her ses skæringspunktet $n_0$, hvorefter $g(n)$ altid er højere end $f(n)$. Altså vækstraten af $g(n)$ højere end vækstraten af $f(n)$.\relax }}{7}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksempel på træ.\relax }}{14}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Eksempel på sortering af en liste\relax }}{9}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Eksempel på binært træ. Træets balde er markeret med \color {green}grøn\color {black}, og roden med \color {red}rød\color {black}. \cite {binaert-trae}\relax }}{15}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Procedure for at indsætte element først i listen. Elementet er markeret med \color {red}rød\color {black}, og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black}. Linjer refererer til koden i figur \ref {fig:Pseudokode til insertionsort}.\relax }}{10}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Binært Træ. \cite [s. 109]{aogd}\relax }}{16}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med \color {red}rød\color {black}, og tal der på allerede er sorterede er markeret med \color {blue}blå\color {black}. Linjer refererer til figur \ref {fig:Pseudokode til insertionsort}.\relax }}{10}{figure.caption.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pseudokode til insertionsort \cite [s. 104]{aogd}.\relax }}{11}{figure.caption.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Eksempel med delfunktionen \emph {merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \color {red}røde \color {black} tal. \color {blue}Blå \color {black}tal er en del af den færdige $c$ liste, og \color {violet}lilla \color {black} tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref {fig:Pseudokode til mergesort}.\relax }}{12}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Hvordan mergesort først opdeler, og derefter samler listen med $merge$. \cite [s. 106]{aogd}\relax }}{12}{figure.caption.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{13}{figure.caption.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Insertionsort: Antal køringer af koden i den indre $j$-løkke, hvis inputlisten har kardinaliteten $n$\relax }}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Insertionsort i Python\relax }}{18}{figure.caption.16}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksempel på træ.\relax }}{15}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).\relax }}{19}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Eksempel på binært træ. Træets balde er markeret med \color {green}grøn\color {black}, og roden med \color {red}rød\color {black}. \cite {binaert-trae}\relax }}{16}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Sammenligning af insertionsort og mergesort. Til venstre ses grafen for de to algoritmer sammen med en regression. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \qopname \relax o{log}n$-regression for mergesort (se afsnit \ref {ch:Sorteringsalgoritmer} for yderligere forklaring).\relax }}{21}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Binært Træ. \cite [s. 109]{aogd}\relax }}{17}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Dette er samme data som i figur \ref {fig:plot - to algoritmer}, men zoomet ind til indervallet $n \leq 100$. Her er regressionerne erstattet af et løbende gennemsnit. Det interessante ved grafen til højre er, at man tydeligt kan de hvordan insertionsort gennemsnitligt er hurtigst, indtil $n \approx 45$ hvorefter mergesort er hurtigst.\relax }}{21}{figure.caption.19}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $15$, og ellers mergesort.\relax }}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Insertionsort i Python\relax }}{19}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Mergesort hvor lister mindre end \color {red}15 \color {black} sorteres effektivt af insertionsort\relax }}{23}{figure.caption.21}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).\relax }}{20}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Mergesort og Hybridalgoritme.\relax }}{23}{figure.caption.22}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Sammenligning af insertionsort og mergesort. Til venstre ses grafen for de to algoritmer sammen med en regression. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \qopname \relax o{log}n$-regression for mergesort (se afsnit \ref {ch:Sorteringsalgoritmer} for yderligere forklaring).\relax }}{22}{figure.caption.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Dette er samme data som i figur \ref {fig:plot - to algoritmer}, men zoomet ind til indervallet $n \leq 100$. Her er regressionerne erstattet af et løbende gennemsnit. Det interessante ved grafen til højre er, at man tydeligt kan de hvordan insertionsort gennemsnitligt er hurtigst, indtil $n \approx 45$ hvorefter mergesort er hurtigst.\relax }}{22}{figure.caption.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $15$, og ellers mergesort.\relax }}{23}{figure.caption.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Mergesort hvor lister mindre end \color {red}15 \color {black} sorteres effektivt af insertionsort\relax }}{24}{figure.caption.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Mergesort og Hybridalgoritme.\relax }}{24}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
