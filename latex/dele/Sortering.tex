@@ -153,26 +153,8 @@ Her er begge argumenter ($a$ og $b$) sorterede lister, der flettes sammen til é
 
 Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele algoritmen i betragtning. Mergesortfunktionen tager en enkel liste som argument, og checker først om listen kun indeholet ét element. Hvis den gør, så returnerer den bare listen uændret. Dette giver intuitivt mening, da en liste med et enkelt element altid vil være sorteret. Hvis listen er \emph{mere} end $1$ lang, gør den det, som får hele algoritmen til at fungere: den deler listen på i to, og kalder sig selv på hver halvdel. Herefter sættes de to dele sammen igen af $merge$-funktionen. Det er dog ikke helt så enkelt som det lyder, idet at $mergesort$ rekursivt kalder sig selv. Det leder til at algoritmen splitter listen op igen og igen, indtil der kun er et element i de mange lister. Herefter samler $merge$ alle de små lister til en stor liste, hvor $merge$ løbende sørger for at de lister den samler er sorterede. De lister der er samlet af $merge$, vil altid være sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-element-lister samles af $merge$ til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede lister. $merge$ får altså i altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som output.
 
-\red{tilfælde hvor med en liste med ulige længde?}
+\input{../img/mergesort_procedure.tex}
 
-\begin{figure}
-	\begin{center}
-		\padtable
-		\begin{tabular}{l|c}
-			Funktion & Lister\\
-			\hline
-			$mergesort$ & $[3,6,4,7,2,7,5,2]$\\
-			$mergesort$ & $[3,6,4,7]\: [2,7,5,2]$\\
-			$mergesort$ & $[3,6] \: [4,7] \: [2,7] \: [5,2]$\\
-			$merge$ & $\red{[3] \: [6]} \: \violet{[4] \: [7]} \: \blue{[2] \: [7]} \: \orange{[5] \: [2]}$\\
-			$merge$ & $\red{[3,6] \: [4,7]} \: \blue{[2,7] \: [2,5]}$\\
-			$merge$ & $\red{[3,4,6,7] \: [2,2,5,7]}$\\
-			Færdig! & $[2,2,3,4,5,6,7,7]$\\
-		\end{tabular}
-	\end{center}
-	\caption{Hvordan $mergesort$ først splitter listen op, og derefter samler den med $merge$ (se figur \ref{fig:merge i mergesort}). Farver indikerer de par af lister der sættes ind i $merge$-funktionen.}
-	\label{fig:mergesort splitter op og sætter sammen}
-\end{figure}
 
 
 
@@ -278,4 +260,5 @@ Med det menes der at udførelsestiden i værste tilfælde stiger med vækstraten
 	\caption{Insertionsort: Antal køringer af koden i den indre $j$-løkke, hvis inputlisten har kardinaliteten $n$}
 	\label{fig:Insertionsort Operationer i løkker}
 \end{figure}
+
 

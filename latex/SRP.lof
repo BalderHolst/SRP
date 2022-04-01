@@ -23,7 +23,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Eksempel med delfunktionen \emph {merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \color {red}røde \color {black} tal. \color {blue}Blå \color {black}tal er en del af den færdige $c$ liste, og \color {violet}lilla \color {black} tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref {fig:Pseudokode til mergesort}.\relax }}{11}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Hvordan $mergesort$ først splitter listen op, og derefter samler den med $merge$ (se figur \ref {fig:merge i mergesort}). Farver indikerer de par af lister der sættes ind i $merge$-funktionen.\relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Hvordan $mergesort$ først splitter listen op, og derefter samler den med $merge$ (se figur \ref {fig:merge i mergesort}). Farver indikerer de par af lister der sættes ind i $merge$-funktionen. \cite [s. 106]{aogd}\relax }}{11}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{12}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
@@ -39,16 +39,18 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Insertionsort i Python\relax }}{18}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Insertionsort i Python\relax }}{19}{figure.caption.16}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).\relax }}{19}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).\relax }}{20}{figure.caption.17}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Sammenligning af insertionsort og mergesort. Til venstre ses grafen for de to algoritmer sammen med en regression. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \qopname \relax o{log}n$-regression for mergesort (se afsnit \ref {ch:Sorteringsalgoritmer} for yderligere forklaring).\relax }}{21}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $15$, og ellers mergesort.\relax }}{21}{figure.caption.18}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Dette er samme data som i figur \ref {fig:plot - to algoritmer}, men zoomet ind til indervallet $n \leq 100$. Her er regressionerne erstattet af et løbende gennemsnit. Det interessante ved grafen til højre er, at man tydeligt kan de hvordan insertionsort gennemsnitligt er hurtigst, indtil $n \approx 45$ hvorefter mergesort er hurtigst.\relax }}{21}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Mergesort hvor lister mindre end \color {red}15 \color {black} sorteres effektivt af insertionsort\relax }}{22}{figure.caption.19}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $15$, og ellers mergesort.\relax }}{22}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Sammenligning af insertionsort og mergesort\relax }}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Mergesort hvor lister mindre end \color {red}15 \color {black} sorteres effektivt af insertionsort\relax }}{23}{figure.caption.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Mergesort og Hybridalgoritme.\relax }}{23}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

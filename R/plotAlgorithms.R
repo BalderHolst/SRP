@@ -3,7 +3,7 @@ library(plyr)
 #library(tikzDevice)
 
 #working dir
-setwd("/home/Balder/Documents/Skole/Gym/SRP/data/the_one")
+setwd("/home/Balder/Documents/Skole/Gym/SRP/data/9")
 
 #dir = "1"
 algorithm_dirs = list.files()
@@ -67,6 +67,16 @@ ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
 
 	ggsave("toAlgoritmer.png")
 
+# laver zoomed
+ggplot(subset(M,n <= 100), aes(x=n, y=t, colour=Algorithm)) +
+	geom_point(size=1.5,alpha=0.1,shape=19) +
+	geom_line(aes(x=n, y=model,color=Algorithm), size=2, alpha=0.6) +
+	theme(legend.position = c(.9, .9)) + # virker ikke!!
+	guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
+	theme_bw()
+
+	ggsave("toAlgoritmerZoomed.png")
+
 	ggplot(M, aes(x=log10(model), y=residual, colour=Algorithm)) +
 		geom_point(size=1.5,alpha=0.1,shape=19) +
 		labs(title="Residualer") +
@@ -75,6 +85,9 @@ ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
 		theme(legend.position="none")
 	ggsave("toAlgoritmerResidual.png")
 
+
+
+	# Laver ges data.frame
 	C = data.frame(
 		       Algorithm = unique(M$Algorithm),
 		       R2 = c(with(m_merge, cor(t,n)), with(m_insertion, cor(t,n)))
@@ -88,14 +101,13 @@ f = function(x) {
 
 gns = ddply(subset(M,n <= 100), .(Algorithm, n), f)	
 	
-	
 	ggplot(subset(M,n <= 100), aes(x=n, y=t, colour=Algorithm)) +
 	  geom_point(size=1.5,alpha=0.08,shape=19) +
 	  geom_line (size=1.5, data=gns) +
 	  guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
 	  theme_bw()
 	
-	ggsave("toAlgoritmerZoomed.png")
+	ggsave("toAlgoritmerZoomedGns.png")
 
 
 

@@ -2,7 +2,7 @@ library(ggplot2)
 #library(tikzDevice)
 
 #working dir
-setwd("/home/Balder/Documents/Skole/Gym/SRP/data/5")
+setwd("/home/Balder/Documents/Skole/Gym/SRP/data/the_second_one")
 
 #dir = "1"
 algorithm_dirs = list.files()

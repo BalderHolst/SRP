@@ -43,21 +43,50 @@ For at teste sorteringsalgoritmerne fra afsnit \ref{ch:Sorteringsalgoritmer}, og
 \section{De Reelle Udførelsestider}
 \label{sec:De Reelle Køretider}
 
-Algoritmernes udførelsestider er plottet i figur \ref{fig:plot - to algoritmer}.
+Algoritmernes udførelsestider er plottet i figur \ref{fig:plot - to algoritmer}.\\
 
-\subsection{Store-O er Værste Tilfælde}%
+Som det tydeligt fremgår på graferne, er mergesort langt hurtigere end insertionsort ved store $n$. Vi kan også se at algoritmerne nogenlunde følger deres regressioner, men hvorfor enlig det? Det er jo kun i værste tilfælde at $T_{insertionsort}(n) \in \Theta (n^2)$ ikke? Jo, men det lader til at insertionsorts gennemsnitlige vækstrate, er tættere på $\Theta (n^2)$ end på $\Theta (n)$. Det er dog alligevel tydeligt at andengradsregression ikke passer helt på insertionsorts gennemsnitlige køretid, hvis vi zoomer ind på plottet som i figur \red{??}. Faktisk passer regressionen slet ikke på punkterne på dette stykke af grafen, hvilket tyder på at algoritmens udførelsestid ikke bare kan beskrives med et \red{andengraspolynomie}. En anden finurlighed kan findes i residualplottet (figur \ref{??}). Residualplottet for begge grafer er rigtig flot, med en jævn punktfordeling på beggesider af regressionen, men til aller sidst er der et par af insertionsorts punkter der er langt under regressionen. Det kan være af flere grunde bla. at computerens styresystem lige i dette tilfælde, tildelte flere ressourcer til programmet. En anden grund kunne være at algoritmen netop i disse tilfælde var heldig at få en delvist sorteret liste, der gjorde at listen kunne sorteres langt hurtigere end $O(n^2)$. Dog tyder det tydelige nedadgående mønster i outlier-residualern på, at afvigelsen ikke er en tilfældighed. Når man ser på residualplottene er et andet mønster også tydeligt: variansen stiger. Udførelsestiderne har større og større usikkerhed, jo større $n$ er. Dette giver intuitiv mening hvis man sætter det i kontekst. Hvis $10$ personer løber et $100$m løb, vil alle løbere afslutte inden for et forholdsvist lille tidinterval. Hvis vi herefter \red{bedte } dem om at løbe en marton, ville deres tider ikke bare variere med sekunder og minutter, men med timer. Variansen i deres tider, øges altså af størrelsen på opgaven. Det samme er sandt for vores sorteringsalgoritmer, hvilket det tydeliggøres i residualplottene. 
+
+
+\subsection{Hvornår er Insertionsort Hurtigst?}%
 \label{sub:Store-O er Værste Tilfælde}
+Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ved små $n$ kan vi også se at insertionsort, ikke er langt bagefter. Faktisk er den \emph{gennemsnitlige} sortering hurtigere eller nogenlunde egens før $n = \red{15}$ (se figur \red{??}). Det bekræfter teorien fa afsnit \ref{ch:Algoritmers Udførelsestid}, idet at store-O ikke siger noget om algoritmens opførsel ved små $n$, men kun ved meget store $n$. Her er det tydeligt at en sådan form for analyse ikke er tilstrækkeligt for at bedømme, hvilken algoritme er bedst til hvilke problemer. Store-O analyse er også blind overfor den gennemsnitlige udførelsestid. Ved små $n$ er den gennemsnitlige køretid brugbar, da den maksimale køretid aldrig bliver astronomisk stor, og vi kan derfor med god vilje bruge gennemsnitlig udførelsestid i disse beregninger. Det ville gennemsnitligt være hurtigst, at bruge insertionsort, ved små $n$ og mergesort ved store. Punktet der adskiller hvilken algoritme er hurtigst er ca. $n = 15$. Dette punkt er hvad svarer til $n_0$ fra afsnit \ref{ch:Algoritmers Udførelsestid}.
 
-...grunden til at bruge algoritmens gennemsnitlige udførelsestid er...
-
-% Plot gennemsnit for hvert n
+%...grunden til at bruge algoritmens gennemsnitlige udførelsestid er...
 
 % mergesort kører altid med store Theta(n)
+
+
+\begin{figure} \centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../img/toAlgoritmer.png}
+		\caption{$y=\input{../img/r2-insertion.txt}$}
+		\label{fig:regressioner}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../img/toAlgoritmerZoomed}
+		\caption{$y=3sinx$}
+		\label{fig:residualplot}
+	\end{subfigure}
+	\caption{Sammenligning af insertionsort og mergesort. Til venstre ses grafen for de to algoritmer sammen med en regression. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \log n$-regression for mergesort (se afsnit \ref{ch:Sorteringsalgoritmer} for yderligere forklaring).}
+	\label{fig:plot - to algoritmer}
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.6]{../img/toAlgoritmerZoomedGns.png}
+	\end{center}
+	\caption{Dette er samme data som i figur \ref{fig:plot - to algoritmer}, men zoomet ind til indervallet $n \leq 100$. Her er regressionerne erstattet af et løbende gennemsnit. Det interessante ved grafen til højre er, at man tydeligt kan de hvordan insertionsort gennemsnitligt er hurtigst, indtil $n \approx 45$ hvorefter mergesort er hurtigst.}
+	\label{fig:toAlgoritmerZoomedGns}
+\end{figure}
 
 \section{Optimering af Mergesort}%
 \label{sub:Optimering af Mergesort}
 
-Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ved små $n$ kan vi også se at insertionsort, ikke er langt bagefter. Faktisk er den \emph{gennemsnitlige} sortering hurtigere eller nogenlunde egens før $n = \red{15}$. Dette punkt er hvad svarer til $n_0$ fra afsnit \ref{ch:Algoritmers Udførelsestid}. At insertionsort faktisk normalt er hurtigere end mergesort hvis $n < n_0$, betyder at den mest hurtigste måde at sortere en liste afhænger af listens længde: Her listen på under $n_0$ elementer? så brug insertionsort. Er listen over $n_0$ elementer? så er mergesort gennemsnitligt hurtigere. Dette kunne lede os til at lave en ny sorteringsalgoritmerne således:
+At insertionsort faktisk normalt er hurtigere end mergesort hvis $n < n_0$, betyder at den mest hurtigste måde at sortere en liste afhænger af listens længde: Er listen på under $n_0$ elementer? så brug insertionsort. Er listen over $n_0$ elementer? så er mergesort gennemsnitligt hurtigere. Dette kunne lede os til at lave en ny sorteringsalgoritmerne således:
 
 \begin{figure}[h]
 	\begin{center}
@@ -78,35 +107,31 @@ Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ve
 
 Her bruger vi insertionsort hvis listens længde er under eller lig $15$, og mergesort hvis ikke. Det er en forbedrig af algoritmen. Dog er der en endnu mere snedig måde at inkorporere denne ide. Hvis vi tænker tilbage på mergesorts procedure fra afsnit \ref{ch:Sorteringsalgoritmer}, ved vi at algoritmen deler en usorterede liste op indtil der kun er lister med enkle elementer tilbage. Funktionen $merge$ sætter herefter listerne sammen igen, og sørger for at den samlede liste altid vil være sorteret, da den altid for sorterede lister som input. Vi ved dog nu at denne process, ikke er effektiv ved $n$-værdier under \red{15 }. Det er derfor en smart ide at bruge insertionsort til at sortere listerne når mergesort har opdelt listen i tilstrækkeligt små bidder. Koden for denne hybridalgoritme kan ses på figur \ref{fig:hybridalgoritme2}. I stedet for at opdele listen helt til der kun er et enkelt element i hver delliste, stopper denne algoritme opdelingen så snart insertionsort kan sortere listen hurtigere.
 
-\subsection{Sammenligning af Optimerede Algoritmer}%
-\label{sub:Sammenligning af Optimerede Algoritmer}
-
-
 
 \begin{figure}
 	\begin{center}
 		\lstinputlisting[lastline=23]{../python/algoritmer/hybrid.py}
 	\end{center}
 	\caption{Mergesort hvor lister mindre end \red{15 } sorteres effektivt af insertionsort}
-	\label{fig:hybridalgoritme2}
+	\label{fig:hybridalgoritme}
 \end{figure}
 
 
 
-\begin{figure} \centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{../img/toAlgoritmer.png}
-		\caption{$y=\input{../img/r2-insertion.txt}$}
-		\label{fig:regressioner}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{../img/toAlgoritmerZoomed}
-		\caption{$y=3sinx$}
-		\label{fig:residualplot}
-	\end{subfigure}
-	\caption{Sammenligning af insertionsort og mergesort}
-	\label{fig:plot - to algoritmer}
+
+
+
+
+\subsection{Sammenligning af Optimerede Algoritmer}%
+\label{sub:Sammenligning af Optimerede Algoritmer}
+
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.4]{../img/toMergesort.png}
+		\includegraphics[scale=0.4]{../img/toMergesortResidual.png}
+	\end{center}
+	\caption{Mergesort og Hybridalgoritme.}
+	\label{fig:Mergesort og Hybridalgoritme}
 \end{figure}
+
