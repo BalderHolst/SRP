@@ -13,24 +13,24 @@
 \end{figure}
 
 
-Sortering er helt lavpraktisk at sætte en mængde data en rækkefølge på baggrund af dataens attributter. Det kunne f.eks. være alfabetisk eller efter farve eller størrelse. Det er dog ikke entydigt hvilken sorterings-strategi der ville være hurtigst. Disse sorterings-strategier kan også kaldes sorterings-algoritmer, det er ikke kun mennesker der kan benytte sorterings-algoritmer til f.eks. at sortere kort, men computere kan også, og de gør det for det meste også hurtigere. De næste to afsnit omhandler to forskellige sorterings-algoritmer, og deres måde at sortere en liste med tal.\\
+Sortering er helt lavpraktisk at sætte en mængde data en rækkefølge på baggrund af dataens attributter. Det kunne f.eks. være alfabetisk eller efter farve eller størrelse. Det er dog ikke altid entydigt hvilken sorterings-strategi, der ville være hurtigst. Disse sorterings-strategier kan også kaldes sorterings-algoritmer. Det er ikke kun mennesker, der kan benytte sorterings-algoritmer til f.eks. at sortere kort, men computere kan også, og de gør det for det meste også langt hurtigere. De næste \red{to afsnit} omhandler to forskellige sorterings-algoritmer, og deres måde at sortere en liste med tal.\\
 
 
 Herfra vil jeg kun forholde mig til sortering af lister med tal, og sortere dem på baggrund af deres størrelse (se figur \ref{fig:Eksempel på sortering af en liste})
 
+% TODO computere rykker ikke!
 
 \section{Insertionsort}
 \label{sec:Insertionsort}
 
-Insertionsort er en af de mere simple sorteringsalgoritmer. Pseudokoden til algoritmen kan ses i figur \ref{fig:Pseudokode til insertionsort}
+Insertionsort er en af de mere simple sorteringsalgoritmer. Pseudokoden til algoritmen kan ses i figur \ref{fig:Pseudokode til insertionsort}\\
 
-
-Det er ikke en tilfældighed at denne algoritme hedder insertionsort. Den fungerer nemlig ved at gennemgå gennemgå hvert element i listen, og placere det hvor det passer ind i de elementer der allerede er sorterede. Dette er nok til dels den måde man f.eks. ville sortere sin hånd i Uno eller 500. 
+Det er ikke en tilfældighed, at denne algoritme hedder insertionsort. Den fungerer nemlig ved at gennemgå gennemgå hvert element i listen, og placere det hvor det passer ind i de elementer der allerede er sorterede. Dette er nok til dels den måde man f.eks. ville sortere sin hånd i Uno eller 500. 
 
 \subsection{Insertionsort Procedure}%
 \label{sub:Insertionsort Procedure}
 
-At algoritmen gennemgår alle elementerne i listen kronologisk kan vi se allerede i linje 2, da algoritmen her begynder med en for-løkke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar sættes elementet som algoritmen er nået til ind i variablen e i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen (se figur \ref{fig:Indsæt element først i listen}).
+Vi kan allerede i linje 2, se at algoritmen gennemgår alle elementerne i listen kronologisk, da algoritmen her begynder med en for-løkke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar, sættes elementet som algoritmen er nået til ind i variablen $e$ i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen (se figur \ref{fig:Indsæt element først i listen}).
 
 \begin{figure}[h]
 	\begin{center}
@@ -49,7 +49,7 @@ At algoritmen gennemgår alle elementerne i listen kronologisk kan vi se allered
 \end{figure}
 
 
-Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første element i listen sker følgende (se figur \ref{fig:Indsæt element hvor det passer i listen}): Algoritmen ser på tallet før elementet og spørger: "er dette tal større end elementet". Hvis det er, rykkes det hen på elementets plads. Herefter stiller algoritmen samme spørgsmål, til tallet to pladser før elementet. Hvis dette tal er mindre and elementet placerer algoritmen elementet efter dette tal, hvis ikke stiller den samme spørgsmål til tallet 3 pladser før elementet og så videre. Det er vigtigt at pointere, at der altid vil være et tal der er mindre end elementet, da elementet ellers ville være blevet placeret først i liste af den første del af algoritmenen (linje $5$-$10$).
+Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første element i listen sker følgende (se figur \ref{fig:Indsæt element hvor det passer i listen}): Algoritmen ser på tallet før elementet og spørger: "er dette tal større end elementet". Hvis det er, rykkes det til højre. Herefter stiller algoritmen samme spørgsmål, til tallet to pladser før elementet. Hvis dette tal er mindre and elementet placerer algoritmen elementet efter dette tal i listen, hvis ikke stiller den samme spørgsmål til tallet 3 pladser før elementet og så videre. Det er vigtigt at pointere, at der altid vil være et tal der er mindre end elementet, da elementet ellers ville være blevet placeret først i liste af den første del af proceduren (linje $5$-$10$).
 
 
 \begin{figure}[h]
@@ -104,7 +104,7 @@ Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første ele
 
 \subsection{Egenskaber af Insertionsort}%
 \label{sub:Egenskaber af Insertionsort}
-Insertionsort er en god sorteringsalgoritme, idet at proceduren er forholdsvis nem at forstå, men også at listen til venstre for det element algoritmen er nået til, altid vil være sorteret. Hvis man stopper en insertionsort-algoritme halvvejs gennem dens køretid, vil man altid have en liste hvor den første halvdel er sorteret og den anden halvdel usorteret. Dette er ikke en egenskal i den næste algoritme.\\
+Insertionsort er en god sorteringsalgoritme, idet at proceduren er forholdsvis nem at forstå, men også fordi listen til venstre for det element algoritmen er nået til ($e$), altid vil være sorteret. Hvis man stopper en insertionsort-algoritme halvvejs gennem dens køretid, vil man altid have en liste hvor den første halvdel er sorteret og den anden halvdel usorteret. Dette er ikke en egenskab af den næste algoritme.\\
 
 (se afsnit \ref{sec:Analyse af Insertionsort} for store-O analysen)
 
@@ -113,18 +113,18 @@ Insertionsort er en god sorteringsalgoritme, idet at proceduren er forholdsvis n
 \section{Mergesort}
 \label{sec:Mergesort}
 
-Hvor insertionsort er en løkke-baseret algoritme, er mergesort rekursiv idet at den ikke benytter en løkke til at gentage instruktioner, men kalder sig selv i stedet. Dette leder til en fraktallignende sorteringsmetode, der deler problemet i mindre og mindre bidder. 
+Hvor insertionsort er en løkke-baseret algoritme, er mergesort rekursiv idet at den ikke benytter en løkke til at gentage instruktioner, men kalder sig selv i stedet. Dette leder til en \red{fraktal}lignende sorteringsmetode, der deler problemet i mindre og mindre bidder. 
 
 \subsection{Mergesort Procedure}%
 \label{sub:Mergesort Procedure}
 
 Pseudokode til denne algoritme kan findes i figur \ref{fig:Pseudokode til mergesort}.\\
 
-Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen $merge$, da det er den mest simple. Funktionen tager to lister ($a$ og $b$) som argumenter, og fletter dem sammen til en tredje liste ($c$) (se figur \ref{fig:merge i mergesort}). Denne $c$ liste dog ikke altid sorteret. Eksempelvis kunne dette være en returneret liste:
+Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen $merge$, da det er den mest simple. Funktionen tager to lister ($a$ og $b$) som argumenter, og fletter dem sammen til en tredje liste ($c$) (se figur \ref{fig:merge i mergesort}). Denne $c$ liste dog ikke nødvendigvis sorteret. Eksempelvis kunne dette være en returneret liste:
 
 $$merge([1,2,4,8],[9,5,6,4,7]) \longrightarrow [\orange{1}, \orange{2}, \orange{4}, \orange{8}, \orange{9}, \blue{5}, \blue{6}, \violet{4}, \violet{7}]$$
 
-Her er resultatet en delvist sorteret liste bestående af flere sorterede dele. Altså kan vi ikke nøjes med $merge$ for at sortere en liste. En vigtig egenskab af $merge$ er at, den kan flette to sorterede lister sammen, til én samlet liste. Det kunne for eksempel være i dette tilfælde:
+Her er resultatet en delvist sorteret liste bestående af flere sorterede dele. Altså kan vi ikke nøjes med $merge$ for at sortere en liste. En vigtig egenskab af $merge$ er dog at den kan flette to sorterede lister sammen til én samlet sorteret liste. Det kunne for eksempel være i dette tilfælde:
 
 $$merge([1,3,4,8],[2,3,6,7,7]) \longrightarrow [1, 2, 3, 3, 4, 6, 7, 7, 8]$$
 
@@ -151,12 +151,11 @@ Her er begge argumenter ($a$ og $b$) sorterede lister, der flettes sammen til é
 	\label{fig:merge i mergesort}
 \end{figure}
 
-Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele algoritmen i betragtning. Mergesortfunktionen tager en enkel liste som argument, og checker først om listen kun indeholet ét element. Hvis den gør, så returnerer den bare listen uændret. Dette giver intuitivt mening, da en liste med et enkelt element altid vil være sorteret. Hvis listen er \emph{mere} end $1$ lang, gør den det, som får hele algoritmen til at fungere: den deler listen på i to, og kalder sig selv på hver halvdel. Herefter sættes de to dele sammen igen af $merge$-funktionen. Det er dog ikke helt så enkelt som det lyder, idet at $mergesort$ rekursivt kalder sig selv. Det leder til at algoritmen splitter listen op igen og igen, indtil der kun er et element i de mange lister. Herefter samler $merge$ alle de små lister til en stor liste, hvor $merge$ løbende sørger for at de lister den samler er sorterede. De lister der er samlet af $merge$, vil altid være sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-element-lister samles af $merge$ til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede lister. $merge$ får altså i altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som output.
+% TODO linjenumre over det hele!
 
-\input{../img/mergesort_procedure.tex}
+Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele algoritmen i betragtning. Mergesortfunktionen tager en enkel liste som argument, og checker først om listen kun indeholet ét element. Hvis den gør, så returnerer den listen uændret. Dette giver intuitivt mening, da en liste med et enkelt element altid vil være sorteret. Hvis listen er \emph{mere} end $1$ lang, gør den det, som får hele algoritmen til at fungere: den deler listen på i to, og kalder sig selv på hver halvdel. Herefter sættes de to dele sammen igen af $merge$-funktionen. Det er dog ikke helt så enkelt som det lyder, idet at $mergesort$ rekursivt kalder sig selv. Det leder til at algoritmen splitter listen op igen og igen, indtil der kun er et element i de mange lister. Herefter samler $merge$ alle de små lister til en stor liste, hvor $merge$ løbende sørger for at de lister den samler er sorterede. De lister der er samlet af $merge$, vil altid være sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-element-lister samles af $merge$ til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede lister. $merge$ får i altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som output.
 
-
-
+% TODO kommentarer
 
 \begin{figure}
 	\begin{center}
@@ -199,8 +198,12 @@ Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele
 \end{figure}
 
 
+\input{../img/mergesort_procedure.tex}
+
 \section{Store-O-Analyse af Insertionsort}
 \label{sec:Analyse af Insertionsort}
+
+I dette afsnit gør vi brug af tidligere definerede begreber og koncepter fra afsnit \ref{ch:Algoritmers Udførelsestid}.
 
 \subsection{Insertionsort i Værste Tilfælde}%
 \label{sub:Insertionsort i Værste Tilfælde}
@@ -208,11 +211,9 @@ Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele
 
 \cite[s. 42]{aogd}\\
 
-I dette afsnit gør vi brug af tidligere definerede begreber fra afsnittet "Algoritmer Udførelsestid" på side \pageref{ch:Algoritmers Udførelsestid}.
+Når man analyserer en algoritme teoretisk handler det ikke om den faktiske udførelsestid, men nærmere hvor mange operationer computeren skal køre, for at fuldføre algoritmen. På den måde kan man abstrahere helt væk fra fysisk tid, og regne med teoretiske operationer, hvis reelle udførelsestid ikke har nogen indflydelse. Det er fordi udførelsestiden er proportional med antallet af operationer der kører på computerens cpu. Den eneste faktor for antallet af operationer som en sorteringsalgoritme kører, er kardinaliteten af inputtet algoritmen udføres på. Dette gør det muligt at beskrive antallet af operationer (der er propportionalt med udførelsestiden) udelukkende som funktion af $n$ (inputtets kardinalitet).\\
 
-Når man analyserer en algoritme teoretisk handler det ikke om den faktiske udførelsestig, men nærmere hvor mange operationer computeren skal køre, for at fuldføre algoritmen. På den måde kan man abstrahere helt væk fra fysisk tid, og regne med teoretiske operationer, hvis reelle udførelsestid ikke har nogen indflydelse. Den eneste faktor for antallet af operationer er kardinaliteten af instansen algoritmen udføres på. Dette gør det muligt at beskrive antallet af operationer (der er propportionalt med udførelsestiden) udelukkende som funktion af $n$ (instansens kardinalitet).\\
-
-Insertionsort består af to løkker: en indre og en ydre. Den ydre løkke kører fra $i = 2$ til $i = n$. Altså kører koden inde i løkken $n - 1$ gange. Den indre løkke kører i værste tilfælde fra $j = i$ til $j = 1$ for hver $i$ værdi fra den ydre løkke. Det betyder at operationerne, som den indre løkke udfører, stiger sammen med $i$ (se figur \ref{fig:Insertionsort Operationer i løkker}). Vi ænder med at kunne beskrive det totale antal gange som koden i den indre kører, som summen af alle $i$-værdierne, som den ydre løkke gennemgår.
+Insertionsort består af to løkker: en indre og en ydre. Den ydre løkke kører fra $i = 1$ til (og uden) $i = n$. Altså kører koden inde i løkken $n - 1$ gange. Den indre løkke kører i værste tilfælde fra $j = i$ til $j = 1$ for hver $i$ værdi i den ydre løkke. Det betyder at operationerne, som den indre løkke udfører, stiger sammen med $i$ (se figur \ref{fig:Insertionsort Operationer i løkker}). Vi ænder med at kunne beskrive det totale antal gange som koden i den indre kører, som summen af alle $i$-værdierne, som den ydre løkke gennemgår, koden i den indre lykke køres $i$ gange for hver $i$.
 
 $$\sum_{i=2}^{n}i-1$$
 
@@ -224,7 +225,7 @@ For at simplificere udtrykket endnu mere kan vi bruge reglen at en sum som $1 + 
 
 $$\sum_{i=1}^{n-1}i \s=\s \frac{n(n-1)}{2} \s=\s \frac{1}{2}\cdot  n^2 - \frac{1}{2}\cdot  n$$
 
-Dette er altså et udtryk for hvor mange gange koden i den indre løkke kører, som funktion af kardinaliteten af algoritmens input. Vi kunne nu begynde at gange denne funktion med hvor mange operationer der sker inde i den indre løkke, og lægge operationerne der sker $n$ gange fordi de er med i den ydre løkke. Til sidst kunne vi lægge de operationer der kun sker én gang til, og resultatet ville se nogenlunde sådan ud:
+Dette er altså et udtryk for hvor mange gange koden i den indre løkke kører, som funktion af kardinaliteten af algoritmens input. Vi kunne nu begynde at gange denne funktion med hvor mange operationer der sker inde i den indre løkke, og lægge operationerne der sker $n$, gange fordi de er med i den ydre løkke. Til sidst kunne vi lægge de operationer der kun sker én gang til, og resultatet ville se nogenlunde sådan ud:
 
 $$a \cdot \frac{1}{2} \cdot n^2 - a \cdot \frac{1}{2} \cdot n + b \cdot n + c$$
 

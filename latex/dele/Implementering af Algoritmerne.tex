@@ -12,7 +12,7 @@ Sproget Python har et højt abstraktionsniveau, og kan på mange punkter ligne v
 \section{Implementering}
 \label{sec:Implementering}
 
-Implementering i Python er relativt simpelt. Den største forskel er at man tæller fra $1$ i pseudokode, og fra $0$ i Python (ligesom de fleste andre sprog). Det betyder for eksempel at det første element i en liste i Python er $liste[0]$, hvor det i pseudokode ville være $liste[2]$. Lykken i insertionsort der starter på $i = 2$ (se linje $\red{2}$ figur \ref{fig:Pseudokode til insertionsort}), starter  derfor i stedet på $i = 1$ i python. En anden forskel er at Python bruger dynamiske variabler \cite{what-is-python}; det er ikke nødvendigt at fortælle Python, om en variabel f.eks. er et heltal eller en liste.
+Implementering i Python er relativt simpelt. Python bruger dynamiske variabler \cite{what-is-python}, derfor er det ikke nødvendigt at fortælle Python, om en variabel f.eks. er et heltal eller en liste. \red{[kode??]}
 
 \begin{figure}
 	\begin{center}
@@ -23,16 +23,16 @@ Implementering i Python er relativt simpelt. Den største forskel er at man tæl
 \end{figure}
 
 \section{Test af Sorteringsalgoritmer}
-\label{sec:Kode til Test af Sorteringsalgoritmer}
+\label{sec:Test af Sorteringsalgoritmer}
 
-For at teste sorteringsalgoritmerne fra afsnit \ref{ch:Sorteringsalgoritmer}, og se hvordan deres reelle udførelsestid som funktion af $n$, relaterer til deres teoretiske væksthastighed og store-O-analyse. På figur \ref{fig:Kode til test af algoritmerne} ses koden til test af algoritmerne. Variablen $functions$ på linje $1$ indeholder en liste med de algoritmer der skal testes. I vores tilfælde indeholdt den $[insertionsort,mergesort]$. Inde in denne lykke tester vi funktionerne. Dette sikrer at algoritmerne bliver testet på samme måde. Det næste vi gør er at definere lister til opbevarting af kardinaliteten af den liste som algoritmen sorterer (l. $4$), og en til den reelle tid det tig for algoritmen at sortere listen (l. 9).  I linje $9$ sætter vi frøet for de pseudotilfældige tal \cite{python-random}, som vi senere skal bruge til at generere listerne som vi får sorteringsalgoritmerne til at sortere. Det er vigtigt af vi her sætter frøet til den samme værdi, før vi tester hver algoritme, da vi på den måde sikrer os at det er de samme pseudotilfældige lister, som algorimerne sorterer. På den måde kan vi med god vilje sammenligne algoritmernes køretider, da vi er sikre på at deres input, var det samme under testen. Efter denne \red{initialisering } begynder vi to løkker (l. 12 og 15). Den første sørger for at vi gentager den samme test flere gange. I vores tilfælde er variablen $trials$ sat til $15$, hvilket resulterer i at vi tester sorteringen af en $n$ lang liste $15$ gange. Den indre løkke tæller fra $i=0$ til $i=80$. Vi bruger herefter $i$-værdien til at generere vores $n$-værdier i linje $18$. Her bruges formlen $n=\nint{1.1^i}$. Valget at test med exponentielt stigende $n$, er af to grunde: det kan tage lang tid for en algoritme, at sortere lister med store $n$, så det gør hele processen meget hurtigere, hvis man ikke tester så mange sorteringer med store $n$. Den anden og nok bedre grund, er at vi er meget interesserede i at se hvordan algoritmerne måles med hinanden, når $n$ \emph{ikke} er stort. Det ville jo være interesseret, hvis vi kunne identificere et $n_0$ som i afsnit \ref{ch:Algoritmers Udførelsestid}. Til dette skal vi bruge en punkttæthed der ved store $n$ ville være overflødig. Nu er det hele sat op, og vi kan time algoritmen på en $n$ lang liste med tilfældige tal. $n$-værdien og den tid sorteringen tog, gemmes i listerne, og eksporteres til en csv fil til brug i databehandlingen (se bilag 1 og 2).
+For at teste sorteringsalgoritmerne fra afsnit \ref{ch:Sorteringsalgoritmer}, og se hvordan deres reelle udførelsestid som funktion af $n$, relaterer til deres teoretiske væksthastighed og store-O-analyse, skal algoritmerne køres på en kontroleret måde hvor vi systematiske kan tage tid på algoritmens udførelsestid ved forskellige input.\\
 
-
+På figur \ref{fig:Kode til test af algoritmerne} ses koden til test af algoritmerne. Variablen $functions$ på linje $1$ indeholder en liste med de algoritmer, der skal testes. I vores tilfælde indeholdt den $[insertionsort,mergesort]$. Inde in denne lykke tester vi funktionerne. Det at vi behandler algoritmerne ens, sikrer at de bliver testet på samme måde. Det næste vi gør er at definere lister til opbevarting af kardinaliteten af den liste som algoritmen sorterer (l. $4$), og en til den reelle tid det tager for algoritmen at sortere listen (l. 9).  I linje $9$ sætter vi frøet for de pseudotilfældige tal \cite{python-random}, som vi senere skal bruge til at generere listerne som sorteringsalgoritmerne skal sortere. Det er vigtigt af vi sætter frøet til den samme værdi, før vi tester hver algoritme, da vi på den måde sikrer os, at det er de samme pseudotilfældige lister, som algorimerne sorterer. Vi kan derfor med god vilje sammenligne algoritmernes køretider, da vi er sikre på at deres input, var det samme under testen. Efter denne \red{initialisering } begynder vi to løkker (l. 12 og 40). Den første sørger for at vi gentager den samme test flere gange. I vores tilfælde er variablen $trials$ sat til $40$, hvilket resulterer i at vi tester sorteringen af hver $n$ lange liste $40$ gange. Den indre løkke tæller fra $i=0$ til $i=80$. Vi bruger herefter $i$-værdien til at generere vores $n$-værdier i linje $18$. Til det bruges formlen $n=\nint{1.1^i}$. Valget at test med exponentielt stigende $n$, er af to grunde: det kan tage lang tid for en algoritme, at sortere lister med store $n$, så det gør hele processen meget hurtigere, hvis man ikke tester så mange sorteringer med store $n$. Den anden og nok bedre grund, er at vi er meget interesserede i at se hvordan algoritmerne måles med hinanden, når $n$ \emph{ikke} er stort. Det ville jo være interesseret, hvis vi kunne identificere et $n_0$ som i afsnit \ref{ch:Algoritmers Udførelsestid}. Til dette skal vi bruge en punkttæthed, der ved store $n$ ville være overflødig. Nu er det hele sat op, og vi kan teste algoritmen på en $n$ lang liste med tilfældige tal. $n$-værdien og den tid sorteringen tog, gemmes i listerne, og eksporteres til en csv fil til brug i databehandlingen (se koden i bilag 1 og 2).
 
 \begin{figure}
 	\begin{center}
 		%\lstinputlisting[language=Python]{../python/algoritmer/mergesort.py}
-		\lstinputlisting[firstline=57,lastline=85]{../python/sorting.py}
+		\lstinputlisting[firstline=53,lastline=81]{../python/sorting.py}
 	\end{center}
 	\caption{Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).}
 	\label{fig:Kode til test af algoritmerne}
@@ -45,12 +45,14 @@ For at teste sorteringsalgoritmerne fra afsnit \ref{ch:Sorteringsalgoritmer}, og
 
 Algoritmernes udførelsestider er plottet i figur \ref{fig:plot - to algoritmer}.\\
 
-Som det tydeligt fremgår på graferne, er mergesort langt hurtigere end insertionsort ved store $n$. Vi kan også se at algoritmerne nogenlunde følger deres regressioner, men hvorfor enlig det? Det er jo kun i værste tilfælde at $T_{insertionsort}(n) \in \Theta (n^2)$ ikke? Jo, men det lader til at insertionsorts gennemsnitlige vækstrate, er tættere på $\Theta (n^2)$ end på $\Theta (n)$. Det er dog alligevel tydeligt at andengradsregression ikke passer helt på insertionsorts gennemsnitlige køretid, hvis vi zoomer ind på plottet som i figur \red{??}. Faktisk passer regressionen slet ikke på punkterne på dette stykke af grafen, hvilket tyder på at algoritmens udførelsestid ikke bare kan beskrives med et \red{andengraspolynomie}. En anden finurlighed kan findes i residualplottet (figur \ref{??}). Residualplottet for begge grafer er rigtig flot, med en jævn punktfordeling på beggesider af regressionen, men til aller sidst er der et par af insertionsorts punkter der er langt under regressionen. Det kan være af flere grunde bla. at computerens styresystem lige i dette tilfælde, tildelte flere ressourcer til programmet. En anden grund kunne være at algoritmen netop i disse tilfælde var heldig at få en delvist sorteret liste, der gjorde at listen kunne sorteres langt hurtigere end $O(n^2)$. Dog tyder det tydelige nedadgående mønster i outlier-residualern på, at afvigelsen ikke er en tilfældighed. Når man ser på residualplottene er et andet mønster også tydeligt: variansen stiger. Udførelsestiderne har større og større usikkerhed, jo større $n$ er. Dette giver intuitiv mening hvis man sætter det i kontekst. Hvis $10$ personer løber et $100$m løb, vil alle løbere afslutte inden for et forholdsvist lille tidinterval. Hvis vi herefter \red{bedte } dem om at løbe en marton, ville deres tider ikke bare variere med sekunder og minutter, men med timer. Variansen i deres tider, øges altså af størrelsen på opgaven. Det samme er sandt for vores sorteringsalgoritmer, hvilket det tydeliggøres i residualplottene. 
+Som det tydeligt fremgår på graferne, er mergesort langt hurtigere end insertionsort ved store $n$. Vi kan også se at algoritmerne nogenlunde følger deres regressioner, men hvorfor enlig det? Det er jo kun i værste tilfælde at $T_{insertionsort}(n) \in \Theta (n^2)$ ikke? Jo, men det lader til at insertionsorts gennemsnitlige vækstrate, er tættere på $\Theta (n^2)$ end på $\Theta (n)$. Det er dog alligevel tydeligt at andengradsregression ikke passer helt på insertionsorts gennemsnitlige køretid, hvis vi zoomer ind på plottet til højre på figur \ref{fig:plot - to algoritmer}. Faktisk passer regressionen slet ikke på punkterne på dette stykke af grafen, hvilket tyder på at algoritmens udførelsestid ikke bare kan beskrives med et \red{andengraspolynomie}. \red{Hvad angår mergesort...} \\
+
+En anden finurlighed kan findes i residualplottet (figur \ref{fig:toAlgoritmerResidual}). Residualplottet for begge grafer er rigtig flot, med en jævn punktfordeling på beggesider af regressionen, men til aller sidst er der et par af insertionsorts punkter der er langt under regressionen. Det kan være af flere grunde bla. at computerens styresystem lige i dette tilfælde, tildelte flere ressourcer til programmet. En anden grund kunne være at algoritmen netop i disse tilfælde var heldig at få en delvist sorteret liste, der gjorde at listen kunne sorteres langt hurtigere end $O(n^2)$. Dog tyder det tydelige nedadgående mønster i outlier-residualerne på, at afvigelsen ikke er en tilfældighed. Når man ser på residualplottene er et andet mønster også tydeligt: variansen stiger. Udførelsestiderne har større og større usikkerhed, jo større $n$ er. Dette giver intuitivt mening hvis man sætter det i kontekst. Hvis $10$ personer løber et $100$m løb, vil alle løbere afslutte inden for et forholdsvist lille tidinterval. Hvis vi herefter bad dem om at løbe en marton, ville deres tider ikke bare variere med sekunder og minutter, men med timer. Variansen i deres tider, øges altså af størrelsen på opgaven. Det samme er sandt for vores sorteringsalgoritmer, hvilket tydeliggøres af residualplottene. 
 
 
 \subsection{Hvornår er Insertionsort Hurtigst?}%
 \label{sub:Store-O er Værste Tilfælde}
-Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ved små $n$ kan vi også se at insertionsort, ikke er langt bagefter. Faktisk er den \emph{gennemsnitlige} sortering hurtigere eller nogenlunde egens før $n = \red{15}$ (se figur \red{??}). Det bekræfter teorien fa afsnit \ref{ch:Algoritmers Udførelsestid}, idet at store-O ikke siger noget om algoritmens opførsel ved små $n$, men kun ved meget store $n$. Her er det tydeligt at en sådan form for analyse ikke er tilstrækkeligt for at bedømme, hvilken algoritme er bedst til hvilke problemer. Store-O analyse er også blind overfor den gennemsnitlige udførelsestid. Ved små $n$ er den gennemsnitlige køretid brugbar, da den maksimale køretid aldrig bliver astronomisk stor, og vi kan derfor med god vilje bruge gennemsnitlig udførelsestid i disse beregninger. Det ville gennemsnitligt være hurtigst, at bruge insertionsort, ved små $n$ og mergesort ved store. Punktet der adskiller hvilken algoritme er hurtigst er ca. $n = 15$. Dette punkt er hvad svarer til $n_0$ fra afsnit \ref{ch:Algoritmers Udførelsestid}.
+Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ved små $n$ kan vi også se at insertionsort, ikke er langt bagefter. Faktisk er den \emph{gennemsnitlige} sortering hurtigere eller nogenlunde egens før $n = \red{40}$ (se figur \ref{fig:toAlgoritmerZoomedGns}). Det bekræfter teorien fra afsnit \ref{ch:Algoritmers Udførelsestid}, idet at store-O ikke siger noget om algoritmens opførsel ved små $n$, men kun ved meget store. Her er det tydeligt at en sådan form for analyse ikke er tilstrækkeligt for at bedømme, hvilken algoritme er bedst til hvilke problemer. Store-O analyse er også blind overfor den gennemsnitlige udførelsestid. Ved små $n$ er den gennemsnitlige køretid brugbar, da den maksimale køretid aldrig bliver astronomisk stor, og vi kan derfor med god vilje bruge gennemsnitlig udførelsestid i disse overvejelser. Det ville gennemsnitligt være hurtigst, at bruge insertionsort, ved små $n$ og mergesort ved store. Punktet der adskiller hvilken algoritme er hurtigst er ca. $n = 40$. Dette punkt er hvad svarer til $n_0$ fra afsnit \ref{ch:Algoritmers Udførelsestid}, \red{idet at...}
 
 %...grunden til at bruge algoritmens gennemsnitlige udførelsestid er...
 
@@ -69,7 +71,7 @@ Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ve
 		\includegraphics[scale=0.7]{../img/toAlgoritmerResidual.png}
 	\end{center}
 	\caption{Residualplot for modellerne i figur \ref{fig:plot - to algoritmer}.}
-	\label{fig:}
+	\label{fig:toAlgoritmerResidual}
 \end{figure}
 
 
@@ -78,7 +80,7 @@ Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ve
 	\begin{center}
 		\includegraphics[scale=0.6]{../img/toAlgoritmerZoomedGns.png}
 	\end{center}
-	\caption{Dette er samme data som i figur \ref{fig:plot - to algoritmer}, men zoomet ind til indervallet $n \leq 100$. Her er regressionerne erstattet af et løbende gennemsnit. Det interessante ved grafen til højre er, at man tydeligt kan de hvordan insertionsort gennemsnitligt er hurtigst, indtil $n \approx 45$ hvorefter mergesort er hurtigst.}
+	\caption{Dette er samme data som i figur \ref{fig:plot - to algoritmer}, men zoomet ind til indervallet $n \leq 100$. Her er regressionerne erstattet af en linje der går mellem gennemsnittet af $t$ for hver $n$. Det interessante ved grafen er, at man tydeligt kan de hvordan insertionsort gennemsnitligt er hurtigst, indtil $n \approx 40$ hvorefter mergesort er hurtigst.}
 	\label{fig:toAlgoritmerZoomedGns}
 \end{figure}
 
@@ -91,7 +93,7 @@ At insertionsort faktisk normalt er hurtigere end mergesort hvis $n < n_0$, bety
 	\begin{center}
 		\begin{lstlisting}
 		def sort(liste) {
-			if liste.length <= 15 {
+			if liste.length <= 40 {
 				return(insertionsort(liste))
 			}
 			return(mergesort(liste))
@@ -99,20 +101,20 @@ At insertionsort faktisk normalt er hurtigere end mergesort hvis $n < n_0$, bety
 		\end{lstlisting}
 	\end{center}
 	\vspace{-6mm}
-	\caption{Algoritme der bruger insertionsort hvis inputlisten er kortere end $15$, og ellers mergesort.}
+	\caption{Algoritme der bruger insertionsort hvis inputlisten er kortere end $40$, og ellers mergesort.}
 	\label{fig:hybridalgoritme1}
 \end{figure}
 
 
-Her bruger vi insertionsort hvis listens længde er under eller lig $15$, og mergesort hvis ikke. Det er en forbedrig af algoritmen. Dog er der en endnu mere snedig måde at inkorporere denne ide. Hvis vi tænker tilbage på mergesorts procedure fra afsnit \ref{ch:Sorteringsalgoritmer}, ved vi at algoritmen deler en usorterede liste op indtil der kun er lister med enkle elementer tilbage. Funktionen $merge$ sætter herefter listerne sammen igen, og sørger for at den samlede liste altid vil være sorteret, da den altid for sorterede lister som input. Vi ved dog nu at denne process, ikke er effektiv ved $n$-værdier under \red{15 }. Det er derfor en smart ide at bruge insertionsort til at sortere listerne når mergesort har opdelt listen i tilstrækkeligt små bidder. Koden for denne hybridalgoritme kan ses på figur \ref{fig:hybridalgoritme2}. I stedet for at opdele listen helt til der kun er et enkelt element i hver delliste, stopper denne algoritme opdelingen så snart insertionsort kan sortere listen hurtigere.
+Her bruger vi insertionsort hvis listens længde er under eller lig $40$, og mergesort hvis ikke. Det er en forbedrig af algoritmen, men kun hvis $n < 45$. Dog er der en endnu mere snedig måde at inkorporere denne ide. Hvis vi tænker tilbage på mergesorts procedure fra afsnit \ref{ch:Sorteringsalgoritmer}, ved vi at algoritmen deler en usorterede liste op indtil der kun er lister med enkle elementer tilbage. Funktionen $merge$ sætter herefter listerne sammen igen, og sørger for at den samlede liste altid vil være sorteret, da den altid for sorterede lister som input. Vi ved dog nu at denne process, ikke er effektiv ved $n$-værdier under 40. Det er derfor en smart ide at bruge insertionsort til at sortere listerne når mergesort har opdelt listen i tilstrækkeligt små bidder. Koden for denne hybridalgoritme kan ses på figur \ref{fig:hybridalgoritme i Python}. I stedet for at opdele listen helt til der kun er et enkelt element i hver delliste, stopper denne algoritme opdelingen så snart insertionsort kan sortere listen hurtigere.
 
 
 \begin{figure}
 	\begin{center}
 		\lstinputlisting[lastline=23]{../python/algoritmer/hybrid.py}
 	\end{center}
-	\caption{Mergesort hvor lister mindre end \red{15 } sorteres effektivt af insertionsort}
-	\label{fig:hybridalgoritme}
+	\caption{Mergesort hvor lister mindre end 40 sorteres effektivt af insertionsort}
+	\label{fig:hybridalgoritme i Python}
 \end{figure}
 
 
