@@ -128,6 +128,17 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
@@ -1412,60 +1423,55 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt0900.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
-INPUT ./dele/Binære Træer.tex
-INPUT ./dele/Binære Træer.tex
-INPUT ./dele/Binære Træer.tex
-INPUT dele/Binære Træer.tex
-INPUT ./dele/Binære Træer.tex
-INPUT ./dele/Binære Træer.tex
-INPUT dele/Binære Træer.tex
-INPUT ../img/binary_tree.png
-INPUT ../img/binary_tree.png
-INPUT ../img/binary_tree.png
-INPUT ../img/binary_tree.png
-INPUT ./dele/Store-O og bedste tilfælde.tex
-INPUT ./dele/Store-O og bedste tilfælde.tex
-INPUT ./dele/Store-O og bedste tilfælde.tex
-INPUT dele/Store-O og bedste tilfælde.tex
-INPUT ./dele/Store-O og bedste tilfælde.tex
-INPUT ./dele/Store-O og bedste tilfælde.tex
-INPUT dele/Store-O og bedste tilfælde.tex
-INPUT ./dele/Implementering af Algoritmerne.tex
-INPUT ./dele/Implementering af Algoritmerne.tex
-INPUT ./dele/Implementering af Algoritmerne.tex
-INPUT dele/Implementering af Algoritmerne.tex
-INPUT ./dele/Implementering af Algoritmerne.tex
-INPUT ./dele/Implementering af Algoritmerne.tex
-INPUT dele/Implementering af Algoritmerne.tex
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/sorting.py
-INPUT ../python/sorting.py
-INPUT ../python/sorting.py
-INPUT ../python/sorting.py
-INPUT ../python/sorting.py
-INPUT ../python/sorting.py
-INPUT ../python/algoritmer/hybrid_2.py
-INPUT ../python/algoritmer/hybrid_2.py
-INPUT ../python/algoritmer/hybrid_2.py
-INPUT ../python/algoritmer/hybrid_2.py
-INPUT ../python/algoritmer/hybrid_2.py
-INPUT ../python/algoritmer/hybrid_2.py
-INPUT ../img/toAlgoritmer.png
-INPUT ../img/toAlgoritmer.png
-INPUT ../img/toAlgoritmer.png
-INPUT ../img/toAlgoritmer.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm
+INPUT ../img/mergesort_procedure.tex
+INPUT ../img/mergesort_procedure.tex
+INPUT ../img/mergesort_procedure.tex
+INPUT ../img/mergesort_procedure.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT ./dele/Binære Træer.tex
+INPUT ./dele/Binære Træer.tex
+INPUT ./dele/Binære Træer.tex
+INPUT dele/Binære Træer.tex
+INPUT ./dele/Binære Træer.tex
+INPUT ./dele/Binære Træer.tex
+INPUT dele/Binære Træer.tex
+INPUT ../img/tree.png
+INPUT ../img/tree.png
+INPUT ../img/tree.png
+INPUT ../img/tree.png
+INPUT ../img/binary_tree.png
+INPUT ../img/binary_tree.png
+INPUT ../img/binary_tree.png
+INPUT ../img/binary_tree.png
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT dele/Implementering af Algoritmerne.tex
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT ./dele/Implementering af Algoritmerne.tex
+INPUT dele/Implementering af Algoritmerne.tex
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/algoritmer/insertionsort.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT ../python/sorting.py
+INPUT ../img/toAlgoritmer.png
+INPUT ../img/toAlgoritmer.png
+INPUT ../img/toAlgoritmer.png
+INPUT ../img/toAlgoritmer.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm
 INPUT ../img/r2-insertion.txt
 INPUT ../img/r2-insertion.txt
 INPUT ../img/r2-insertion.txt
@@ -1474,6 +1480,24 @@ INPUT ../img/r2-insertion.txt
 INPUT ../img/r2-insertion.txt
 INPUT ../img/r2-insertion.txt
 INPUT ../img/r2-insertion.txt
+INPUT ../img/toAlgoritmerZoomedGns.png
+INPUT ../img/toAlgoritmerZoomedGns.png
+INPUT ../img/toAlgoritmerZoomedGns.png
+INPUT ../img/toAlgoritmerZoomedGns.png
+INPUT ../python/algoritmer/hybrid.py
+INPUT ../python/algoritmer/hybrid.py
+INPUT ../python/algoritmer/hybrid.py
+INPUT ../python/algoritmer/hybrid.py
+INPUT ../python/algoritmer/hybrid.py
+INPUT ../python/algoritmer/hybrid.py
+INPUT ../img/toMergesort.png
+INPUT ../img/toMergesort.png
+INPUT ../img/toMergesort.png
+INPUT ../img/toMergesort.png
+INPUT ../img/toMergesortResidual.png
+INPUT ../img/toMergesortResidual.png
+INPUT ../img/toMergesortResidual.png
+INPUT ../img/toMergesortResidual.png
 INPUT ./dele/konklusion.tex
 INPUT ./dele/konklusion.tex
 INPUT ./dele/konklusion.tex

@@ -79,6 +79,38 @@
       \verb https://nathanleclaire.com/blog/2014/03/01/build-a-linked-list-for-each-layer-in-a-binary-tree
       \endverb
     \endentry
+    \entry{trees}{article}{}
+      \name{author}{1}{}{%
+        {{hash=486ba86c93c80ca7df03972da6d489f0}{%
+           family={Nayyar},
+           familyi={N\bibinitperiod},
+           given={Rajpreet\bibnamedelima Singh},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Scaler}%
+      }
+      \strng{namehash}{486ba86c93c80ca7df03972da6d489f0}
+      \strng{fullhash}{486ba86c93c80ca7df03972da6d489f0}
+      \strng{bibnamehash}{486ba86c93c80ca7df03972da6d489f0}
+      \strng{authorbibnamehash}{486ba86c93c80ca7df03972da6d489f0}
+      \strng{authornamehash}{486ba86c93c80ca7df03972da6d489f0}
+      \strng{authorfullhash}{486ba86c93c80ca7df03972da6d489f0}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scaler Topics}
+      \field{month}{12}
+      \field{title}{Tree Data Structure}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.scaler.com/topics/data-structures/tree-data-structure
+      \endverb
+      \verb{url}
+      \verb https://www.scaler.com/topics/data-structures/tree-data-structure
+      \endverb
+    \endentry
     \entry{python-random}{article}{}
       \list{publisher}{1}{%
         {Python Software Foundation}%

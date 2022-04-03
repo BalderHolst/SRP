@@ -1,5 +1,6 @@
 library(ggplot2)
 library(plyr)
+#library(pubr)
 #library(tikzDevice)
 
 #working dir
@@ -58,32 +59,46 @@ M = rbind(m_merge,m_insertion)
 summary(M)
 
 
+farve = c("#3a6ced","#ff9b00")
+
+
 ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
+  scale_color_manual(values = farve)+
 	geom_point(size=1.5,alpha=0.1,shape=19) +
 	geom_line(aes(x=n, y=model,color=Algorithm), size=2, alpha=0.6) +
-	theme(legend.position = c(.9, .9)) + # virker ikke!!
 	guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
-	theme_bw()
+	theme_bw()+
+  theme(legend.position="none")
 
-	ggsave("toAlgoritmer.png")
+	ggsave("toAlgoritmer.png",width=8,height=6)
 
 # laver zoomed
 ggplot(subset(M,n <= 100), aes(x=n, y=t, colour=Algorithm)) +
+  scale_color_manual(values = farve)+
 	geom_point(size=1.5,alpha=0.1,shape=19) +
 	geom_line(aes(x=n, y=model,color=Algorithm), size=2, alpha=0.6) +
 	theme(legend.position = c(.9, .9)) + # virker ikke!!
 	guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
 	theme_bw()
 
-	ggsave("toAlgoritmerZoomed.png")
+	ggsave("toAlgoritmerZoomed.png",width=9,height=6)
 
+	
+	
+	
+	
+	
 	ggplot(M, aes(x=log10(model), y=residual, colour=Algorithm)) +
-		geom_point(size=1.5,alpha=0.1,shape=19) +
+	  geom_hline(yintercept = 0)+
+	  scale_color_manual(values = farve)+
+		geom_point(size=1.5,alpha=0.2,shape=19) +
 		labs(title="Residualer") +
 		facet_wrap(~algorithm,scales="free",ncol=1) +
-		theme_bw() +
-		theme(legend.position="none")
-	ggsave("toAlgoritmerResidual.png")
+	  guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
+		theme_bw()
+	  
+	
+	ggsave("toAlgoritmerResidual.png",width=10,height=5)
 
 
 
@@ -102,12 +117,13 @@ f = function(x) {
 gns = ddply(subset(M,n <= 100), .(Algorithm, n), f)	
 	
 	ggplot(subset(M,n <= 100), aes(x=n, y=t, colour=Algorithm)) +
+	  scale_color_manual(values = farve)+
 	  geom_point(size=1.5,alpha=0.08,shape=19) +
 	  geom_line (size=1.5, data=gns) +
 	  guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
 	  theme_bw()
 	
-	ggsave("toAlgoritmerZoomedGns.png")
+	ggsave("toAlgoritmerZoomedGns.png",height=6, width=10)
 
 
 

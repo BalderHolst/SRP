@@ -40,7 +40,7 @@ Der er dog en vækstrate som både $O(f(n))$ og $\Omega (f(n))$ indeholder: neml
 
 Med denne definition af store-O kan vi klassificere algoritmer i forhold til deres værste-tilfælde-vækstrate. Disse klasser kaldes kompleksitetsklasser. \red{klassen for alle algoritmer der i værste tilfælde har samme vækstrate som $n^2$ hedder $O(n^2)$}. Man siger at algoritmen er $O(n^2)$. Det kunne også være at algoritmen var $O(n)$, altså har den en lineær vækstrate, og hvis en algoritme har konstant vækstrate, er den del af kompleksitetsklassen $O(1)$. Det er vigtigt at huske at disse kompleksitetsklasser ikke kun betegner vækstraten i værste, men at de også indeholder alle bedre vækstrater. Det vil altså sige at alle kompleksitetsklasser med en bestemt værste-vækstrate, også indeholder alle kompleksitetsklasser med lavere værste-vækstrate. 
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{center}
 		$$O(1) \:\:\subset\:\: O(n) \:\:\subset\:\: O(n \cdot \log n) \:\:\subset\:\: O(n^2) \:\:\subset\:\: O(n!)$$
 	\end{center}
@@ -69,7 +69,7 @@ Med denne definition af store-O kan vi klassificere algoritmer i forhold til der
 
 \begin{figure}
 	\begin{center}
-		\begin{tikzpicture}[domain=0:7,range=0:3,scale=1.1] 
+		\begin{tikzpicture}[domain=0:7,range=0:3,scale=1.0] 
 			\normalsize
 			\coordinate (I) at (2.5,2.5);
 			\coordinate (I0) at (2.5,0);
