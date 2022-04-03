@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  3 APR 2022 13:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  3 APR 2022 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1565,12 +1565,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
 [15]) (./dele/Binære Træer.tex [16]
 Kapitel 5.
-<../img/tree.png, id=479, 477.28313pt x 300.3722pt>
+<../img/tree.png, id=482, 477.28313pt x 300.3722pt>
 File: ../img/tree.png Graphic file (type png)
 <use ../img/tree.png>
 Package pdftex.def Info: ../img/tree.png  used on input line 19.
 (pdftex.def)             Requested size: 167.05159pt x 105.13184pt.
-<../img/binary_tree.png, id=481, 196.93575pt x 114.4275pt>
+<../img/binary_tree.png, id=484, 196.93575pt x 114.4275pt>
 File: ../img/binary_tree.png Graphic file (type png)
 <use ../img/binary_tree.png>
 Package pdftex.def Info: ../img/binary_tree.png  used on input line 29.
@@ -1621,43 +1621,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
 LaTeX Warning: Reference `??' on page 23 undefined on input line 48.
 
-<../img/toAlgoritmer.png, id=581, 578.16pt x 433.62pt>
+<../img/toAlgoritmer.png, id=584, 578.16pt x 433.62pt>
 File: ../img/toAlgoritmer.png Graphic file (type png)
 <use ../img/toAlgoritmer.png>
-Package pdftex.def Info: ../img/toAlgoritmer.png  used on input line 63.
+Package pdftex.def Info: ../img/toAlgoritmer.png  used on input line 61.
 (pdftex.def)             Requested size: 209.97983pt x 157.47931pt.
-(../img/r2-insertion.txt) (../img/r2-insertion.txt)
-<../img/toAlgoritmerZoomed.png, id=582, 650.43pt x 433.62pt>
+<../img/toAlgoritmerZoomed.png, id=585, 578.16pt x 433.62pt>
 File: ../img/toAlgoritmerZoomed.png Graphic file (type png)
 <use ../img/toAlgoritmerZoomed.png>
-Package pdftex.def Info: ../img/toAlgoritmerZoomed.png  used on input line 70.
-(pdftex.def)             Requested size: 209.97983pt x 139.98528pt.
-<../img/toAlgoritmerZoomedGns.png, id=585, 722.7pt x 433.62pt>
+Package pdftex.def Info: ../img/toAlgoritmerZoomed.png  used on input line 62.
+(pdftex.def)             Requested size: 209.97983pt x 157.47931pt.
+<../img/toAlgoritmerResidual.png, id=588, 578.16pt x 433.62pt>
+File: ../img/toAlgoritmerResidual.png Graphic file (type png)
+<use ../img/toAlgoritmerResidual.png>
+Package pdftex.def Info: ../img/toAlgoritmerResidual.png  used on input line 69
+.
+(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<../img/toAlgoritmerZoomedGns.png, id=591, 650.43pt x 433.62pt>
 File: ../img/toAlgoritmerZoomedGns.png Graphic file (type png)
 <use ../img/toAlgoritmerZoomedGns.png>
-Package pdftex.def Info: ../img/toAlgoritmerZoomedGns.png  used on input line 8
-0.
-(pdftex.def)             Requested size: 433.62334pt x 260.17401pt.
- [23] [24 <../img/toAlgoritmer.png (PNG copy)> <../img/toAlgoritmerZoomed.png (
-PNG copy)> <../img/toAlgoritmerZoomedGns.png (PNG copy)>]
+Package pdftex.def Info: ../img/toAlgoritmerZoomedGns.png  used on input line 7
+9.
+(pdftex.def)             Requested size: 390.261pt x 260.17401pt.
+[23] [24 <../img/toAlgoritmer.png (PNG copy)> <../img/toAlgoritmerZoomed.png (P
+NG copy)> <../img/toAlgoritmerResidual.png (PNG copy)>]
 
 LaTeX Warning: Reference `fig:hybridalgoritme2' on page 25 undefined on input l
-ine 108.
+ine 107.
 
 (../python/algoritmer/hybrid.py)
-<../img/toMergesort.png, id=601, 578.16pt x 433.62pt>
+<../img/toMergesort.png, id=606, 578.16pt x 433.62pt>
 File: ../img/toMergesort.png Graphic file (type png)
 <use ../img/toMergesort.png>
-Package pdftex.def Info: ../img/toMergesort.png  used on input line 131.
-(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
-<../img/toMergesortResidual.png, id=602, 650.43pt x 433.62pt>
+Package pdftex.def Info: ../img/toMergesort.png  used on input line 130.
+(pdftex.def)             Requested size: 209.97983pt x 157.47931pt.
+<../img/toMergesortResidual.png, id=607, 578.16pt x 433.62pt>
 File: ../img/toMergesortResidual.png Graphic file (type png)
 <use ../img/toMergesortResidual.png>
-Package pdftex.def Info: ../img/toMergesortResidual.png  used on input line 132
+Package pdftex.def Info: ../img/toMergesortResidual.png  used on input line 131
 .
-(pdftex.def)             Requested size: 260.16739pt x 173.44492pt.
-) (./dele/konklusion.tex [25] [26 <../img/toMergesort.png (PNG copy)> <../img/t
-oMergesortResidual.png (PNG copy)>]
+(pdftex.def)             Requested size: 209.97983pt x 157.47931pt.
+ [25 <../img/toAlgoritmerZoomedGns.png (PNG copy)>]) (./dele/konklusion.tex [26
+ <../img/toMergesort.png (PNG copy)> <../img/toMergesortResidual.png (PNG copy)
+>]
 Kapitel 7.
 ) [27
 
@@ -1678,27 +1684,24 @@ File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
 (../R/plotAlgorithms.R [33
 
-] [34]) [35]) 
+] [34] [35])) 
 AED: lastpage setting LastPage
 [36] (./SRP.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `SRP.out' has not changed.
-(rerunfilecheck)             Checksum: 630737BE73CA7658B975710D54EC1B37;5779.
+(rerunfilecheck)             Checksum: 707B5CEA725EDCE5AAA1238AE9F295B1;5779.
 Package logreq Info: Writing requests to 'SRP.run.xml'.
 \openout1 = `SRP.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46268 strings out of 480806
- 984506 string characters out of 5905151
- 1838888 words of memory out of 6000000
- 62362 multiletter control sequences out of 15000+600000
- 448532 words of font info for 90 fonts, out of 8000000 for 9000
+ 46260 strings out of 480806
+ 984408 string characters out of 5905151
+ 1843771 words of memory out of 6000000
+ 62356 multiletter control sequences out of 15000+600000
+ 447756 words of font info for 89 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  89i,17n,86p,2656b,3127s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr
@@ -1719,18 +1722,17 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/s
-fbx0900.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1000
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/cm-super/sftt1000.pfb>
-Output written on SRP.pdf (38 pages, 1773264 bytes).
+fbx1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on SRP.pdf (38 pages, 1986196 bytes).
 PDF statistics:
- 1155 PDF objects out of 1200 (max. 8388607)
- 1040 compressed objects within 11 object streams
- 488 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1159 PDF objects out of 1200 (max. 8388607)
+ 1043 compressed objects within 11 object streams
+ 491 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -59,10 +59,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.5}Optimering af Mergesort}{25}{section.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.1}Sammenligning af Optimerede Algoritmer}{25}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.1}Sammenligning af Optimerede Algoritmer}{26}{subsection.6.5.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Konklusion}{27}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nameref {ch:Bilag 1}}{29}{chapter*.25}%
+\contentsline {chapter}{\nameref {ch:Bilag 1}}{29}{chapter*.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nameref {ch:Bilag 2}}{33}{chapter*.26}%
+\contentsline {chapter}{\nameref {ch:Bilag 2}}{33}{chapter*.27}%

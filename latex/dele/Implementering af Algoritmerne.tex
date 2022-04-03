@@ -58,22 +58,21 @@ Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ve
 
 
 \begin{figure} \centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{../img/toAlgoritmer.png}
-		\caption{$y=\input{../img/r2-insertion.txt}$}
-		\label{fig:regressioner}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{../img/toAlgoritmerZoomed}
-		\caption{$y=3sinx$}
-		\label{fig:residualplot}
-	\end{subfigure}
+	\includegraphics[width=0.45\textwidth]{../img/toAlgoritmer.png}
+	\includegraphics[width=0.45\textwidth]{../img/toAlgoritmerZoomed}
 	\caption{Sammenligning af insertionsort og mergesort. Til venstre ses grafen for de to algoritmer sammen med en regression. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \log n$-regression for mergesort (se afsnit \ref{ch:Sorteringsalgoritmer} for yderligere forklaring).}
 	\label{fig:plot - to algoritmer}
 \end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.7]{../img/toAlgoritmerResidual.png}
+	\end{center}
+	\caption{Residualplot for modellerne i figur \ref{fig:plot - to algoritmer}.}
+	\label{fig:}
+\end{figure}
+
+
 
 \begin{figure}
 	\begin{center}
@@ -128,8 +127,8 @@ Her bruger vi insertionsort hvis listens længde er under eller lig $15$, og mer
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.4]{../img/toMergesort.png}
-		\includegraphics[scale=0.4]{../img/toMergesortResidual.png}
+		\includegraphics[width=0.45\textwidth]{../img/toMergesort.png}
+		\includegraphics[width=0.45\textwidth]{../img/toMergesortResidual.png}
 	\end{center}
 	\caption{Mergesort og Hybridalgoritme.}
 	\label{fig:Mergesort og Hybridalgoritme}

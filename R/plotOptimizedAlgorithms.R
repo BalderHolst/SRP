@@ -77,15 +77,10 @@ ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
 		labs(x="Log10 af Modellens Forudsigelse", y="residualer") +
 		facet_wrap(~algorithm,scales="free",ncol=1) +
 	  guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
-		theme_bw()
+		theme_bw() 
+#theme(legend.position="bottom",legend.title = element_blank())
 	
 	  
-	ggsave("toMergesortResidual.png",width=9,height=6)
-
-	C = data.frame(
-		       Algorithm = unique(M$Algorithm),
-		       R2 = c(with(m_merge, cor(t,n)), with(m_insertion, cor(t,n)))
-	)
-	
+	ggsave("toMergesortResidual.png",width=8,height=6)
 
 
