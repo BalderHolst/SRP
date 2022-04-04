@@ -35,9 +35,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Mergesort Procedure}{11}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Store-O-Analyse af Insertionsort}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.4}\color {red}Tidskompleksiteten af Mergesort\color {black}}{14}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Insertionsort i Værste Tilfælde}{14}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Store-O-Analyse af Insertionsort}{14}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Insertionsort i Værste Tilfælde}{14}{subsection.3.5.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Binære Træer}{16}{chapter.4}%
 \defcounter {refsection}{0}\relax 

@@ -1,4 +1,5 @@
 library(ggplot2)
+library(plyr)
 #library(tikzDevice)
 
 #working dir
@@ -63,12 +64,34 @@ farve = c("forestgreen","#ff9b00")
 
 ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
 	geom_point(size=1.5,alpha=0.1,shape=19) +
+	labs(y="t (s)")+
   scale_color_manual(values = farve)+
 	guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
 	theme_bw()+
-  theme(legend.position="none")
+  theme(legend.position="top",legend.title = element_blank())
 
-	ggsave("toMergesort.png",width=8,height=6)
+	ggsave("toMergesort.png",width=5,height=4,scale=1.3)
+
+# Laver ges data.frame
+f = function(x) {
+	data.frame(
+		   t = mean(x$t)
+	)
+}
+
+gns = ddply(subset(M,n <= 100), .(Algorithm, n), f)	
+
+ggplot(subset(M,n <= 100), aes(x=n, y=t, colour=Algorithm)) +
+	geom_line (size=1.5, data=gns) +
+	geom_point(size=1.5,alpha=0.1,shape=19) +
+	labs(y="t (s)")+
+  scale_color_manual(values = farve)+
+	guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
+	theme_bw()+
+  theme(legend.position="top",legend.title = element_blank())
+
+	ggsave("toMergesortZoomed.png",width=5,height=4,scale=1.3)
+
 
 	ggplot(M, aes(x=log10(model), y=residual, colour=Algorithm)) +
 	  geom_hline(yintercept = 0)+

@@ -64,16 +64,18 @@ farve = c("#3a6ced","#ff9b00")
 
 ggplot(M, aes(x=n, y=t, colour=Algorithm)) +
 	scale_color_manual(values = farve)+
+	labs(y="t (s)")+
 	geom_point(size=1.5,alpha=0.1,shape=19) +
 	geom_line(aes(x=n, y=model,color=Algorithm), size=2, alpha=0.6) +
 	guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
 	theme_bw()+
 		theme(legend.position="none")
 
-	ggsave("toAlgoritmer.png",width=8,height=6)
+	ggsave("toAlgoritmer.png",width=8,height=6,scale=0.7)
 
 	# laver zoomed
 ggplot(subset(M,n <= 100), aes(x=n, y=t, colour=Algorithm)) +
+	labs(y="t (s)")+
 	scale_color_manual(values = farve)+
 	geom_point(size=1.5,alpha=0.1,shape=19) +
 	geom_line(aes(x=n, y=model,color=Algorithm), size=2, alpha=0.6) +
@@ -81,7 +83,7 @@ ggplot(subset(M,n <= 100), aes(x=n, y=t, colour=Algorithm)) +
 	guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
 		theme_bw()
 
-ggsave("toAlgoritmerZoomed.png",width=8,height=6)
+ggsave("toAlgoritmerZoomed.png",width=8,height=6,scale=0.7)
 
 
 
@@ -99,16 +101,13 @@ ggplot(M, aes(x=log10(model), y=residual, colour=Algorithm)) +
 		theme(legend.position="bottom",legend.title = element_blank())
 
 
-	ggsave("toAlgoritmerResidual.png",width=8,height=6)
+	ggsave("toAlgoritmerResidual.png",width=8,height=6,scale=0.7)
+
+
 
 
 
 # Laver ges data.frame
-C = data.frame(
-	       Algorithm = unique(M$Algorithm),
-	       R2 = c(with(m_merge, cor(t,n)), with(m_insertion, cor(t,n)))
-)
-
 f = function(x) {
 	data.frame(
 		   t = mean(x$t)
@@ -118,6 +117,7 @@ f = function(x) {
 gns = ddply(subset(M,n <= 100), .(Algorithm, n), f)	
 
 ggplot(subset(M,n <= 100), aes(x=n, y=t, colour=Algorithm)) +
+	labs(y="t (s)")+
 	scale_color_manual(values = farve)+
 	geom_point(size=1.5,alpha=0.08,shape=19) +
 	geom_line (size=1.5, data=gns) +

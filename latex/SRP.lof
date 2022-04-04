@@ -53,11 +53,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Residualplot for modellerne i figur \ref {fig:plot - to algoritmer}.\relax }}{23}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Dette er samme data som i figur \ref {fig:plot - to algoritmer}, men zoomet ind til indervallet $n \leq 100$. Her er regressionerne erstattet af en linje der går mellem gennemsnittet af $t$ for hver $n$. Det interessante ved grafen er, at man tydeligt kan de hvordan insertionsort gennemsnitligt er hurtigst, indtil $n \approx 40$ hvorefter mergesort er hurtigst.\relax }}{24}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Dette er samme data som i figur \ref {fig:plot - to algoritmer}, men zoomet ind til indervallet $n \leq 100$. Her er regressionerne erstattet af en linje der går mellem gennemsnittet af $t$ for hver $n$. Det interessante ved grafen er, at man tydeligt kan de hvordan insertionsort gennemsnitligt er hurtigst, indtil $n \approx 37$ hvorefter mergesort er hurtigst.\relax }}{24}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $40$, og ellers mergesort.\relax }}{24}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $37$, og ellers mergesort.\relax }}{24}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Mergesort hvor lister mindre end 40 sorteres effektivt af insertionsort\relax }}{25}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mergesort hvor lister mindre end 37 sorteres effektivt af insertionsort\relax }}{25}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Mergesort og Hybridalgoritme.\relax }}{25}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
