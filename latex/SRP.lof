@@ -49,7 +49,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).\relax }}{21}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Sammenligning af insertionsort og mergesort. Til venstre ses grafen for de to algoritmer sammen med en regression. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \qopname \relax o{log}n$-regression for mergesort (se afsnit \ref {ch:Sorteringsalgoritmer} for yderligere forklaring).\relax }}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Sammenligning af insertionsort og mergesort. Til venstre ses grafen for de to algoritmer sammen med en regression. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \qopname \relax o{log}n$-regression for mergesort.\relax }}{23}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Residualplot for modellerne i figur \ref {fig:plot - to algoritmer}.\relax }}{23}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
@@ -57,8 +57,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Algoritme der bruger insertionsort hvis inputlisten er kortere end $37$, og ellers mergesort.\relax }}{24}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Mergesort hvor lister mindre end 37 sorteres effektivt af insertionsort\relax }}{25}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mergesort hvor lister mindre end 30 sorteres effektivt af insertionsort.\relax }}{25}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Mergesort og Hybridalgoritme.\relax }}{25}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Reelle udførelsestider for mergesort og hybridalgoritme. Plottet til højre er samme plot som til venste bare zoomet ind, og med en linje der gør mellem gennemsnitet af $t$ for hver $n$\relax }}{26}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

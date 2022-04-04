@@ -64,13 +64,13 @@ Det er tydeligt at mergesort er langt bedre, til at sortere store lister, men ve
 \begin{figure} \centering
 	\includegraphics[width=0.45\textwidth]{../img/toAlgoritmer.png}
 	\includegraphics[width=0.45\textwidth]{../img/toAlgoritmerZoomed}
-	\caption{Sammenligning af insertionsort og mergesort. Til venstre ses grafen for de to algoritmer sammen med en regression. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \log n$-regression for mergesort (se afsnit \ref{ch:Sorteringsalgoritmer} for yderligere forklaring).}
+	\caption{Sammenligning af insertionsort og mergesort. Til venstre ses grafen for de to algoritmer sammen med en regression. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \log n$-regression for mergesort.}
 	\label{fig:plot - to algoritmer}
 \end{figure}
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.6\textwidth]{../img/toAlgoritmerResidual.png}
+		\includegraphics[width=0.75\textwidth]{../img/toAlgoritmerResidual.png}
 	\end{center}
 	\caption{Residualplot for modellerne i figur \ref{fig:plot - to algoritmer}.}
 	\label{fig:toAlgoritmerResidual}
@@ -115,7 +115,7 @@ Her bruger vi insertionsort hvis listens længde er under eller lig $37$, og mer
 	\begin{center}
 		\lstinputlisting[lastline=23]{../python/algoritmer/hybrid.py}
 	\end{center}
-	\caption{Mergesort hvor lister mindre end 37 sorteres effektivt af insertionsort}
+	\caption{Mergesort hvor lister mindre end 30 sorteres effektivt af insertionsort.}
 	\label{fig:hybridalgoritme i Python}
 \end{figure}
 
@@ -128,7 +128,11 @@ Her bruger vi insertionsort hvis listens længde er under eller lig $37$, og mer
 \subsection{Sammenligning af Optimerede Algoritmer}%
 \label{sub:Sammenligning af Optimerede Algoritmer}
 
+Udførelsestiderne er plottet på figur \ref{fig:Mergesort og Hybridalgoritme}.\\
 
+Når man der på grafen er det klart, at hybridalgoritmen gennemsnitligt er hurtigst, men ikke i samme grad som mergesort var insertionsort overlegen ved høje $n$. Det ligner på grafen, at hybridalgoritmen ligesom mergesort gennemsnitligt kører med $\Theta (n \cdot \log n)$. Vi kan dog ikke være sikker på hybridalgoritmens tidskompleksitet, da vi ikke har fortaget den teoretiske analyse af algoritmen. Hvad der er sikkert, er at hybridalgoritmen er hurtigere end mergesort på computeren som algoritmen er testet på. Det ser dog ud til at algoritmerne i hvert faldt gennemsnitligt, har nogenlunde samme vækstrate. En anden måde vi kan argumentere for at hybridalgoritmens tidskompleksitet i hvert fald ikke er mindre end $O(n \log n)$, er (som vi beviste i afsnit \ref{sec:Højden af et Binært Træ}) at enhver sorteringsalgoritmerne der fungerer ved brug af sammenligninger, ikke kan have en mindre tidskompleksitet end $O(n \cdot \log n)$. Hybridalgoritmen har enten den samme eller værre tidskompleksitet end mergesort. Det der skaber forskellen må være en et mindre led i hybridalgoritmens $T(n)$ eller en konstant, der ganges på det dominerende led.\\
+
+Nu ser det ud som om at hybridalgoritmen altid er det bedste valg ved store $n$, men det kan vi faktisk ikke være sikre på. Problemet er, at det eneste vi ved om hybridalgoritmens tidskompleksitet, er at algoritmen er $\Omega (n \cdot \log n)$ ligesom alle andre sammenlignings-sorterings-algoritmer. Det betyder, at vi ikke ved om hybridalgoritmen ved et exponentielt dårligt udfald, har en astronomisk lang udførelsestid. Der er altså ingen garanti for algoritmens udførelsestid. Mergesort på den anden side, ved vi har tidskompleksitet $\Omega (n \cdot \log n)$, hvilket garanterer udførelsestidens vækstrate. Selvfølgelig ville dette problem forsvinde, hvis det viste sig, at hybridalgoritmen også var $\Theta (n \cdot \log n)$, men da vi ikke ved det med sikkerhed, kan vi ikke være sikker på, at hybridalgoritmen altid er bedre ved store $n$-værdier. Hvis det derimod viste sig, at hybridalgoritmen havde en tidskompleksitet på $O(n^2)$ ligesom insertionsort (som den jo gør brug af), ville det betyde at algoritmen netop, ville have en ekstrem lang udførelsestid i værste tilfælde. Så ville den pæne graf på figur \ref{fig:Mergesort og Hybridalgoritme} være ret så ligegyldig, da et input med høj kardinalitet i værste tilfælde ville tage utrolig lang tid. Den lille mængde tid hybridalgoritmen i gennemsnit sparer, ville da ikke være risikoen for meget lange udførelsestider værd.
 
 \begin{figure}
 	\begin{center}
@@ -136,7 +140,7 @@ Her bruger vi insertionsort hvis listens længde er under eller lig $37$, og mer
 		\includegraphics[width=0.45\textwidth]{../img/toMergesortZoomed.png}
 		%\includegraphics[width=0.45\textwidth]{../img/toMergesortResidual.png}
 	\end{center}
-	\caption{Mergesort og Hybridalgoritme.}
+	\caption{Reelle udførelsestider for mergesort og hybridalgoritme. Plottet til højre er samme plot som til venste bare zoomet ind, og med en linje der gør mellem gennemsnitet af $t$ for hver $n$}
 	\label{fig:Mergesort og Hybridalgoritme}
 \end{figure}
 
