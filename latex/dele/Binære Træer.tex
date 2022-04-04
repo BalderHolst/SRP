@@ -12,7 +12,7 @@ Træer som vi kender dem, har en stamme hvorfra grene springer ud. Fra grenene s
 \section{Et Binært Træ}
 \label{sec:Et Binært Træ}
 
-Man tegner normalt binære træer som på figur \ref{fig:Eksempel på binært træ} bestående af knudepunkter og forbindelser mellem dem. Det specielle ved \emph{binære} træer, er at hvert knudepunkt højst må forgrene sig to gange (altså binært). Denne lille specialisering er brugbar i mange sammenhænge som f.eks. som datastruktur til søgealgoritmer \red{[kilde]}, men det viser sig også at være en snedig vej til at beskrive sorteringsalgoritmers opførsel.
+Man tegner normalt binære træer som på figur \ref{fig:Eksempel på binært træ} bestående af knudepunkter og forbindelser mellem dem. Det specielle ved \emph{binære} træer, er at hvert knudepunkt højst må forgrene sig to gange (altså binært). Denne lille specialisering er brugbar i mange sammenhænge som f.eks. som datastruktur til søgealgoritmer \cite{BST} men det viser sig også at være en snedig vej til at beskrive sorteringsalgoritmers opførsel.
 
 \begin{figure}
 	\begin{center}
@@ -36,8 +36,9 @@ Man tegner normalt binære træer som på figur \ref{fig:Eksempel på binært tr
 
 \section{Binære Træer og Sorteringsalgoritmer}
 \label{sec:Binære Træer og Sorteringsalgoritmer}
+\cite[s. 109]{aogd}\\
 
-Ved første blik kunne man tilgives for ikke, at se hvordan binære træer har relevans for sorteringsalgoritmer, men det kræver bare, at man giver knudepunkterne og grenene meningsfulde betydninger. I bund og grund er det som en sorteringsalgoritme gør, at fortage en masse sammenligninger af elementerne i dens input. Algoritmens bestemmer hvilke operationer, den skal køre udelukkede på baggrund af disse sammenligninger. Hvis vi tænker hvert knudepunkt som en sammenligning af to elementer fra algoritmens input (se figur \ref{fig:Binært Træ for Sammenligninger}), er det jo givet, at det ene element enten vil være større end det andet eller ikke. Denne sammenligning guider algoritmens operationer og derved den næste sammenligning. Dette gentages til algoritmen har gjort nok sammenligninger, til at kunne sortere dens input. Vi kan derfor tænke alle træets blade, som en måde for algoritmen at sortere et bestemt input; hvert blad har kun en vej til det, og vejen til bladet er udelukkede givet af algoritmens input, altså er hvert af træets blade en kollektion af de sammenligninger, som algoritmen gjorde for at sortere inputtet. 
+Ved første blik kunne man tilgives for ikke, at se hvordan binære træer har relevans for sorteringsalgoritmer, men det kræver bare, at man giver knudepunkterne og grenene meningsfulde betydninger. I bund og grund er det som en sorteringsalgoritme gør, at fortage en masse sammenligninger af elementerne i dens input. Algoritmen bestemmer hvilke operationer, den skal køre udelukkede på baggrund af disse sammenligninger. Hvis vi tænker hvert knudepunkt som en sammenligning af to elementer fra algoritmens input (se figur \ref{fig:Binært Træ for Sammenligninger}), er det jo givet, at det ene element enten vil være større end det andet eller ikke. Denne sammenligning guider algoritmens operationer og derved den næste sammenligning. Dette gentages til algoritmen har gjort nok sammenligninger, til at kunne sortere dens input. Vi kan derfor tænke alle træets blade, som en måde for algoritmen at sortere et bestemt input; hvert blad har kun en vej til det, og vejen til bladet er udelukkede givet af algoritmens input, altså er hvert af træets blade en kollektion af de sammenligninger, som algoritmen gjorde for at sortere inputtet. 
 
 \subsection{Det Mindste antal Sammenligninger}%
 \label{sub:Det Mindste antal Sammenligninger}

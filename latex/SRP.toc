@@ -11,7 +11,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}\color {red}Store-O-Analyse\color {black}}{8}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Kompleksetetsklasser \color {red}[kilde]\color {black}}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Kompleksetetsklasser}{8}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Store-O er Værste Tilfælde}{10}{section.3.4}%
 \defcounter {refsection}{0}\relax 
@@ -23,7 +23,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}Insertionsort Procedure}{12}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Egenskaber af Insertionsort}{12}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Egenskaber af Insertionsort}{13}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Mergesort}{13}{section.4.3}%
 \defcounter {refsection}{0}\relax 

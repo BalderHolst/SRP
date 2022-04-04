@@ -12,3 +12,22 @@
 	url = {https://notesformsc.org/algorithms-order-of-growth}
 }
 
+@article{what-is-python,
+	title = {What is Python? Executive Summary},
+	url = {https://www.python.org/doc/essays/blurb}
+}
+
+@article{python-random,
+	publisher = {Python Software Foundation},
+	title = {random --- Generate pseudo-random numbers},
+	url = {https://docs.python.org/3/library/random.html}
+}
+
+@misc{binaert-trae,
+	author = {leclaire, nathan},
+	month = {marts},
+	title = {Build a Linked List For Each Layer in a Binary Tree},
+	url = {https://nathanleclaire.com/blog/2014/03/01/build-a-linked-list-for-each-layer-in-a-binary-tree},
+	year = {2014}
+}
+

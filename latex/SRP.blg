@@ -1,17 +1,20 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'SRP.blg'
-[76] biber:340> INFO - === Fri Apr  1, 2022, 21:18:27
-[89] Biber.pm:415> INFO - Reading 'SRP.bcf'
-[166] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
-[182] Biber.pm:4340> INFO - Processing section 0
-[192] Biber.pm:4531> INFO - Looking for bibtex format file 'backend/kilder.bib' for section 0
-[193] bibtex.pm:1689> INFO - LaTeX decoding ...
-[199] bibtex.pm:1494> INFO - Found BibTeX data source 'backend/kilder.bib'
-[236] Utils.pm:395> WARN - legacy month field 'Dec' in entry 'trees' is not an integer - this will probably not sort properly.
-[241] Utils.pm:395> WARN - legacy month field 'marts' in entry 'binaert-trae' is not an integer - this will probably not sort properly.
-[257] UCollate.pm:68> INFO - Overriding locale 'da-DK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[257] UCollate.pm:68> INFO - Overriding locale 'da-DK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[258] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'da-DK'
-[268] bbl.pm:654> INFO - Writing 'SRP.bbl' with encoding 'UTF-8'
-[270] bbl.pm:757> INFO - Output to SRP.bbl
-[270] Biber.pm:128> INFO - WARNINGS: 2
+[75] biber:340> INFO - === Mon Apr  4, 2022, 09:14:52
+[88] Biber.pm:415> INFO - Reading 'SRP.bcf'
+[165] Biber.pm:952> INFO - Found 9 citekeys in bib section 0
+[180] Biber.pm:4340> INFO - Processing section 0
+[190] Biber.pm:4531> INFO - Looking for bibtex format file 'backend/kilder.bib' for section 0
+[191] bibtex.pm:1689> INFO - LaTeX decoding ...
+[198] bibtex.pm:1494> INFO - Found BibTeX data source 'backend/kilder.bib'
+[236] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'halting-problem' is not an integer - this will probably not sort properly.
+[240] Utils.pm:395> WARN - legacy month field 'Jan' in entry 'time-complexity' is not an integer - this will probably not sort properly.
+[245] Utils.pm:395> WARN - legacy month field 'Dec' in entry 'trees' is not an integer - this will probably not sort properly.
+[246] Utils.pm:395> WARN - legacy month field 'Nov' in entry 'BST' is not an integer - this will probably not sort properly.
+[249] Utils.pm:395> WARN - legacy month field 'marts' in entry 'binaert-trae' is not an integer - this will probably not sort properly.
+[270] UCollate.pm:68> INFO - Overriding locale 'da-DK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[270] UCollate.pm:68> INFO - Overriding locale 'da-DK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[270] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'da-DK'
+[283] bbl.pm:654> INFO - Writing 'SRP.bbl' with encoding 'UTF-8'
+[286] bbl.pm:757> INFO - Output to SRP.bbl
+[286] Biber.pm:128> INFO - WARNINGS: 5
