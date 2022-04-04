@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber SRP"] 1649056492 "SRP.bcf" "SRP.bbl" "SRP" 1649056492
-  "SRP.bcf" 1649056475 108464 4d8e10b21c1b9a7c9b8a5c30d426dbca "latex"
-  "backend/kilder.bib" 1649056471 2125 e0672ea6d6e9e49fe2ee68bd4004f60c ""
+["biber SRP"] 1649067233 "SRP.bcf" "SRP.bbl" "SRP" 1649067233
+  "SRP.bcf" 1649067213 108526 d765c189176af4e8274cac45ef029254 "latex"
+  "backend/kilder.bib" 1649067166 2434 d93e03750605cb3dcdbe2791dd3e3793 ""
   (generated)
   "SRP.bbl"
   "SRP.blg"
-["latex"] 1649056492 "SRP.tex" "SRP.dvi" "SRP" 1649056492
+["latex"] 1649067234 "SRP.tex" "SRP.dvi" "SRP" 1649067234
   "../R/plotAlgorithms.R" 1648988524 3447 af4f26d8321158ccd162345620e0cc9a ""
   "../img/binary_tree.png" 1648744513 14545 b228e1f13b6d10e4b2a92e0725877cab ""
   "../img/mergesort_procedure.tex" 1648832994 1943 24560ace17615e471cc1e746087e8084 ""
@@ -281,18 +281,18 @@
   "/usr/share/texmf/tex/lastpage/lastpage.sty" 1646424507 10253 d1fb80bca50ae6aa432ccf86e6663bd0 ""
   "/usr/share/texmf/tex/was/icomma.sty" 1646425385 1018 df058db1896806f044e2233bb506d425 ""
   "/usr/share/texmf/tex/wrapfig/wrapfig.sty" 1646424973 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "SRP.aux" 1649056475 26219 987aede3697adc0e4546cdd7a5ba4bbb "latex"
-  "SRP.bbl" 1649056492 9130 2a03a8823a73f2f38049b4332e47e563 "biber SRP"
-  "SRP.lof" 1649056475 6205 d055915064abde126c3482bd2650abb4 "latex"
-  "SRP.out" 1649056475 5779 47a8db4d38692304d567278fe0b379c8 "latex"
-  "SRP.run.xml" 1649056475 2402 61364ff6f32e24e6ba348e4f5674c3f1 "latex"
+  "SRP.aux" 1649067213 25995 6be1b0a49c3afe16ddf7c2ab7971e4bd "latex"
+  "SRP.bbl" 1649067234 10402 5188d6976d118326e9e38c40372a6391 "biber SRP"
+  "SRP.lof" 1649067213 6205 d055915064abde126c3482bd2650abb4 "latex"
+  "SRP.out" 1649067213 5469 482ec3256fa66388dacdc08355959072 "latex"
+  "SRP.run.xml" 1649067213 2402 61364ff6f32e24e6ba348e4f5674c3f1 "latex"
   "SRP.tex" 1648813550 569 37aa818cf6e08915f7fbadc4b31db9bd ""
-  "SRP.toc" 1649056475 4077 850384834e350a1491e43ee06359472a "latex"
+  "SRP.toc" 1649067213 3896 890cd9a60c30073abe4f3693f230d599 "latex"
   "backend/macros.tex" 1648803399 550 479ce6244ccf1c574ef31290d9cc4148 ""
   "backend/setup.tex" 1648840325 2808 d8c345dec0744fe7fd0d474fe805df68 ""
   "bilag/bilag.tex" 1648802015 665 723e38d370c90a174b4fdd8595d11744 ""
-  "dele/Algoritmers Udførelsestid.tex" 1649054243 9511 101c6e3c982649336f39a55367601f57 ""
-  "dele/Binære Træer.tex" 1649056473 7575 881c80f32c718dec3673a953afc5c623 ""
+  "dele/Algoritmers Udførelsestid.tex" 1649067211 10138 cda46653aedae8e0bf9531de0ddb5f48 ""
+  "dele/Binære Træer.tex" 1649061958 7576 090ee9c72172bb27ba30c984b24e7fa2 ""
   "dele/Implementering af Algoritmerne.tex" 1649012077 12307 2f9d5ee5c44afe0d2564774373f667fd ""
   "dele/Kompleksitetsklasser.tex" 1648478225 21 23e1e6e1a794b4a8fd18935b70801842 ""
   "dele/Sortering.tex" 1649056191 15592 7ad90c7ae812873cfa8d3cc4309397b7 ""

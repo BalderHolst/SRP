@@ -7,17 +7,26 @@
 
 \fontfamily{bch}\selectfont
 
+\setcounter{page}{1}
+\pagenumbering{Roman}
+
+
 \maketitle
 
-\tableofcontents
-\thispagestyle{fancy}
-
-\listoffigures
 
 \input{dele/indledning}
 \input{dele/resume}
 
-\input{dele/Kompleksitetsklasser}
+\tableofcontents
+\pagestyle{plain}
+\listoffigures
+
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\input{dele/Algoritmers Udførelsestid}
+
+
 \input{dele/Algoritmers Udførelsestid}
 \input{dele/Sortering}
 \input{dele/Binære Træer}

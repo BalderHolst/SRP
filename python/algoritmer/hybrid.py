@@ -1,6 +1,6 @@
 from insertionsort import *
 
-n0 = 10
+n0 = 40
 
 def hybrid(l):
 	if len(l) <= n0:

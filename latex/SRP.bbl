@@ -230,6 +230,37 @@
       \verb https://www.programiz.com/dsa/sorting-algorithm
       \endverb
     \endentry
+    \entry{time-complexity-use}{article}{}
+      \name{author}{1}{}{%
+        {{hash=039f8eb02f08ce45455f3584753cfbc3}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {freecodecamp}%
+      }
+      \strng{namehash}{039f8eb02f08ce45455f3584753cfbc3}
+      \strng{fullhash}{039f8eb02f08ce45455f3584753cfbc3}
+      \strng{bibnamehash}{039f8eb02f08ce45455f3584753cfbc3}
+      \strng{authorbibnamehash}{039f8eb02f08ce45455f3584753cfbc3}
+      \strng{authornamehash}{039f8eb02f08ce45455f3584753cfbc3}
+      \strng{authorfullhash}{039f8eb02f08ce45455f3584753cfbc3}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Big O Notation Examples -- Time Complexity and Algorithm Efficiency Explained}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.freecodecamp.org/news/big-o-notation-examples-time-complexity-explained
+      \endverb
+      \verb{url}
+      \verb https://www.freecodecamp.org/news/big-o-notation-examples-time-complexity-explained
+      \endverb
+    \endentry
     \entry{what-is-python}{article}{}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}

@@ -31,3 +31,13 @@
 	year = {2014}
 }
 
+@article{trees,
+	author = {Nayyar, Rajpreet Singh},
+	journal = {Scaler Topics},
+	month = {Dec},
+	publisher = {Scaler},
+	title = {Tree Data Structure},
+	url = {https://www.scaler.com/topics/data-structures/tree-data-structure},
+	year = {2021}
+}
+
