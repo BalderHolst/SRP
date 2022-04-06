@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  6 APR 2022 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  6 APR 2022 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1191,31 +1191,7 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count484
 \l__pdf_internal_box=\box72
 )
-(./SRP.aux
-
-LaTeX Warning: Label `ch:Algoritmers Udførelsestid' multiply defined.
-
-
-LaTeX Warning: Label `sec:Tid som Funktion af Argumentets Kardinalitet' multipl
-y defined.
-
-
-LaTeX Warning: Label `sec:Store-O-Analyse' multiply defined.
-
-
-LaTeX Warning: Label `fig:Store-O definition' multiply defined.
-
-
-LaTeX Warning: Label `sec:Kompleksitetsklasser' multiply defined.
-
-
-LaTeX Warning: Label `fig:kompleksitetsklasserne-indeholder-hinanden' multiply 
-defined.
-
-
-LaTeX Warning: Label `fig:Store-o og n2' multiply defined.
-
-)
+(./SRP.aux)
 \openout1 = `SRP.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1381,7 +1357,7 @@ Package biblatex Info: Reference segment=0 on input line 4.
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=171, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=155, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf  used on input line 6.
@@ -1402,7 +1378,7 @@ ound PDF version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=174, page=1, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=158, page=1, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf, page 1>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf , page1 used on input line
@@ -1449,7 +1425,27 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./dele/
-indledning.tex
+resume.tex)pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.I}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 \tableofcontents
+                      [1
+
+] (./SRP.toc [2
+
+])
+\tf@toc=\write6
+\openout6 = `SRP.toc'.
+
+ [3] (./SRP.lof [4
+
+])
+\tf@lof=\write7
+\openout7 = `SRP.lof'.
+
+ [5]
+(./dele/indledning.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
@@ -1459,29 +1455,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) (./dele/resume.texpdfTeX warning (ext4): destination with the same identifier
- (name{page.I}) has been already used, duplicate ignored
+) (./dele/Algoritmers Udførelsestid.texpdfTeX warning (ext4): destination with
+ the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            *{Resume} [1
+            {Algoritmers Udførelsestid} [1
 
-]) [2
-
-] (./SRP.toc [3
-
-])
-\tf@toc=\write6
-\openout6 = `SRP.toc'.
-
- [4] (./SRP.lof [5
-
-])
-\tf@lof=\write7
-\openout7 = `SRP.lof'.
-
- [6]
-(./dele/Algoritmers Udførelsestid.tex
+]
 Kapitel 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -1498,12 +1479,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.24 
-      [1
+[2
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
@@ -1520,42 +1496,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-[2]) (./dele/Algoritmers Udførelsestid.tex [3] [4]
+[3]) (./dele/Sortering.tex [4] [5]
 Kapitel 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-[5
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
-
-[6]) (./dele/Sortering.tex [7] [8]
-Kapitel 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
@@ -1574,80 +1516,85 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-[11] (../img/mergesort_procedure.tex) [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+[8] (../img/mergesort_procedure.tex) [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
-[14]) (./dele/Binære Træer.tex [15]
-Kapitel 4.
-<../img/tree.png, id=584, 477.28313pt x 300.3722pt>
+[11]) (./dele/Binære Træer.tex [12]
+Kapitel 3.
+<../img/tree.png, id=528, 477.28313pt x 300.3722pt>
 File: ../img/tree.png Graphic file (type png)
 <use ../img/tree.png>
 Package pdftex.def Info: ../img/tree.png  used on input line 26.
 (pdftex.def)             Requested size: 167.05159pt x 105.13184pt.
-<../img/binary_tree.png, id=586, 196.93575pt x 114.4275pt>
+<../img/binary_tree.png, id=530, 196.93575pt x 114.4275pt>
 File: ../img/binary_tree.png Graphic file (type png)
 <use ../img/binary_tree.png>
 Package pdftex.def Info: ../img/binary_tree.png  used on input line 36.
 (pdftex.def)             Requested size: 196.93524pt x 114.42722pt.
-[16
+[13
 
  <../img/tree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-
- []
-
 Missing character: There is no ; in font nullfont!
-[17 <../img/binary_tree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+ [14 <../img/binary_tree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-[18]) (./dele/Implementering af Algoritmerne.tex [19]
-Kapitel 5.
+[15]) (./dele/Implementering af Algoritmerne.tex [16]
+Kapitel 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
@@ -1658,7 +1605,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-[20
+[17
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
@@ -1670,7 +1617,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-[21]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
@@ -1680,30 +1627,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-<../img/toAlgoritmer.png, id=681, 404.712pt x 303.2931pt>
+<../img/toAlgoritmer.png, id=624, 404.712pt x 303.2931pt>
 File: ../img/toAlgoritmer.png Graphic file (type png)
 <use ../img/toAlgoritmer.png>
 Package pdftex.def Info: ../img/toAlgoritmer.png  used on input line 66.
 (pdftex.def)             Requested size: 209.97983pt x 157.3616pt.
-<../img/toAlgoritmerZoomed.png, id=682, 404.712pt x 303.2931pt>
+<../img/toAlgoritmerZoomed.png, id=625, 404.712pt x 303.2931pt>
 File: ../img/toAlgoritmerZoomed.png Graphic file (type png)
 <use ../img/toAlgoritmerZoomed.png>
 Package pdftex.def Info: ../img/toAlgoritmerZoomed.png  used on input line 67.
 (pdftex.def)             Requested size: 209.97983pt x 157.3616pt.
-<../img/toAlgoritmerResidual.png, id=683, 404.712pt x 303.2931pt>
+<../img/toAlgoritmerResidual.png, id=626, 404.712pt x 303.2931pt>
 File: ../img/toAlgoritmerResidual.png Graphic file (type png)
 <use ../img/toAlgoritmerResidual.png>
 Package pdftex.def Info: ../img/toAlgoritmerResidual.png  used on input line 74
 .
 (pdftex.def)             Requested size: 349.96877pt x 262.28014pt.
-<../img/toAlgoritmerZoomedGns.png, id=686, 650.43pt x 433.62pt>
+<../img/toAlgoritmerZoomedGns.png, id=629, 650.43pt x 433.62pt>
 File: ../img/toAlgoritmerZoomedGns.png Graphic file (type png)
 <use ../img/toAlgoritmerZoomedGns.png>
 Package pdftex.def Info: ../img/toAlgoritmerZoomedGns.png  used on input line 8
 4.
 (pdftex.def)             Requested size: 390.261pt x 260.17401pt.
-[22] [23 <../img/toAlgoritmer.png (PNG copy)> <../img/toAlgoritmerZoomed.png (P
-NG copy)> <../img/toAlgoritmerResidual.png (PNG copy)>] [24 <../img/toAlgoritme
+[19] [20 <../img/toAlgoritmer.png (PNG copy)> <../img/toAlgoritmerZoomed.png (P
+NG copy)> <../img/toAlgoritmerResidual.png (PNG copy)>] [21 <../img/toAlgoritme
 rZoomedGns.png (PNG copy)>] (../python/algoritmer/hybrid.py)
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
@@ -1714,43 +1661,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-[25]
-<../img/toMergesort.png, id=746, 469.755pt x 375.804pt>
+[22]
+<../img/toMergesort.png, id=689, 469.755pt x 375.804pt>
 File: ../img/toMergesort.png Graphic file (type png)
 <use ../img/toMergesort.png>
 Package pdftex.def Info: ../img/toMergesort.png  used on input line 139.
 (pdftex.def)             Requested size: 209.97983pt x 167.98058pt.
-<../img/toMergesortZoomed.png, id=747, 469.755pt x 375.804pt>
+<../img/toMergesortZoomed.png, id=690, 469.755pt x 375.804pt>
 File: ../img/toMergesortZoomed.png Graphic file (type png)
 <use ../img/toMergesortZoomed.png>
 Package pdftex.def Info: ../img/toMergesortZoomed.png  used on input line 140.
 (pdftex.def)             Requested size: 209.97983pt x 167.98058pt.
-) (./dele/konklusion.tex [26 <../img/toMergesort.png (PNG copy)> <../img/toMerg
+) (./dele/konklusion.tex [23 <../img/toMergesort.png (PNG copy)> <../img/toMerg
 esortZoomed.png (PNG copy)>]
-Kapitel 6.
-) [27
+Kapitel 5.
+) [24
 
 ]
-Overfull \hbox (5.06938pt too wide) in paragraph at lines 38--38
+Overfull \hbox (5.06938pt too wide) in paragraph at lines 39--39
 []\T1/cmr/m/n/10 Dietzfelbinger, M. & Mehlhorn, K. \T1/cmr/m/it/10 Al-go-rit-me
 r og datas-truk-tur-er []$\T1/cmtt/m/n/10 https : / / github . com / thorehusfe
 ldt /
  []
 
 
-Overfull \hbox (1.64853pt too wide) in paragraph at lines 38--38
+Overfull \hbox (1.64853pt too wide) in paragraph at lines 39--39
 []\T1/cmr/m/n/10 Leclaire, N. \T1/cmr/m/it/10 Build a Linked List For Each Lay-
 er in a Bi-na-ry Tree \T1/cmr/m/n/10 mar. 2014. []$\T1/cmtt/m/n/10 https : / / 
 nathanleclaire .
  []
 
-(./bilag/bilag.tex [28
+(./bilag/bilag.tex [25
 
 ] (../python/algoritmer/insertionsort.py)
-(../python/algoritmer/mergesort.py [29
+(../python/algoritmer/mergesort.py [26
 
-]) (../python/sorting.py [30] [31])
-[32] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+]) (../python/sorting.py [27] [28])
+[29] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
@@ -1759,24 +1706,21 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
-(../R/plotAlgorithms.R [33
+(../R/plotAlgorithms.R [30
 
-] [34] [35])) 
+] [31] [32])) 
 AED: lastpage setting LastPage
-[36] (./SRP.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+[33] (./SRP.aux)
 Package rerunfilecheck Info: File `SRP.out' has not changed.
-(rerunfilecheck)             Checksum: 696ABB174B092E557E58D1F39AD7B815;7328.
+(rerunfilecheck)             Checksum: BD980F4EE59EC49364EA4D54DA0C285F;6600.
 Package logreq Info: Writing requests to 'SRP.run.xml'.
 \openout1 = `SRP.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46286 strings out of 480806
- 985034 string characters out of 5905151
- 1843444 words of memory out of 6000000
+ 46273 strings out of 480806
+ 984848 string characters out of 5905151
+ 1843389 words of memory out of 6000000
  62377 multiletter control sequences out of 15000+600000
  448893 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1807,10 +1751,10 @@ e/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on SRP.pdf (44 pages, 1721017 bytes).
+Output written on SRP.pdf (40 pages, 1709133 bytes).
 PDF statistics:
- 1275 PDF objects out of 1440 (max. 8388607)
- 1151 compressed objects within 12 object streams
- 498 named destinations out of 1000 (max. 500000)
- 401 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1217 PDF objects out of 1440 (max. 8388607)
+ 1099 compressed objects within 11 object streams
+ 487 named destinations out of 1000 (max. 500000)
+ 369 words of extra memory for PDF output out of 10000 (max. 10000000)
 

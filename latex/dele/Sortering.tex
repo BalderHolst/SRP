@@ -29,7 +29,7 @@ Det er ikke en tilfældighed, at denne algoritme hedder insertionsort. Den funge
 \subsection{Insertionsort Procedure}%
 \label{sub:Insertionsort Procedure}
 
-Vi kan allerede i linje 2, se at algoritmen gennemgår alle elementerne i listen kronologisk, da algoritmen her begynder med en for-løkke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar, sættes elementet som algoritmen er nået til ind i variablen $e$ i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen (se figur \ref{fig:Indsæt element først i listen}).
+Vi kan allerede i linje 2, se at algoritmen gennemgår alle elementerne i listen kronologisk, da algoritmen her begynder med en for-løkke, der tæller for hvert element i listen, dog starter den ved 2. element i listen. For at gøre koden mere læsbar, sættes elementet som algoritmen er nået til ind i variablen $e$ i linje 3. Det næste algoritmen gør, er at checke om elementet har en mindre værdi end det første element i listen, hvis dette er sandt rykkes alt før elementet et tak til højre, og elementet sættes ind først i listen (se figur \ref{fig:Indsæt element først i listen}). 
 
 % TODO computere rykker ikke!
 
@@ -40,7 +40,7 @@ Vi kan allerede i linje 2, se at algoritmen gennemgår alle elementerne i listen
 			Forklaring & Eksempel & Linje \\
 			\hline
 			Liste hvor \verb|e < liste[0]| & $[\blue{5},\blue{7},\blue{9},\red{4},6,5,2]$ & $5$ \\
-			Rykker til højre & $[\blue{5},\blue{5},\blue{7},\blue{9},6,5,2]$ & $6$-$8$\\
+			"Rykker" til højre & $[\blue{5},\blue{5},\blue{7},\blue{9},6,5,2]$ & $6$-$8$\\
 			Sætter elementet ind først  & $[\red{4},\blue{5},\blue{7},\blue{9},6,5,2]$ & $9$
 		\end{tabular}
 	\end{center}
@@ -49,6 +49,7 @@ Vi kan allerede i linje 2, se at algoritmen gennemgår alle elementerne i listen
 	\label{fig:Indsæt element først i listen}
 \end{figure}
 
+Det er vigtigt at pointere, at computere ikke kan "rykke"\ tal i en liste, men kun overskrive dem. Det er derfor at det ligner at, computeren har dubleret $5$-tallet i figur \ref{fig:Indsæt element først i listen}. Det har den nemlig, den har taget de tre første elementer i listen, og skrevet dem over på andet, tredje og fjerde element. Computeren kan nu overskrive det første tal i listen, da det er en dublet.\\
 
 Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første element i listen sker følgende (se figur \ref{fig:Indsæt element hvor det passer i listen}): Algoritmen ser på tallet før elementet og spørger: "er dette tal større end elementet". Hvis det er, rykkes det til højre. Herefter stiller algoritmen samme spørgsmål, til tallet \emph{to} pladser før elementet. Hvis dette tal er mindre and elementet placerer algoritmen elementet efter dette tal i listen, hvis ikke stiller den samme spørgsmål til tallet 3 pladser før elementet og så videre. Det er vigtigt at pointere, at der altid vil være et tal der er mindre end elementet, da elementet ellers ville være blevet placeret først i listen af den første del af proceduren (linje $5$-$10$).
 
