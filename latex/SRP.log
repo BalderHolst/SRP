@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  5 APR 2022 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.29)  6 APR 2022 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1203,14 +1203,14 @@ y defined.
 LaTeX Warning: Label `sec:Store-O-Analyse' multiply defined.
 
 
-LaTeX Warning: Label `sec:Kompleksetetsklasser' multiply defined.
+LaTeX Warning: Label `fig:Store-O definition' multiply defined.
+
+
+LaTeX Warning: Label `sec:Kompleksitetsklasser' multiply defined.
 
 
 LaTeX Warning: Label `fig:kompleksitetsklasserne-indeholder-hinanden' multiply 
 defined.
-
-
-LaTeX Warning: Label `fig:Store-O definition' multiply defined.
 
 
 LaTeX Warning: Label `fig:Store-o og n2' multiply defined.
@@ -1381,7 +1381,7 @@ Package biblatex Info: Reference segment=0 on input line 4.
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=163, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=171, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf  used on input line 6.
@@ -1402,7 +1402,7 @@ ound PDF version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./bilag/Opgaveformulering.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<bilag/Opgaveformulering.pdf, id=166, page=1, 597.55246pt x 845.07718pt>
+<bilag/Opgaveformulering.pdf, id=174, page=1, 597.55246pt x 845.07718pt>
 File: bilag/Opgaveformulering.pdf Graphic file (type pdf)
 <use bilag/Opgaveformulering.pdf, page 1>
 Package pdftex.def Info: bilag/Opgaveformulering.pdf , page1 used on input line
@@ -1449,9 +1449,18 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./dele/
-indledning.tex)
-(./dele/resume.texpdfTeX warning (ext4): destination with the same identifier (
-name{page.I}) has been already used, duplicate ignored
+indledning.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+) (./dele/resume.texpdfTeX warning (ext4): destination with the same identifier
+ (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
@@ -1502,17 +1511,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
@@ -1541,145 +1545,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
-[6]) (./dele/Sortering.tex [7] [8]
-Kapitel 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-[9
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-1.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-(../img/mergesort_procedure.tex)
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 204.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 204.
-
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-
- []
-
-[14]) (./dele/Binære Træer.tex [15]
-Kapitel 4.
-<../img/tree.png, id=568, 477.28313pt x 300.3722pt>
-File: ../img/tree.png Graphic file (type png)
-<use ../img/tree.png>
-Package pdftex.def Info: ../img/tree.png  used on input line 17.
-(pdftex.def)             Requested size: 167.05159pt x 105.13184pt.
-<../img/binary_tree.png, id=570, 196.93575pt x 114.4275pt>
-File: ../img/binary_tree.png Graphic file (type png)
-<use ../img/binary_tree.png>
-Package pdftex.def Info: ../img/binary_tree.png  used on input line 27.
-(pdftex.def)             Requested size: 196.93524pt x 114.42722pt.
-[16
-
- <../img/tree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-Missing character: There is no ; in font nullfont!
-[17 <../img/binary_tree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-[18]) (./dele/Implementering af Algoritmerne.tex [19]
-Kapitel 5.
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 19.
-(../python/algoritmer/insertionsort.py) [20
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-(../python/sorting.py
-consecutive:
-) [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
@@ -1689,30 +1554,156 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-<../img/toAlgoritmer.png, id=684, 404.712pt x 303.2931pt>
+[6]) (./dele/Sortering.tex [7] [8]
+Kapitel 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
+2.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+[11] (../img/mergesort_procedure.tex) [12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+[14]) (./dele/Binære Træer.tex [15]
+Kapitel 4.
+<../img/tree.png, id=584, 477.28313pt x 300.3722pt>
+File: ../img/tree.png Graphic file (type png)
+<use ../img/tree.png>
+Package pdftex.def Info: ../img/tree.png  used on input line 26.
+(pdftex.def)             Requested size: 167.05159pt x 105.13184pt.
+<../img/binary_tree.png, id=586, 196.93575pt x 114.4275pt>
+File: ../img/binary_tree.png Graphic file (type png)
+<use ../img/binary_tree.png>
+Package pdftex.def Info: ../img/binary_tree.png  used on input line 36.
+(pdftex.def)             Requested size: 196.93524pt x 114.42722pt.
+[16
+
+ <../img/tree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+Missing character: There is no ; in font nullfont!
+[17 <../img/binary_tree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+[18]) (./dele/Implementering af Algoritmerne.tex [19]
+Kapitel 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+[20
+
+]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 36.
+ (../python/sorting.py
+consecutive:
+)
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+<../img/toAlgoritmer.png, id=680, 404.712pt x 303.2931pt>
 File: ../img/toAlgoritmer.png Graphic file (type png)
 <use ../img/toAlgoritmer.png>
-Package pdftex.def Info: ../img/toAlgoritmer.png  used on input line 65.
+Package pdftex.def Info: ../img/toAlgoritmer.png  used on input line 66.
 (pdftex.def)             Requested size: 209.97983pt x 157.3616pt.
-<../img/toAlgoritmerZoomed.png, id=685, 404.712pt x 303.2931pt>
+<../img/toAlgoritmerZoomed.png, id=681, 404.712pt x 303.2931pt>
 File: ../img/toAlgoritmerZoomed.png Graphic file (type png)
 <use ../img/toAlgoritmerZoomed.png>
-Package pdftex.def Info: ../img/toAlgoritmerZoomed.png  used on input line 66.
+Package pdftex.def Info: ../img/toAlgoritmerZoomed.png  used on input line 67.
 (pdftex.def)             Requested size: 209.97983pt x 157.3616pt.
-<../img/toAlgoritmerResidual.png, id=686, 404.712pt x 303.2931pt>
+<../img/toAlgoritmerResidual.png, id=682, 404.712pt x 303.2931pt>
 File: ../img/toAlgoritmerResidual.png Graphic file (type png)
 <use ../img/toAlgoritmerResidual.png>
-Package pdftex.def Info: ../img/toAlgoritmerResidual.png  used on input line 73
+Package pdftex.def Info: ../img/toAlgoritmerResidual.png  used on input line 74
 .
 (pdftex.def)             Requested size: 349.96877pt x 262.28014pt.
-<../img/toAlgoritmerZoomedGns.png, id=689, 650.43pt x 433.62pt>
+<../img/toAlgoritmerZoomedGns.png, id=685, 650.43pt x 433.62pt>
 File: ../img/toAlgoritmerZoomedGns.png Graphic file (type png)
 <use ../img/toAlgoritmerZoomedGns.png>
 Package pdftex.def Info: ../img/toAlgoritmerZoomedGns.png  used on input line 8
-3.
+4.
 (pdftex.def)             Requested size: 390.261pt x 260.17401pt.
-[23] [24 <../img/toAlgoritmer.png (PNG copy)> <../img/toAlgoritmerZoomed.png (P
-NG copy)> <../img/toAlgoritmerResidual.png (PNG copy)>] [25 <../img/toAlgoritme
+[22] [23 <../img/toAlgoritmer.png (PNG copy)> <../img/toAlgoritmerZoomed.png (P
+NG copy)> <../img/toAlgoritmerResidual.png (PNG copy)>] [24 <../img/toAlgoritme
 rZoomedGns.png (PNG copy)>] (../python/algoritmer/hybrid.py)
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
@@ -1723,21 +1714,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-[26]
-<../img/toMergesort.png, id=749, 469.755pt x 375.804pt>
+[25]
+<../img/toMergesort.png, id=745, 469.755pt x 375.804pt>
 File: ../img/toMergesort.png Graphic file (type png)
 <use ../img/toMergesort.png>
 Package pdftex.def Info: ../img/toMergesort.png  used on input line 139.
 (pdftex.def)             Requested size: 209.97983pt x 167.98058pt.
-<../img/toMergesortZoomed.png, id=750, 469.755pt x 375.804pt>
+<../img/toMergesortZoomed.png, id=746, 469.755pt x 375.804pt>
 File: ../img/toMergesortZoomed.png Graphic file (type png)
 <use ../img/toMergesortZoomed.png>
 Package pdftex.def Info: ../img/toMergesortZoomed.png  used on input line 140.
 (pdftex.def)             Requested size: 209.97983pt x 167.98058pt.
-) (./dele/konklusion.tex [27 <../img/toMergesort.png (PNG copy)> <../img/toMerg
+) (./dele/konklusion.tex [26 <../img/toMergesort.png (PNG copy)> <../img/toMerg
 esortZoomed.png (PNG copy)>]
 Kapitel 6.
-) [28
+) [27
 
 ]
 Overfull \hbox (5.06938pt too wide) in paragraph at lines 38--38
@@ -1753,13 +1744,13 @@ er in a Bi-na-ry Tree \T1/cmr/m/n/10 mar. 2014. []$\T1/cmtt/m/n/10 https : / /
 nathanleclaire .
  []
 
-(./bilag/bilag.tex [29
+(./bilag/bilag.tex [28
 
 ] (../python/algoritmer/insertionsort.py)
-(../python/algoritmer/mergesort.py [30
+(../python/algoritmer/mergesort.py [29
 
-]) (../python/sorting.py [31] [32])
-[33] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+]) (../python/sorting.py [30] [31])
+[32] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
@@ -1768,28 +1759,28 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
-(../R/plotAlgorithms.R [34
+(../R/plotAlgorithms.R [33
 
-] [35] [36])) 
+] [34] [35])) 
 AED: lastpage setting LastPage
-[37] (./SRP.aux)
+[36] (./SRP.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `SRP.out' has not changed.
-(rerunfilecheck)             Checksum: 7046A0EAF82FDF2F973455203E83FB17;6877.
+(rerunfilecheck)             Checksum: 696ABB174B092E557E58D1F39AD7B815;7328.
 Package logreq Info: Writing requests to 'SRP.run.xml'.
 \openout1 = `SRP.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46302 strings out of 480806
- 985404 string characters out of 5905151
- 1843387 words of memory out of 6000000
- 62375 multiletter control sequences out of 15000+600000
+ 46286 strings out of 480806
+ 985034 string characters out of 5905151
+ 1843444 words of memory out of 6000000
+ 62377 multiletter control sequences out of 15000+600000
  448893 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 89i,17n,86p,2470b,3125s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 89i,17n,86p,2303b,3125s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr
 /share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf
 -dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fo
@@ -1816,10 +1807,10 @@ e/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on SRP.pdf (45 pages, 1721963 bytes).
+Output written on SRP.pdf (44 pages, 1720970 bytes).
 PDF statistics:
- 1282 PDF objects out of 1440 (max. 8388607)
- 1157 compressed objects within 12 object streams
- 514 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1274 PDF objects out of 1440 (max. 8388607)
+ 1150 compressed objects within 12 object streams
+ 498 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

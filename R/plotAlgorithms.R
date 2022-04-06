@@ -98,7 +98,7 @@ ggplot(M, aes(x=log10(model), y=residual, colour=Algorithm)) +
 	facet_wrap(~algorithm,scales="free",ncol=1) +
 	guides(colour = guide_legend(override.aes = list(alpha = 1))) + # lav legend alpha 1
 	theme_bw() +
-		theme(legend.position="bottom",legend.title = element_blank())
+		theme(legend.position="top",legend.title = element_blank())
 
 
 	ggsave("toAlgoritmerResidual.png",width=8,height=6,scale=0.7)

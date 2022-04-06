@@ -4,9 +4,9 @@
 \section{Tid som Funktion af Inputtets Størrelse}
 \label{sec:Tid som Funktion af Argumentets Kardinalitet}
 
-Dette afsnit bygger primært på side $24$ og $25$ i bogen \emph{"Algoritmer og Datastrukturer"} \cite{aogd}.\\
+Dette afsnit bygger primært på side $24$ og $25$ i bogen \emph{"Algoritmer og Datastrukturer"} \cite{aogd}. I følgende afsnit redegøres for definitionen af store-O\\
 
-Når vi analyserer algoritmer, er det primære formål at skabe udsagn, der kort og præcist beskriver algoritmers opførsel. I vores tilfælde er vi interesserede i algoritmens udførselsestid. Vi lader $\I _n$ være mængden af mulige argumenter til algoritmen, $n$ være kardinaliteten (størrelsen) af $\I _n$ og $I$ være en instans af $\I$ (altså $I \in \I _n$). Algoritmens udførselsestid $T$ når kan nu beskrives som funktion af instansen $T(I)$. Med det menes der, at en algoritmes udførselsestid er afhængig af det input algoritmen får. Vi kan bruge dette til at beskrive tre egenskaber af algoritmens udførselsestid: algoritmens maksimale udførselsestid, algoritmens minimale udførselsestid og algoritmens gennemsnitlige udførselsestid. Den maksimale udførselsestid er udførselsestiden i værste tilfælde ($T(I_{\text{værst}})$), den minimale udførselsestid kan modsat beskrives som køretiden på det bedste tilfælde ($T(I_{\text{bedst}})$), og den gennemsnitlige udførselsestid kan findes ved at tage gennemsnittet af alle udførselsestiderne ($\frac{1}{|\I |} \sum_{I \in \I _n}T(I)$). Med disse udtryk kan vi nu opskrive algoritmens mulige udførselsestider som funktion af kardinaliteten $n$ af $\I _n$ således:
+Når vi analyserer algoritmer, er det primære formål at skabe udsagn, der kort og præcist beskriver algoritmers opførsel. I vores tilfælde er vi interesserede i algoritmens udførselsestid. Vi lader $\I _n$ være mængden af mulige argumenter til algoritmen, $n$ være kardinaliteten (størrelsen) af $\I _n$ og $I$ være en instans af $\I$ (altså $I \in \I _n$). Algoritmens udførselsestid $T$ kan nu beskrives som funktion af instansen $T(I)$. Med det menes der, at en algoritmes udførselsestid er afhængig af det input algoritmen får. Vi kan bruge dette til at beskrive tre egenskaber af algoritmens udførselsestid; algoritmens maksimale udførselsestid, algoritmens minimale udførselsestid og algoritmens gennemsnitlige udførselsestid. Den maksimale udførselsestid er udførselsestiden i værste tilfælde ($T(I_{\text{værst}})$), den minimale udførselsestid kan modsat beskrives som køretiden på det bedste tilfælde ($T(I_{\text{bedst}})$), og den gennemsnitlige udførselsestid kan findes ved at tage gennemsnittet af alle udførselsestiderne ($\frac{1}{|\I |} \sum_{I \in \I _n}T(I)$). Med disse udtryk kan vi nu opskrive algoritmens mulige udførselsestider som funktion af kardinaliteten $n$ af $\I _n$ således:
 
 \[ T(n) = \left\{ \begin{array}{l}
 	T(I_{\text{værst}}): I_{\text{værst}} \in \I _n  \\
@@ -18,44 +18,18 @@ Når vi analyserer algoritmer, er det primære formål at skabe udsagn, der kort
 	\text{i gennemsnit}
 \end{array}\]
 
-Alle størrelserne beskriver et aspekt af algoritmens udførselsestid, dog er den mest pålidelige størrelse udførselsestiden i værste tilfælde. Det er samme koncept som når postvæsnet siger at det vil tage tre bankdage for din pakke at nå frem, selvom det godt kan ske hurtigere. Det værste tilfælde \emph{garanterer} hvornår algoritmen er færdig. Dette værste tilfælde kan sammen med det bedste tilfælde bestemme variansen på udførselsestiden. Hvis en algoritme viser stor varians i dens udførselsestid, kan gennemsnitsudførselsestiden sige noget om hvordan man kan forvente at algoritmen opfører sig.\\
+Alle størrelserne beskriver et aspekt af algoritmens udførselsestid, dog er den mest pålidelige størrelse udførselsestiden i værste tilfælde. Det er samme koncept som når postvæsnet siger at det vil tage tre dage for din pakke at nå frem, selvom det godt kan ske hurtigere. Det værste tilfælde \emph{garanterer} hvornår algoritmen er færdig. Dette værste tilfælde kan sammen med det bedste tilfælde bestemme variansen på udførselsestiden. Hvis en algoritme viser stor varians i dens udførselsestid, kan gennemsnitsudførselsestiden sige noget om hvordan man kan forvente at algoritmen opfører sig.\\
 
-Denne form for algoritmeanalyse er dog ikke helt problemfri: for det første kan vi aldrig definere nogen fast forskrift for $T(n)$, der ville gøre det muligt at beregne den præcise udførselsestid. Tildels kan det forklares af Allan Turings "halt problem" \cite{halting-problem}, hvor han beviste, at man aldrig kan vide om en program stopper eller ender i en uendelig lykke. Problemet i vores kontekst, hvor vi forsøger at bestemme en køretid for algoritmen, er, at hvis man kender udførselsestiden for en algoritme, så ville man vide at algoritmen stoppede før den havde kørt. Det var netop dette, Allan Turing viste, at man ikke kan. En anden forklaring er, at alle computere vil køre den samme algoritme med forskellig hastighed pga. varians i computerens komponenter. Derudover vil selv den samme computer aldrig udføre en handling i præcis samme tidsinterval, da andre processer på computeren kan bruge dele af computerens ydeevne, eller fordi at cpu'ens temperatur ændre sig. Der er mange faktorer der kan bestemme hvor lang tid det tager en algoritme at fuldføre, hvilket gør det meget svært at bruge denne form for analyse praktisk.\\
+Denne form for algoritmeanalyse er dog ikke helt problemfri: for det første kan vi aldrig definere nogen fast forskrift for $T(n)$, der ville gøre det muligt at beregne den præcise udførselsestid. Tildels kan det forklares af Allan Turings "halt problem" \cite{halting-problem}, hvor han beviste, at man aldrig kan vide om et program stopper eller ender i en uendelig løkke. Problemet i vores kontekst, hvor vi forsøger at bestemme en køretid for algoritmen, er, at hvis man kender udførselsestiden for en algoritme, så ville man vide at algoritmen stoppede før den havde kørt. Det var netop dette, Allan Turing viste, at man ikke kan. En anden forklaring er, at alle computere vil køre den samme algoritme med forskellig hastighed pga. varians i computerens komponenter. Derudover vil selv den samme computer aldrig udføre en handling i præcis samme tidsinterval, da andre processer på computeren kan bruge dele af computerens ydeevne, eller fordi cpu'ens temperatur ændrer sig. Der er mange faktorer der kan bestemme hvor lang tid det tager en algoritme at fuldføre, hvilket gør det meget svært at bruge denne form for analyse praktisk.\\
 
 Uanset hvilken forklaring man bruger, er det svært at sige meget om den faktiske køretid for en algoritme før man har kørt algoritmen. Derfor er det nemmere og mere brugbart, at forfolde sig til udførselsestidens vækstrate, og algoritmens opførsel når $n$ bliver meget stort. Denne form for analyse hedder store-O-analyse.
 
 \section{Store-O-Analyse}
 \label{sec:Store-O-Analyse}
 
-I store-O-analyse forholder vi os til hvordan udførselsestidens stiger, når $n$ bliver meget stort. I denne form for analyse indeler vi grupper efter deres vækstrate. En funktions vækstrate beskriver hvor hurtigt funktionen stiger i forhold til andre funktioner ved meget høje $n$-værdier. Hvis en funktion $f(n)$ har en højere vækstrate end funktionen $g(n)$, betyder det at funktionen $f(n)$ altid vil være større end $g(n)$ ved store nok $n$-værdier. Det har ingen betydning om $f(n)$ er mindre end $g(n)$ ved små $n$, da $f(n)$ altid vil overstige $g(n)$ pga. dens højere vækstrate. Matematisk kan man sige at an funktion $f(n)$ har en højere vækstrate end $g(n)$, hvis $f(n) \geq c \cdot g(n)$  (hvor $c$ er en konstant, og $n$ er tilstrækkeligt stort). Hvis funktionerne har \emph{samme} vækstrate gælder det at $c \leq \frac{f(n)}{g(n)} \leq d$ (hvor $d$ er en konstant, og det samme gælder for $n$ og $c$ som før). I praksis betyder det, at funktioner som $n^2$ og $n^2+3n-10$ har den samme vækstrate og, at deres vækstrate er højere end en funktion som $n \cdot log(n)$.\\
-
-Vi kan nu bruge disse regler til at definere store-O-notation (se figur \ref{fig:Store-O definition}). Lad os begynde med $O(f(n)$. En funktion er del af mængden $O(f(n))$, hvis den kan sættes ind som $g(n)$. Med den matematiske definition menes der: $g(n)$ skal være sådan at (:) der findes en værdi $c$, som er større end $0$, sådan at (:) der findes et positivt helt tal $n_0$, sådan at der for alle $n$ større end $n_0$, gælder at $g(n)$ er mindre eller lig $c \cdot f(n)$. Dvs. $g(n)$ har mindre eller samme vækstrate som $f(n)$. I praksis betyder dette, at der altid vil være en positiv $n_0$, hvorefter $f(n)$ altid vil være højere end eller lig $g(n)$ (se figur \ref{fig:Store-o og n2}). Man kan også tænke mængden $O(f(n))$, som mængden af funktioner der \emph{ikke vokser hurtigere end} $f(n)$.\\
-
-Når man siger at en algoritme er $O(n^2)$, menes der at vækstraten for $T(n)$ er en del af mængden $O(n^2)$, og at $T(n)$ i værste tilfælde har samme vækstrate som $n^2$. Man kan også sige at algoritmens \emph{tidskompleksitet} er $O(n^2)$ \cite{time-complexity-use}. Da det kun er vækstrate vi interesserer os for, betyder det, at det kun er ledet med den højeste vækstrate, der betyder noget, fordi de små led vil være ubetydelige ved store $n$-værdier. En funktion som $n! + n^3+\log n$ vil blive reduceret til tidskompleksiteten $O(n!)$, da $n!$ er ledet med den højeste vækstrate. Selv en funktion som $100 \cdot n!$, vil også have tidskompleksiteten $O(n!)$, da konstanten foran det størst voksende led ikke ændre funktionens tidskompleksitet.\\
-
-$\Omega (f(n))$ indeholder modsat $O(f(n))$ alle funktioner der vokser \emph{mindst lige så hurtigt som} $f(n)$.\\
-
-Der er en enkel vækstrate som både $O(f(n))$ og $\Omega (f(n))$ indeholder: nemlig vækstraten af $f(n)$. For at beskrive \emph{præcis} denne mængde funktioner, bruger vi $\Theta (f(n))$. Hvis en algoritme er $\Theta (n^3)$, betyder det altså, at $T(n)$ \emph{altid} vil have samme vækstrate som $n^3$. Det ville også betyde at alle input af samme kardinalitet, vil resultere i lige lang teoretisk udførselsestid.
-
-
-\section{Kompleksetetsklasser} 
-\label{sec:Kompleksetetsklasser}
-
-
-Med denne definition af store-O kan vi klassificere algoritmer i forhold til deres værste-tilfælde-vækstrate. Store-O inddeler algoritmer i kompleksitetsklasser efter deres tidskompleksitet \cite{time-complexity}. Algoritmer som er en del af klassen $O(n^2)$ har i værste tilfælde har samme vækstrate som $n^2$ . Man siger at algoritmen er $O(n^2)$. Det kunne også være at algoritmen var $O(n)$, altså ville den have en lineær vækstrate, og hvis en algoritme har konstant vækstrate, er den del af kompleksitetsklassen $O(1)$. Det er vigtigt at huske at disse kompleksitetsklasser ikke kun betegner vækstraten i værste, men at de også indeholder alle bedre vækstrater. Det vil altså sige at alle kompleksitetsklasser med en bestemt værste-vækstrate, også indeholder alle kompleksitetsklasser med lavere værste-vækstrate. 
+I store-O-analyse forholder vi os til hvordan udførselsestidens stiger, når $n$ bliver meget stort. I denne form for analyse inddeler vi grupper efter deres vækstrate. En funktions vækstrate beskriver hvor hurtigt funktionen stiger i forhold til andre funktioner ved meget høje $n$-værdier. Hvis en funktion $f(n)$ har en højere vækstrate end funktionen $g(n)$, betyder det at funktionen $f(n)$ altid vil være større end $g(n)$ ved store nok $n$-værdier. Det har ingen betydning om $f(n)$ er mindre end $g(n)$ ved små $n$, da $f(n)$ altid vil overstige $g(n)$ pga. dens højere vækstrate. Matematisk kan man sige at en funktion $f(n)$ har en højere vækstrate end $g(n)$, hvis $f(n) \geq c \cdot g(n)$  (hvor $c$ er en konstant, og $n$ er tilstrækkeligt stort). Hvis funktionerne har \emph{samme} vækstrate gælder det at $c \leq \frac{f(n)}{g(n)} \leq d$ (hvor $d$ er en konstant, og det samme gælder for $n$ og $c$ som før). I praksis betyder det, at funktioner som $n^2$ og $n^2+3n-10$ har den samme vækstrate og, at deres vækstrate er højere end en funktion som $n \cdot log(n)$.\\
 
 \begin{figure}[h]
-	\begin{center}
-		$$O(1) \:\:\subset\:\: O(n) \:\:\subset\:\: O(n \cdot \log n) \:\:\subset\:\: O(n^2) \:\:\subset\:\: O(n!)$$
-	\end{center}
-	\caption{Eksemplel på hvordan kompleksitetsklasserne indeholder hinanden}
-	\label{fig:kompleksitetsklasserne-indeholder-hinanden}
-\end{figure}
-
-
-%Grunden til dette, er at algoritmeoptimering (hvor man bruger meget algoritmeanalyse) netop har størst effekt hvis algoritmens input har en høj kardinalitet.
-
-\begin{figure}
 	\begin{center}
 		\padtable
 		\begin{tabular}{l}
@@ -71,6 +45,33 @@ Med denne definition af store-O kan vi klassificere algoritmer i forhold til der
 	\label{fig:Store-O definition}
 \end{figure}
 
+Vi kan nu bruge disse regler til at definere store-O-notation (se figur \ref{fig:Store-O definition}). Lad os begynde med $O(f(n))$. En funktion er del af mængden $O(f(n))$, hvis den kan sættes ind som $g(n)$. Med den matematiske definition menes der: $g(n)$ skal være sådan at der findes en værdi $c$, som er større end $0$, sådan at der findes et positivt helt tal $n_0$, sådan at der for alle $n$ større end $n_0$, gælder at $g(n)$ er mindre eller lig $c \cdot f(n)$. Dvs. $g(n)$ har mindre eller samme vækstrate som $f(n)$. I praksis betyder dette, at der altid vil være en positiv $n_0$, hvorefter $f(n)$ altid vil være højere end eller lig $g(n)$ (se figur \ref{fig:Store-o og n2}). Man kan også tænke mængden $O(f(n))$, som mængden af funktioner der \emph{ikke vokser hurtigere end} $f(n)$.\\
+
+Når man siger at en algoritme er $O(n^2)$, menes der at vækstraten for $T(n)$ er en del af mængden $O(n^2)$, og at $T(n)$ i værste tilfælde har samme vækstrate som $n^2$. Man kan også sige at algoritmens \emph{tidskompleksitet} er $O(n^2)$ \cite{time-complexity-use}. Da det kun er vækstrate vi interesserer os for, betyder det, at det kun er leddet med den højeste vækstrate, der betyder noget, fordi de små led vil være ubetydelige ved store $n$-værdier. En funktion som $n! + n^3+\log n$ vil blive reduceret til tidskompleksiteten $O(n!)$, da $n!$ er leddet med den højeste vækstrate. Selv en funktion som $100 \cdot n!$, vil også have tidskompleksiteten $O(n!)$, da konstanten foran det størst voksende led ikke ændrer funktionens tidskompleksitet.\\
+
+$\Omega (f(n))$ indeholder modsat $O(f(n))$ alle funktioner der vokser \emph{mindst lige så hurtigt som} $f(n)$.\\ \red{[kilde]}
+
+Der er en enkel vækstrate som både $O(f(n))$ og $\Omega (f(n))$ indeholder: nemlig vækstraten af $f(n)$. For at beskrive \emph{præcis} denne mængde funktioner, bruger vi $\Theta (f(n))$. Hvis en algoritme er $\Theta (n^3)$, betyder det altså, at $T(n)$ \emph{altid} vil have samme vækstrate som $n^3$. Det ville også betyde at alle input af samme kardinalitet, vil resultere i lige lang teoretisk udførselsestid.
+
+
+\section{Kompleksitetsklasser} 
+\label{sec:Kompleksitetsklasser}
+
+
+Med denne definition af store-O kan vi klassificere algoritmer i forhold til deres værste-tilfælde-vækstrate. Store-O inddeler algoritmer i kompleksitetsklasser efter deres tidskompleksitet \cite{time-complexity}. Algoritmer som er en del af klassen $O(n^2)$ har i værste tilfælde samme vækstrate som $n^2$ . Det kunne også være at algoritmen var $O(n)$, altså ville den have en lineær vækstrate, og hvis en algoritme har konstant vækstrate, er den del af kompleksitetsklassen $O(1)$. Det er vigtigt at huske at disse kompleksitetsklasser ikke kun betegner vækstraten i værste, men at de også indeholder alle bedre vækstrater. Det vil altså sige at alle kompleksitetsklasser med en bestemt værste-vækstrate, også indeholder alle kompleksitetsklasser med lavere værste-vækstrate(se figur \ref{fig:kompleksitetsklasserne-indeholder-hinanden}).
+
+\begin{figure}[h]
+	\begin{center}
+		$$O(1) \:\:\subset\:\: O(n) \:\:\subset\:\: O(n \cdot \log n) \:\:\subset\:\: O(n^2) \:\:\subset\:\: O(n!)$$
+	\end{center}
+	\caption{Eksemplel på hvordan kompleksitetsklasserne indeholder hinanden}
+	\label{fig:kompleksitetsklasserne-indeholder-hinanden}
+\end{figure}
+
+
+%Grunden til dette, er at algoritmeoptimering (hvor man bruger meget algoritmeanalyse) netop har størst effekt hvis algoritmens input har en høj kardinalitet.
+
+
 \begin{figure}
 	\begin{center}
 		\begin{tikzpicture}[domain=0:7,range=0:3,scale=1.0] 
@@ -79,8 +80,8 @@ Med denne definition af store-O kan vi klassificere algoritmer i forhold til der
 			\coordinate (I0) at (2.5,0);
 			\draw[very thin,color=lightgray] (-0.5,-0.5) grid (6.7,6.7);
 			\draw[thick,->] (-0.5,0) -- (7.2,0) node[right] {$n$}; \draw[thick,->] (0,-0.5) -- (0,7.2) node[above] {$T$};
-			\draw[thick,color=blue, samples=150,domain=0:5.5]	plot (\x,{\x})	node[right] {$T(n) \in O(n)$}; 
-			\draw[thick,color=violet, samples=150,domain=0:3.73]	plot (\x,{0.4*\x^2})	node[above] {$T(n) \in O(n^2)$}; 
+			\draw[thick,color=blue, samples=150,domain=0:5.5]	plot (\x,{\x})	node[right] {$f(n) \in O(n)$}; 
+			\draw[thick,color=violet, samples=150,domain=0:3.73]	plot (\x,{0.4*\x^2})	node[above] {$g(n) \in O(n^2)$}; 
 			\large
 			\draw[dashed] (I) -- (I0) node[below] {$n_0$};
 		\end{tikzpicture}
