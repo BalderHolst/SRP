@@ -66,3 +66,11 @@
 	url = {https://www.programiz.com/dsa/sorting-algorithm}
 }
 
+@article{BST,
+	month = {Nov},
+	publisher = {freecodecamp},
+	title = {Binary Search Trees: BST Explained with Examples},
+	url = {https://www.freecodecamp.org/news/binary-search-trees-bst-explained-with-examples},
+	year = {2019}
+}
+

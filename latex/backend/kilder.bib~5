@@ -41,3 +41,22 @@
 	year = {2021}
 }
 
+@misc{halting-problem,
+	author = {Jago, Mark},
+	editor = {Riley, Sean},
+	month = {Aug},
+	publisher = {Youtube},
+	title = {Turing \& The Halting Problem - Computerphile},
+	url = {https://www.youtube.com/watch?v=macM_MtS_w4},
+	year = {2014}
+}
+
+@misc{time-complexity,
+	author = {Huang, Shen},
+	month = {Jan},
+	publisher = {freecodecamp},
+	title = {What is Big O Notation Explained: Space and Time Complexity},
+	url = {https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c},
+	year = {2020}
+}
+

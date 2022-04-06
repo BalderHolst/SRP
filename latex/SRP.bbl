@@ -140,6 +140,21 @@
       \verb https://www.youtube.com/watch?v=macM_MtS_w4
       \endverb
     \endentry
+    \entry{big-o-cheatsheet}{article}{}
+      \list{publisher}{1}{%
+        {bigocheatsheet}%
+      }
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeltitlesource}{title}
+      \field{title}{Know Thy Complexities!}
+      \verb{urlraw}
+      \verb https://www.bigocheatsheet.com
+      \endverb
+      \verb{url}
+      \verb https://www.bigocheatsheet.com
+      \endverb
+    \endentry
     \entry{binaert-trae}{misc}{}
       \name{author}{1}{}{%
         {{hash=3138766bb93cade03c174a8236f3f20e}{%

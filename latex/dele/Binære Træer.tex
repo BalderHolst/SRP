@@ -5,9 +5,16 @@
 \section{Hvad er et Træ}
 \label{sec:Hvad er et Træ}
 
-% TODO dybde!
+Træer som vi kender dem, har en stamme hvorfra grene springer ud. Fra grenene springer mindre grene, og på den måde ender træet med at have mange små grene, som stammer fra samme stamme. Informatikkens træer er ikke langt fra denne forståelse. I informatik er træer en datastruktur. Det er et netværk af knudepunkter forbundet af kanter. Træet starter med roden, der typisk er tegnet øverst (se figur \ref{fig:Eksempel på træ.}). En rod er hvor træet begynder, og har ingen forældre \cite{trees}. Fra roden forgrener træet sig i flere, børn der også kan have flere børn. Træstrukturen er sådan at man altid kan vælge et knudepunkt, og lave et subtræ med kudepunktet som rod. Knudepunkterne hvor træet ender kalder man blade. Informatikkens træer har også en dybde. Hvis man starter ved roden, er dybden $0$. Hver gang man går et trin "ned", i træstrukturen, stiger dybden med $1$. Det betyder at den maksimale dybde svarer til træets højde.
 
-Træer som vi kender dem, har en stamme hvorfra grene springer ud. Fra grenene springer mindre grene, og på den måde ender træet med at have mange små grene, som stammer fra samme stamme. Informatikkens træer er ikke langt fra denne forståelse. I informatik er træer en datastruktur. Det er et netværk af knudepunkter forbundet af kanter. Træet starter med roden, der typisk er tegnet øverst (se figur \ref{fig:Eksempel på træ.}). En rod er hvor træet begynder, og har ingen forældre \cite{trees}. Fra roden forgrener træet sig i flere, børn der også kan have flere børn. Træstrukturen er sådan at man altid kan vælge et knudepunkt, og lave et subtræ med kudepunktet som rod. Knudepunkterne hvor træet ender kalder man blade.
+\section{Antallet af Knudepunter og Kanter}
+\label{sec:Antallet af Knudepunter og Kanter}
+
+
+\section{Højden af et Balanceret og Fuldt Træ}
+\label{sec:Højden af et Balanceret og Fuldt Træ}
+
+
 
 \section{Et Binært Træ}
 \label{sec:Et Binært Træ}
@@ -86,7 +93,7 @@ Dette bevis er basseret på kilden \cite[s. 109]{aogd}.\\
 
 Dette er et modstridsbevis hvilket betyder, at vi starter med at antage det modsatte, af det vi prøver at bevise: vi antager altså at $\pi$ og $\sigma$, leder til samme blad i sammenligningstræet; $l_{\pi}$ og $l_{\sigma}$ er ens.\\
 
-Under denne antagelse kan to forskellige lister $\{e_1 \dots e_n\}$ og $\{e_1' \dots e_n'\}$, gennemgå de \emph{præcis} samme operationer og derved sortere listen. Dette er en modstrid, da man aldrig vil kunne benytte præcis de samme operationer, til at sortere to forskellige permutationer af $\{1 \dots n\}$. \red{[qed]}\\
+Under denne antagelse kan to forskellige lister $\{e_1 \dots e_n\}$ og $\{e_1' \dots e_n'\}$, gennemgå de \emph{præcis} samme operationer og derved sortere listen. Dette er en modstrid, da man aldrig vil kunne benytte præcis de samme operationer, til at sortere to forskellige permutationer af $\{1 \dots n\}$. $\blacksquare$ \\
 
 
 Alle permutationer af listen $\{1 \dots n\}$ har altså et tilsvarende blad, derfor må sammenligningstræet have mindst $n!$, da der skal være et for hver permutation.\\
@@ -108,11 +115,23 @@ Dette er altså et udtryk for højden af et sammenligningstræ:
 
 $$d \geq n \cdot \log n - n \cdot \log e$$
 
-Da $d$ er træets dybde, der det også det maksimale antal sammenligninger en given sorteringalgoritme skal gøre, for at sortere en liste. Udtrykket siger at den nedre grænse for $d$ er $n \cdot \log n - n \cdot \log e$. Det er altså ikke muligt at sortere en liste med færre sammenligninger. Den nedre grænse for antallet af sammenligninger (højre del af ligningen), og da antallet af sammenligninger er proportionalt med algoritmens udførelsestid, må det være sandt at alle sorteringsalgoritmer har en nedre vækstrategrænse på $n \cdot \log n$.
+Da $d$ er træets dybde, der det også det maksimale antal sammenligninger en given sorteringalgoritme skal gøre, for at sortere en liste. Udtrykket siger at den nedre grænse for $d$ er $n \cdot \log n - n \cdot \log e$. Det er altså ikke muligt at sortere en liste med færre sammenligninger i værste tilfælde. Den nedre grænse for antallet af sammenligninger (højre del af ligningen), og da antallet af sammenligninger er proportionalt med algoritmens udførelsestid, må det være sandt at alle sorteringsalgoritmer har en nedre værste-tilfælde-vækstrategrænse på $n \cdot \log n$.
 
-$$T(n) \in \Omega (n \cdot \log n)$$
 
-Her er $T(n)$ en vilkårlig sorteringsalgoritmes køretid som funktion af inputtets størrelse. Udtrukket betyder at en hvilken som helst sortieringsalgoritme, der fungerer ved hjælp af sammenligninger, har en nedre vækstrategrænse på $n \cdot \log n$.
+\section{Store-O er Værste Tilfælde}
+\label{sec:Store-O er Værste Tilfælde}
+
+Det er en vigtigt detalge, at denne nedre grænse er for vækstraten i \emph{værste} tilfælde. Insertionsort kan i bedste tilfælde sortere en liste med $O(n)$ \cite{big-o-cheatsheet}, men det er værste-tilfælde-vækstraten gænsen går for. Det er muligt at sortere en liste hurtigere end $O(n \cdot \log n)$, det kræver bare at det ikke er det værste tilfælde, og at algoritmen som insertionsort kan sortere listen hurtigere i bedste tilfælde. Man burde hellere tænke grænsen således: Man kan aldrig lave en sorteringalgoritme, der virker ved hjælp af sammenligninger, som vi kan være sikrer på, er hurtigere end $O(n \cdot \log n)$.
+
+
+
+\section{Mergesort og Den Nedre Grænse}
+\label{sec:Mergesort og Den Nedre Grænse}
+
+Vi ved nu at alle sorteringsalgoritmers værste-tilfælde-vækstrate, er afgrænset af $O(n \cdot \log n)$. Vi ved også at mergesort har tidskompleksiteten $O (n \cdot \log n)$. Mergesort har altså den teoretisk bedste tidskompleksitet for en sammenlignings-sortering-algoritme. Ikke nok med det betyder det også at mergesort både i bedste og væreste tilfælde er $O(n \cdot \log n)$. Mergesort er altså $\Theta (n \cdot \log n)$.
+
+
+$$T_{\text{mergesort}}(n) \,\,\in\,\, \Theta (n \cdot \log n)$$
 
 
 

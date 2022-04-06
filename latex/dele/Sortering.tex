@@ -120,7 +120,7 @@ Hvor insertionsort er en løkke-baseret algoritme, er mergesort rekursiv idet at
 
 Pseudokode til denne algoritme kan findes i figur \ref{fig:Pseudokode til mergesort}. (Koden er basseret på kilde \cite[s. 106]{aogd})\\
 
-Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen $merge$, da det er den mest simple. Funktionen tager to lister ($a$ og $b$) som argumenter, og fletter dem sammen til en tredje liste ($c$) (se figur \ref{fig:merge i mergesort}). Denne $c$ liste dog ikke nødvendigvis sorteret. Eksempelvis kunne dette være en returneret liste:
+Mergesortalgoritmen består af to funktioner. Lad os begynde med funktionen $merge$, da det er den mest simple. Koden til funktionen kan findes på figur \ref{fig:Pseudokode til mergesort} linje $11$-$29$. Funktionen tager to lister ($a$ og $b$) som argumenter, og fletter dem sammen til en tredje liste ($c$) (se figur \ref{fig:merge i mergesort}). Denne $c$ liste dog ikke nødvendigvis sorteret. Eksempelvis kunne dette være en returneret liste:
 
 $$merge([1,2,4,8],[9,5,6,4,7]) \longrightarrow [\orange{1}, \orange{2}, \orange{4}, \orange{8}, \orange{9}, \blue{5}, \blue{6}, \violet{4}, \violet{7}]$$
 
@@ -151,39 +151,39 @@ Her er begge argumenter ($a$ og $b$) sorterede lister, der flettes sammen til é
 	\label{fig:merge i mergesort}
 \end{figure}
 
-% TODO linjenumre over det hele!
+Linjenumre refererer til pseudokoden til algoritmen på figur \ref{fig:Pseudokode til mergesort}.\\
 
-Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele algoritmen i betragtning. Mergesortfunktionen tager en enkel liste som argument, og checker først om listen kun indeholet ét element. Hvis den gør, så returnerer den listen uændret. Dette giver intuitivt mening, da en liste med et enkelt element altid vil være sorteret. Hvis listen er \emph{mere} end $1$ lang, gør den det, som får hele algoritmen til at fungere: den deler listen på i to, og kalder sig selv på hver halvdel. Herefter sættes de to dele sammen igen af $merge$-funktionen. Det er dog ikke helt så enkelt som det lyder, idet at $mergesort$ rekursivt kalder sig selv. Det leder til at algoritmen splitter listen op igen og igen, indtil der kun er et element i de mange lister. Herefter samler $merge$ alle de små lister til en stor liste, hvor $merge$ løbende sørger for at de lister den samler er sorterede. De lister der er samlet af $merge$, vil altid være sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-element-lister samles af $merge$ til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede lister. $merge$ får i altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som output.
+Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele algoritmen i betragtning. Mergesortfunktionen (l. $1$) tager en enkel liste som argument, og checker først om listen kun indeholet ét element (l. $2$). Hvis den gør, så returnerer den listen uændret (l. $3$). Dette giver intuitivt mening, da en liste med et enkelt element altid vil være sorteret. Hvis listen er \emph{mere} end $1$ lang, gør den det, som får hele algoritmen til at fungere (l. $5$-$8$): den deler listen på i to, og kalder sig selv på hver halvdel. Herefter sættes de to dele sammen igen af $merge$-funktionen. Det er dog ikke helt så enkelt som det lyder, idet at $mergesort$ rekursivt kalder sig selv. Det leder til at algoritmen splitter listen op igen og igen, indtil der kun er et element i de mange lister. Herefter samler $merge$ alle de små lister til en stor liste, hvor $merge$ løbende sørger for at de lister den samler er sorterede. De lister der er samlet af $merge$, vil altid være sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-element-lister samles af $merge$ til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede lister. $merge$ får i altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som output.
 
-% TODO kommentarer
 
 \begin{figure}
 	\begin{center}
 		\begin{lstlisting}
 			funktion mergesort(liste) {
-				if liste.length == 1{
+				if liste.length == 1{ 		# hvis listen har en længde på 1: returner listen uændret
 					return(liste)
 				}
 				else {
+					# Her deler algoritmen først listen i to dele. Derefter kalder den sig selv på hver del. Dette gør den til listerne kun er indeholder et element. Derefter samles dellisterne til en samlet og sorteret liste af mergefunktionen
 					return(merge(mergesort(liste[0 ... n/2]), mergesort(liste[n/2 + 1 ... n])))
 				}
 			}
 
 			funktion merge(a,b) {
-				c = []
+				c = []							# Listen a og b flettes ind i
 
-				while(true) {
-					if a.length == 0 {
-						return(c + b)
+				while(true) {					# Lykken kører til der returneres en værdi 
+					if a.length == 0 {		# Hvis der ikke er mere i a
+						return(c + b)			# Returnerer c sammenføjet med b
 					}
-					elif b.length == 0 {
-						return(c + a)
+					elif b.length == 0 {		# Ellers hvis der ikke er mere i b
+						return(c + a)			# Returnerer c sammenføjet med a
 					}
-					elif a[0] <= b[0] {
+					elif a[0] <= b[0] {		# Ellers hvis det første element i a er mindre end det i b
 						tilføj a[0] til c
 						fjern a[0] fra a
 					}
-					else {
+					else {						# Ellers
 						tilføj b[0] til c
 						fjern b[0] fra b
 					}
@@ -201,10 +201,10 @@ Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele
 \input{../img/mergesort_procedure.tex}
 
 
-\section{\red{Tidskompleksiteten af Mergesort}}
+\subsection{\red{Tidskompleksiteten af Mergesort}}
 \label{sec:Tidskompleksiteten af Mergesort}
 
-Mergesort har tidskompleksiteten $O(n \cdot \log n)$ \red{[kilde]}.
+Mergesort har tidskompleksiteten $O(n \cdot \log n)$ \cite{big-o-cheatsheet}. Algoritmens værste-tilfælde-vækstrate stiger er altså den samme som $n \cdot \log n$.
 
 $$T_{text{mergesort}} \in \Theta (n \cdot \log n)$$
 
@@ -212,7 +212,7 @@ $$T_{text{mergesort}} \in \Theta (n \cdot \log n)$$
 \section{Store-O-Analyse af Insertionsort}
 \label{sec:Analyse af Insertionsort}
 
-I dette afsnit gør vi brug af tidligere definerede begreber og koncepter fra afsnit \ref{ch:Algoritmers Udførelsestid}.
+I dette afsnit gøre der brug af tidligere definerede begreber og koncepter fra afsnit \ref{ch:Algoritmers Udførelsestid}.
 
 \subsection{Insertionsort i Værste Tilfælde}%
 \label{sub:Insertionsort i Værste Tilfælde}
