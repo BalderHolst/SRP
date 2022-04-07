@@ -74,3 +74,18 @@
 	year = {2019}
 }
 
+@article{time-complexity-use,
+	author = {Thompson, Jeremy},
+	month = {marts},
+	publisher = {freecodecamp},
+	title = {Big O Notation Examples -- Time Complexity and Algorithm Efficiency Explained},
+	url = {https://www.freecodecamp.org/news/big-o-notation-examples-time-complexity-explained},
+	year = {2021}
+}
+
+@article{big-o-cheatsheet,
+	publisher = {bigocheatsheet},
+	title = {Know Thy Complexities!},
+	url = {https://www.bigocheatsheet.com}
+}
+

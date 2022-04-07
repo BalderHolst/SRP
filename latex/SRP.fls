@@ -1352,25 +1352,14 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT ./dele/indledning.tex
-INPUT ./dele/indledning.tex
-INPUT ./dele/indledning.tex
-INPUT dele/indledning.tex
-INPUT ./dele/indledning.tex
-INPUT ./dele/indledning.tex
-INPUT dele/indledning.tex
+INPUT ./dele/resume.tex
+INPUT ./dele/resume.tex
+INPUT ./dele/resume.tex
+INPUT dele/resume.tex
+INPUT ./dele/resume.tex
+INPUT ./dele/resume.tex
+INPUT dele/resume.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8t.tfm
-INPUT ./dele/resume.tex
-INPUT ./dele/resume.tex
-INPUT ./dele/resume.tex
-INPUT dele/resume.tex
-INPUT ./dele/resume.tex
-INPUT ./dele/resume.tex
-INPUT dele/resume.tex
-INPUT ./SRP.toc
-INPUT SRP.toc
-INPUT SRP.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -1380,12 +1369,23 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./SRP.toc
+INPUT SRP.toc
+INPUT SRP.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8t.tfm
 OUTPUT SRP.toc
 INPUT ./SRP.lof
 INPUT SRP.lof
 INPUT SRP.lof
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchri8t.tfm
 OUTPUT SRP.lof
+INPUT ./dele/indledning.tex
+INPUT ./dele/indledning.tex
+INPUT ./dele/indledning.tex
+INPUT dele/indledning.tex
+INPUT ./dele/indledning.tex
+INPUT ./dele/indledning.tex
+INPUT dele/indledning.tex
 INPUT ./dele/Algoritmers Udførelsestid.tex
 INPUT ./dele/Algoritmers Udførelsestid.tex
 INPUT ./dele/Algoritmers Udførelsestid.tex
@@ -1399,13 +1399,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
-INPUT ./dele/Algoritmers Udførelsestid.tex
-INPUT ./dele/Algoritmers Udførelsestid.tex
-INPUT ./dele/Algoritmers Udførelsestid.tex
-INPUT dele/Algoritmers Udførelsestid.tex
-INPUT ./dele/Algoritmers Udførelsestid.tex
-INPUT ./dele/Algoritmers Udførelsestid.tex
-INPUT dele/Algoritmers Udførelsestid.tex
 INPUT ./dele/Sortering.tex
 INPUT ./dele/Sortering.tex
 INPUT ./dele/Sortering.tex
@@ -1455,12 +1448,6 @@ INPUT dele/Implementering af Algoritmerne.tex
 INPUT ./dele/Implementering af Algoritmerne.tex
 INPUT ./dele/Implementering af Algoritmerne.tex
 INPUT dele/Implementering af Algoritmerne.tex
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
-INPUT ../python/algoritmer/insertionsort.py
 INPUT ../python/sorting.py
 INPUT ../python/sorting.py
 INPUT ../python/sorting.py

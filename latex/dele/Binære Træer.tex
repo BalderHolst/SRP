@@ -7,14 +7,6 @@
 
 Træer som vi kender dem, har en stamme hvorfra grene springer ud. Fra grenene springer mindre grene, og på den måde ender træet med at have mange små grene, som stammer fra samme stamme. Informatikkens træer er ikke langt fra denne forståelse. I informatik er træer en datastruktur. Det er et netværk af knudepunkter forbundet af kanter. Træet starter med roden, der typisk er tegnet øverst (se figur \ref{fig:Eksempel på træ.}). En rod er hvor træet begynder, og har ingen forældre. Fra roden forgrener træet sig til flere, børn der også kan have flere børn. Træstrukturen er sådan at man altid kan vælge et knudepunkt, og lave et subtræ med kudepunktet som rod. Knudepunkterne hvor træet ender kalder man blade. Informatikkens træer har også en dybde. Hvis man starter ved roden, er dybden $0$. Hver gang man går et trin "ned", i træstrukturen, stiger dybden med $1$. Det betyder at den maksimale dybde svarer til træets højde. \cite{trees}
 
-\section{Antallet af Knudepunter og Kanter}
-\label{sec:Antallet af Knudepunter og Kanter}
-
-
-\section{Højden af et Balanceret og Fuldt Træ}
-\label{sec:Højden af et Balanceret og Fuldt Træ}
-
-
 
 \section{Et Binært Træ}
 \label{sec:Et Binært Træ}
@@ -40,6 +32,32 @@ Man tegner normalt binære træer som på figur \ref{fig:Eksempel på binært tr
 \end{figure} 
 
 
+\section{Blade i et Fuldt Binært Træ}
+\label{sec:Blade i et Fuldt Binært Træ}
+
+Beviset er baseret på kilden \cite{tree-leaves}.\\
+
+Et fuldt binært træ, er et binært træ, hvor alle bladene har samme dybde. Træet på figur \ref{fig:Eksempel på binært træ}, er et fuldt binært træ. \\
+
+Intuitivt giver det mening, at hvert knudepunkt har to børn, og at antallet af blade derfor er givet ved $2^d$, hvor $d$ er træets dybde. Dette udtryk kan bevises således:\\
+
+Vi antager at et træ med en maksimal dybde $d$, har $2^d$ blade.\\
+
+Hvis vores dybde er $d + 1$, skal antallet af blade være $2^{d+1}$.\\
+
+I et fuldt binært træ fordobles antallet af blade, hver gang dybden stiger med $1$. Det er fordi alle knudepunkter i et fuldt binært tre, altid forgrener sig til to børn. Altså må antallet af blade ved dybden $d+1$, være det dobbelte af antallet af blade ved dybden $d$.
+
+$$2\cdot (2^d)$$
+
+Vi kan nu omskrive udtrykket således:
+
+$$2\cdot (2^d) \,\,\,=\,\,\, 2^1 \cdot 2^d \,\,\,=\,\,\ 2^{d+1}$$
+
+Altså er antagelsen, at antallet af blade i et fuldt binært træ er $2^d$, bekræftet. $\blacksquare$\\
+
+Det er vigtigt at pointere at alle binære træer med dybden $d$, maksimalt har lige så mange blade, som det fulde træ med samme dybde. Altså er $2^d$ også det maksimale antal blade for er generelt binært træ, med dybden $d$.
+
+æ
 
 \section{Binære Træer og Sorteringsalgoritmer}
 \label{sec:Binære Træer og Sorteringsalgoritmer}
@@ -97,7 +115,7 @@ Under denne antagelse kan to forskellige lister $\{e_1 \dots e_n\}$ og $\{e_1' \
 
 Alle permutationer af listen $\{1 \dots n\}$ har altså et tilsvarende blad, derfor må sammenligningstræet have mindst $n!$, da der skal være et for hver permutation.\\
 
-Antallet af balde på et binært træ er $2^d$, hvor $d$ er træets dybde. Vi kan nu opstille denne ligning:
+Det maksimale antal blade på et binært træ er $2^d$, hvor $d$ er træets dybde (som vi beviste i afsnit \ref{sec:Blade i et Fuldt Binært Træ}). Vi kan nu opstille denne ligning:
 
 
 $$2^d \geq n! \s\Leftrightarrow\s d \geq \log n!$$

@@ -37,21 +37,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Hvad er et Træ}{13}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Antallet af Knudepunter og Kanter}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Et Binært Træ}{13}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Højden af et Balanceret og Fuldt Træ}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Blade i et Fuldt Binært Træ}{14}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Et Binært Træ}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Binære Træer og Sorteringsalgoritmer}{15}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Binære Træer og Sorteringsalgoritmer}{14}{section.3.5}%
+\contentsline {subsection}{\numberline {3.4.1}Det Mindste antal Sammenligninger}{15}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Det Mindste antal Sammenligninger}{14}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.5}Højden af et Binært Træ}{15}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Højden af et Binært Træ}{15}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Store-O er Værste Tilfælde}{16}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Store-O er Værste Tilfælde}{15}{section.3.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}Mergesort og Den Nedre Grænse}{16}{section.3.8}%
+\contentsline {section}{\numberline {3.7}Mergesort og Den Nedre Grænse}{16}{section.3.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Implementering og Test}{17}{chapter.4}%
 \defcounter {refsection}{0}\relax 

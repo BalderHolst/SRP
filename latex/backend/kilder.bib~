@@ -83,3 +83,9 @@
 	year = {2021}
 }
 
+@article{big-o-cheatsheet,
+	publisher = {bigocheatsheet},
+	title = {Know Thy Complexities!},
+	url = {https://www.bigocheatsheet.com}
+}
+

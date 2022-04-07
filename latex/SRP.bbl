@@ -68,6 +68,34 @@
       \verb https://github.com/thorehusfeldt/algoritmer-og-datastrukturer/blob/master/ad-book.pdf
       \endverb
     \endentry
+    \entry{tree-leaves}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bcf9d35837bb7e5c0f0c6ec5abd556e5}{%
+           family={Farolino},
+           familyi={F\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bcf9d35837bb7e5c0f0c6ec5abd556e5}
+      \strng{fullhash}{bcf9d35837bb7e5c0f0c6ec5abd556e5}
+      \strng{bibnamehash}{bcf9d35837bb7e5c0f0c6ec5abd556e5}
+      \strng{authorbibnamehash}{bcf9d35837bb7e5c0f0c6ec5abd556e5}
+      \strng{authornamehash}{bcf9d35837bb7e5c0f0c6ec5abd556e5}
+      \strng{authorfullhash}{bcf9d35837bb7e5c0f0c6ec5abd556e5}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{Binary Tree Inductive Proofs}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://blog.domfarolino.com/Binary-Tree-Inductive-Proofs/#perfect-binary-tree-proof-3
+      \endverb
+      \verb{url}
+      \verb https://blog.domfarolino.com/Binary-Tree-Inductive-Proofs/#perfect-binary-tree-proof-3
+      \endverb
+    \endentry
     \entry{time-complexity}{misc}{}
       \name{author}{1}{}{%
         {{hash=8c982630119073a910cc76ba70ff782a}{%
