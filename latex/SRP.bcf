@@ -2378,7 +2378,8 @@
     <bcf:citekey order="33">big-o-cheatsheet</bcf:citekey>
     <bcf:citekey order="34">aogd</bcf:citekey>
     <bcf:citekey order="35">what-is-python</bcf:citekey>
-    <bcf:citekey order="36">python-random</bcf:citekey>
+    <bcf:citekey order="36">what-is-python</bcf:citekey>
+    <bcf:citekey order="37">python-random</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -4,7 +4,7 @@
 \section{Tid som Funktion af Inputtets Størrelse}
 \label{sec:Tid som Funktion af Argumentets Kardinalitet}
 
-Dette afsnit bygger primært på side $24$ og $25$ i bogen \emph{"Algoritmer og Datastrukturer"} \cite{aogd}. I følgende afsnit redegøres for definitionen af store-O\\
+Dette afsnit bygger primært på side $24$ og $25$ i bogen \emph{"Algoritmer og Datastrukturer"} \cite{aogd}. I følgende afsnit redegøres for definitionen af store-O.\\
 
 Når vi analyserer algoritmer, er det primære formål at skabe udsagn, der kort og præcist beskriver algoritmers opførsel. I vores tilfælde er vi interesserede i algoritmens udførselsestid. Vi lader $\I _n$ være mængden af mulige argumenter til algoritmen, $n$ være kardinaliteten (størrelsen) af $\I _n$ og $I$ være en instans af $\I$ (altså $I \in \I _n$). Algoritmens udførselsestid $T$ kan nu beskrives som funktion af instansen $T(I)$. Med det menes der, at en algoritmes udførselsestid er afhængig af det input algoritmen får. Vi kan bruge dette til at beskrive tre egenskaber af algoritmens udførselsestid; algoritmens maksimale udførselsestid, algoritmens minimale udførselsestid og algoritmens gennemsnitlige udførselsestid. Den maksimale udførselsestid er udførselsestiden i værste tilfælde ($T(I_{\text{værst}})$), den minimale udførselsestid kan modsat beskrives som køretiden på det bedste tilfælde ($T(I_{\text{bedst}})$), og den gennemsnitlige udførselsestid kan findes ved at tage gennemsnittet af alle udførselsestiderne ($\frac{1}{|\I |} \sum_{I \in \I _n}T(I)$). Med disse udtryk kan vi nu opskrive algoritmens mulige udførselsestider som funktion af kardinaliteten $n$ af $\I _n$ således:
 
