@@ -41,7 +41,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Blade i et Fuldt Binært Træ}{14}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Binære Træer og Sorteringsalgoritmer}{15}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Binære Træer og Sorteringsalgoritmer}{14}{section.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.1}Det Mindste antal Sammenligninger}{15}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 

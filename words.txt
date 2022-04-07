@@ -1,24 +1,25 @@
+Indledning
 Alt sorteres. Navne, bøger, lande, slik, biler, ALT. Hver gang vi søger på Google, sorteres søgeresultaterne
-efter relevans, og når vi scroler på Tiktok eller Facebook, er opslagene sorteret, på baggrund af tidspunktet
+efter relevans, og når vi scroller på Tiktok eller Facebook, er opslagene sorteret, på baggrund af tidspunktet
 de er postet, og den personlige data der står i deres databaser.
 Sortering er en måde at ordne data, så de er nemme at finde igen. Servere verden rundt bruger store dele
 af deres ydeevne på netop, at sortere den data de lagre. Optimering af disse algoritmer er derfor essentiel
-for det moderne samfunds gigantiske dataafhængighed, da de drastisk kan nedsætte databehandlings ud-
+for det moderne samfunds gigantiske dataafhængighed, da de drastisk kan nedsætte databehandlingens ud-
 førelsestid.
-Denne opgave omhandler sorteringsalgoritmer, og analysen af dem ved hjælp af store-O og kompleksit-
+Denne opgave omhandler sorteringsalgoritmer, og analysen af dem ved hjælp af store-O og kompleksitet-
 sklasser. Først defineres store-O, og herefter tages der udgangspunkt i sorteringsalgoritmerne insertionsort
 og mergesort, hvis tidskompleksitet diskuteres og bevises. Blandt andet vises det at insertionsort har en
-værste-tilfælde-vækstrate på O(n2 ). Binære træer bruges i afsnittet efter, til at bevise at den nedregrænse for
-værste-tilfælde-vækstraten er O(n · log n). Det vil også forklares hvorfor det, at insertionsort har en bedste-
-tilfælde-vækstrate på O(n), ikke overskrider denne grænse. Til sidst implementeres algoritmerne i Python
-og deres reelle køretider undersøges. Algoritmerne samles til en hybridalgoritme, er sammenlignes med
-mergesort.
+værste-tilfælde-vækstrate på O(n2 ). Binære træer bruges i afsnittet efter, til at bevise at den nedre grænse
+for værste-tilfælde-vækstraten er O(n · log n) for alle sorteringsalgoritmer. Det vil også forklares hvorfor det,
+at insertionsort har en bedste-tilfælde-vækstrate på O(n), ikke overskrider denne grænse. Til sidst imple-
+menteres algoritmerne i Python og deres reelle køretider undersøges. Algoritmerne samles til en hybridal-
+goritme, der sammenlignes med mergesort.
 
 Algoritmers Udførelsestid
 1.1
 Tid som Funktion af Inputtets Størrelse
 Dette afsnit bygger primært på side 24 og 25 i bogen "Algoritmer og Datastrukturer" [2]. I følgende afsnit
-redegøres for definitionen af store-O
+redegøres for definitionen af store-O.
 Når vi analyserer algoritmer, er det primære formål at skabe udsagn, der kort og præcist beskriver algorit-
 mers opførsel. I vores tilfælde er vi interesserede i algoritmens udførselsestid. Vi lader In være mængden af
 mulige argumenter til algoritmen, n være kardinaliteten (størrelsen) af In og I være en instans af I (altså
@@ -33,15 +34,14 @@ P
 førselsestiderne ( |I|
 I∈In T (I)). Med disse udtryk kan vi nu opskrive algoritmens mulige udførselsestider
 som funktion af kardinaliteten n af In således:
-
 T (n) =
-
-
-
- T (Iværst ) : Iværst ∈ Inværste tilfælde
-
-
-i gennemsnit
+
+
+
+ T (Iværst ) : Iværst ∈ Inværste tilfælde
+
+
+i gennemsnit
 T (Ibedst ) : Ibedst ∈ In
 P
 1
@@ -56,11 +56,10 @@ den. Hvis en algoritme viser stor varians i dens udførselsestid, kan gennemsnit
 om hvordan man kan forvente at algoritmen opfører sig.
 Denne form for algoritmeanalyse er dog ikke helt problemfri: for det første kan vi aldrig definere nogen fast
 forskrift for T (n), der ville gøre det muligt at beregne den præcise udførselsestid. Tildels kan det forklares
-af Allan Turings "halt problem"[4], hvor han beviste, at man aldrig kan vide om et program stopper eller
+af Allan Turings "halt problem"[5], hvor han beviste, at man aldrig kan vide om et program stopper eller
 ender i en uendelig løkke. Problemet i vores kontekst, hvor vi forsøger at bestemme en køretid for algo-
 ritmen, er, at hvis man kender udførselsestiden for en algoritme, så ville man vide at algoritmen stoppede
 før den havde kørt. Det var netop dette, Allan Turing viste, at man ikke kan. En anden forklaring er, at alle
-
 
 computere vil køre den samme algoritme med forskellig hastighed pga. varians i computerens komponenter.
 Derudover vil selv den samme computer aldrig udføre en handling i præcis samme tidsinterval, da andre
@@ -95,26 +94,21 @@ f (n) altid vil være højere end eller lig g(n) (se figur 1.3). Man kan også t
 mængden af funktioner der ikke vokser hurtigere end f (n).
 Når man siger at en algoritme er O(n2 ), menes der at vækstraten for T (n) er en del af mængden O(n2 ), og
 at T (n) i værste tilfælde har samme vækstrate som n2 . Man kan også sige at algoritmens tidskompleksitet er
-O(n2 ) [10]. Da det kun er vækstrate vi interesserer os for, betyder det, at det kun er leddet med den højeste
+O(n2 ) [11]. Da det kun er vækstrate vi interesserer os for, betyder det, at det kun er leddet med den højeste
 vækstrate, der betyder noget, fordi de små led vil være ubetydelige ved store n-værdier. En funktion som
 n! + n3 + log n vil blive reduceret til tidskompleksiteten O(n!), da n! er leddet med den højeste vækstrate.
 
-Vi kan nu bruge disse regler til at definere store-O-notation (se figur 1.1). Lad os begynde med O(f (n)). En
-funktion er del af mængden O(f (n)), hvis den kan sættes ind som g(n). Med den matematiske definition
-menes der: g(n) skal være sådan at der findes en værdi c, som er større end 0, sådan at der findes et positivt
-helt tal n0 , sådan at der for alle n større end n0 , gælder at g(n) er mindre eller lig c · f (n). Dvs. g(n) har
-mindre eller samme vækstrate som f (n). I praksis betyder dette, at der altid vil være en positiv n0 , hvorefter
-f (n) altid vil være højere end eller lig g(n) (se figur 1.3). Man kan også tænke mængden O(f (n)), som
-mængden af funktioner der ikke vokser hurtigere end f (n).
-Når man siger at en algoritme er O(n2 ), menes der at vækstraten for T (n) er en del af mængden O(n2 ), og
-at T (n) i værste tilfælde har samme vækstrate som n2 . Man kan også sige at algoritmens tidskompleksitet er
-O(n2 ) [10]. Da det kun er vækstrate vi interesserer os for, betyder det, at det kun er leddet med den højeste
-vækstrate, der betyder noget, fordi de små led vil være ubetydelige ved store n-værdier. En funktion som
-n! + n3 + log n vil blive reduceret til tidskompleksiteten O(n!), da n! er leddet med den højeste vækstrate.
-
+Selv en funktion som 100 · n!, vil også have tidskompleksiteten O(n!), da konstanten foran det størst vok-
+sende led ikke ændrer funktionens tidskompleksitet.
+Ω(f (n)) indeholder modsat O(f (n)) alle funktioner der vokser mindst lige så hurtigt som f (n).
+Der er en enkel vækstrate som både O(f (n)) og Ω(f (n)) indeholder: nemlig vækstraten af f (n). For at
+beskrive præcis denne mængde funktioner, bruger vi Θ(f (n)). Hvis en algoritme er Θ(n3 ), betyder det altså,
+at T (n) altid vil have samme vækstrate som n3 . Det ville også betyde at alle input af samme kardinalitet, vil
+resultere i lige lang teoretisk udførselsestid.
+1.3
 Kompleksitetsklasser
 Med denne definition af store-O kan vi klassificere algoritmer i forhold til deres værste-tilfælde-vækstrate.
-Store-O inddeler algoritmer i kompleksitetsklasser efter deres tidskompleksitet [3]. Algoritmer som er en
+Store-O inddeler algoritmer i kompleksitetsklasser efter deres tidskompleksitet [4]. Algoritmer som er en
 del af klassen O(n2 ) har i værste tilfælde samme vækstrate som n2 . Det kunne også være at algoritmen var
 O(n), altså ville den have en lineær vækstrate, og hvis en algoritme har konstant vækstrate, er den del af
 kompleksitetsklassen O(1). Det er vigtigt at huske at disse kompleksitetsklasser ikke kun betegner vækstrat-
@@ -122,10 +116,8 @@ en i værste, men at de også indeholder alle bedre vækstrater. Det vil altså 
 med en bestemt værste-vækstrate, også indeholder alle kompleksitetsklasser med lavere værste-vækstrate(se
 figur 1.2).
 
-Sorteringsalgoritmer
-2.1
 Hvad er sortering?
-Sortering er helt lavpraktisk, at sætte en mængde data i rækkefølge på baggrund af dataens attributter [9].
+Sortering er helt lavpraktisk, at sætte en mængde data i rækkefølge på baggrund af dataens attributter [10].
 Det kunne f.eks. være alfabetisk eller efter farve eller størrelse. Når man som menneske sorterer en hånd
 med kort er det ikke altid, at vi tænker over hvordan vi gør. Det er dog ikke altid entydigt hvilken sorterings-
 strategi, der ville være hurtigst. Disse sorterings-strategier kan også kaldes sorterings-algoritmer, og det er
@@ -135,6 +127,7 @@ insertionsort og mergesort, og deres forskellige måder at sortere en liste med 
 Herfra vil jeg kun forholde mig til sortering af lister med tal, og sortere dem på baggrund af deres størrelse
 (se figur 2.1). Derudover vil algoritmernes opgave altid være, at sortere liste i stigende rækkefølge.
 
+2.2
 Insertionsort
 Insertionsort er en af de mere simple sorteringsalgoritmer. Pseudokoden til algoritmen kan ses i figur 2.4 på
 side 8. Koden er baseret på kilde Algoritmer og datastrukturer [2] s. 104.
@@ -161,6 +154,7 @@ samme spørgsmål til tallet 3 pladser før elementet og så videre. Det er vigt
 være et tal der er mindre end elementet, da elementet ellers ville være blevet placeret først i listen af den
 første del af proceduren (linje 5-10).
 
+2.2.2
 Egenskaber af Insertionsort
 Insertionsort er en god sorteringsalgoritme, idet at proceduren er forholdsvis nem at forstå, men også fordi
 listen til venstre for det element algoritmen er nået til (e), altid vil være sorteret. Hvis man stopper en
@@ -200,12 +194,14 @@ sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-eleme
 til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede
 lister. merge får altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som
 output.
-[bro?]
-2.3.2
-Tidskompleksiteten af Mergesort
-Mergesort har tidskompleksiteten O(n · log n) [5]. Algoritmens værste-tilfælde-vækstrate stiger med det
-samme som n · log n.
 
+Tidskompleksiteten af Mergesort
+Mergesort har tidskompleksiteten O(n · log n) [6]. Algoritmens værste-tilfælde-vækstrate stiger med det
+samme som n · log n.
+Tmergesort ∈ O(n · log n)
+
+2.4
+Balder W. Holst 3.x
 Store-O-Analyse af Insertionsort
 I dette afsnit gøres der brug af tidligere definerede begreber og koncepter fra afsnit 1.
 2.4.1
@@ -234,7 +230,7 @@ X
 i
 i=1
 For at simplificere udtrykket endnu mere kan vi bruge reglen at en sum som 1 + · · · + n − 1 kan omskrives
-på denne måde. [Bevis??]
+på denne måde.
 n−1
 X
 i =
@@ -265,8 +261,6 @@ vækstraten. Vi kan derfor sige at algoritmens udførelsestid er O(n2 ).
 Tinsertionsort (n) ∈ O(n2 )
 Med det menes der at udførelsestiden i værste tilfælde har tidskompleksiteten Θ(n2 ).
 
-Binære Træer
-3.1
 Hvad er et Træ
 Træer som vi kender dem, har en stamme hvorfra grene springer ud. Fra grenene springer mindre grene,
 og på den måde ender træet med at have mange små grene, som stammer fra samme stamme. Infor-
@@ -276,17 +270,38 @@ En rod er hvor træet begynder, og har ingen forældre. Fra roden forgrener træ
 kan have flere børn. Træstrukturen er sådan at man altid kan vælge et knudepunkt, og lave et subtræ med
 kudepunktet som rod. Knudepunkterne hvor træet ender kalder man blade. Informatikkens træer har også
 en dybde. Hvis man starter ved roden, er dybden 0. Hver gang man går et trin "ned", i træstrukturen, stiger
-dybden med 1. Det betyder at den maksimale dybde svarer til træets højde. [7]
-3.2Antallet af Knudepunter og Kanter
-3.3Højden af et Balanceret og Fuldt Træ
-3.4Et Binært Træ
+dybden med 1. Det betyder at den maksimale dybde svarer til træets højde. [8]
+3.2
+Et Binært Træ
 Man tegner normalt binære træer som på figur 3.2 bestående af knudepunkter og forbindelser mellem dem.
 Det specielle ved binære træer, er at hvert knudepunkt højst må forgrene sig to gange (altså binært). Denne
 lille specialisering er brugbar i mange sammenhænge som f.eks. som datastruktur til søgealgoritmer [1],
 men det viser sig også at være en snedig vej til at beskrive sorteringsalgoritmers opførsel.
 
-ed første blik kunne man tilgives for ikke, at se hvordan binære træer har relevans for sorteringsalgoritmer,
+.3
+Blade i et Fuldt Binært Træ
+Beviset er baseret på kilden [3].
+Et fuldt binært træ, er et binært træ, hvor alle bladene har samme dybde. Træet på figur 3.2, er et fuldt
+binært træ.
+Intuitivt giver det mening, at hvert knudepunkt har to børn, og at antallet af blade derfor er givet ved 2d ,
+hvor d er træets dybde. Dette udtryk kan bevises således:
+Vi antager at et træ med en maksimal dybde d, har 2d blade.
+Hvis vores dybde er d + 1, skal antallet af blade være 2d+1 .
+I et fuldt binært træ fordobles antallet af blade, hver gang dybden stiger med 1. Det er fordi alle knudepunk-
+ter i et fuldt binært tre, altid forgrener sig til to børn. Altså må antallet af blade ved dybden d + 1, være det
+dobbelte af antallet af blade ved dybden d.
+2 · (2d )
+Vi kan nu omskrive udtrykket således:
+2 · (2d ) = 21 · 2d = 2d+1
+Altså er antagelsen, at antallet af blade i et fuldt binært træ er 2d , bekræftet. 
+Det er vigtigt at pointere at alle binære træer med dybden d, maksimalt har lige så mange blade, som det
+fulde træ med samme dybde. Altså er 2d også det maksimale antal blade for er generelt binært træ, med
+dybden d.
+
+Binære Træer og Sorteringsalgoritmer
+Ved første blik kunne man tilgives for ikke, at se hvordan binære træer har relevans for sorteringsalgoritmer,
 men det kræver bare, at man giver knudepunkterne og grenene meningsfulde betydninger. I bund og grund
+
 er det som en sorteringsalgoritme gør, at fortage en masse sammenligninger af elementerne i dens input.
 Algoritmen bestemmer hvilke operationer, den skal køre udelukkede på baggrund af disse sammenligninger.
 Hvis vi tænker hvert knudepunkt som en sammenligning af to elementer fra algoritmens input (se figur 3.3),
@@ -296,12 +311,12 @@ gjort nok sammenligninger, til at kunne sortere dens input. Vi kan derfor tænke
 måde for algoritmen at sortere et bestemt input; Hvert blad har kun en specifik vej, og vejen til bladet er
 udelukkede givet af algoritmens input. Altså er hvert af træets blade en kollektion af de sammenligninger,
 som algoritmen gjorde for at sortere inputtet. [2, s. 109]
-
+3.4.1
 Det Mindste antal Sammenligninger
 I dette store teoretiske træ med alle dets blade kunne man jo så spørge: Hvor mange sammenligninger skal
 der så højest til at sortere et input? eller omformuleret: Hvor højt er træet? Denne oversættelse holder stik,
 da vi skal lave lige så mange sammenligninger for at komme ned til nederste blad, som træet er højt.
-
+3.5
 Højden af et Binært Træ
 Dette bevis er basseret på kilden [2, s. 109].
 Bevis: I et sammenligningstræ for en sorteringsalgoritme med input længden n, hvor π og σ er permutation-
@@ -313,7 +328,9 @@ ationer og derved sortere listen. Dette er en modstrid, da man aldrig vil kunne 
 operationer, til at sortere to forskellige permutationer af {1 . . . n}. 
 Alle permutationer af listen {1 . . . n} har altså et tilsvarende blad, derfor må sammenligningstræet have
 mindst n!, da der skal være et for hver permutation.
-Antallet af balde på et binært træ er 2d , hvor d er træets dybde. Vi kan nu opstille denne ligning:
+
+Det maksimale antal blade på et binært træ er 2d , hvor d er træets dybde (som vi beviste i afsnit 3.3). Vi kan
+nu opstille denne ligning:
 2d ≥ n! ⇔ d ≥ log n!
 
 n n
@@ -337,18 +354,15 @@ gøre, for at sortere en liste. Udtrykket siger at den nedre grænse for d er n 
 muligt at sortere en liste med færre sammenligninger i værste tilfælde. Da antallet af sammenligninger er
 proportionalt med algoritmens udførelsestid, må det være sandt at alle sorteringsalgoritmer har en nedre
 værste-tilfælde-vækstrategrænse på O(n · log n).
-
-3.7
+3.6
 Store-O er Værste Tilfælde
 Det er en vigtigt detalje, at denne nedre grænse er for vækstraten i værste tilfælde. Insertionsort kan i bedste
-tilfælde sortere en liste med O(n) [5], men det er værste tilfælde som vækstraten-gænsen gælder for. Det
+tilfælde sortere en liste med O(n) [6], men det er værste tilfælde som vækstraten-gænsen gælder for. Det
 er muligt at sortere en liste hurtigere end O(n · log n), det kræver bare at det ikke er det værste tilfælde,
-Side 15 af 33Sorø Akademi
-Balder W. Holst 3.x
 og at algoritmen (som insertionsort) kan sortere listen hurtigere i bedste tilfælde. Man burde hellere tænke
 grænsen således: Man kan aldrig lave en sorteringalgoritme, der virker ved hjælp af sammenligninger, som
 vi kan være sikrer på, er hurtigere end O(n · log n).
-
+3.7
 Mergesort og Den Nedre Grænse
 Vi ved nu at alle sorteringsalgoritmers værste-tilfælde-vækstrate, er afgrænset af O(n · log n). Vi ved også at
 mergesort har tidskompleksiteten O(n · log n). Mergesort har altså den teoretisk bedste tidskompleksitet for
@@ -363,18 +377,17 @@ Python
 Sproget Python har et højt abstraktionsniveau, og kan på mange punkter ligne vores pseudokode fra tidligere
 [2, s. 68]. Det betyder at vi på mange punkter opgiver lidt kontrol til compileren, for at gøre koden mere
 læsbar og tilgængelig. Det betyder også at vi aldrig helt kan vide hvilke instruktioner computeren udfører.
-Derudover er Python et relativt langsomt sprog, da koden kompileres samtidigt med at programmet kører.
-Dette gør at sproget ikke egner sig særligt godt til at skrive optimerede algoritmer, der skal køre på meget
-store datasæt. Heldigvis kan vi se bort fra dette, da vi med store-O-analyse er ligeglade med den reelle
-udførelsestid, og i stedet er interesseret i vækstrater. Vækstraten for en algoritme er nemlig egns for en
-algoritme, ligegyldigt hvor langsomt hvert skridt er. På nogle punkter er det måske endda en fordel, at
-algoritmerne køre langsommere, da det vil gøre forskellen i udførelsestiderne større, og lettere at forholde
-sig til.
+Derudover er Python et relativt langsomt sprog, da koden kompileres samtidigt med at programmet kører
+[12]. Dette gør at sproget ikke egner sig særligt godt til at skrive optimerede algoritmer, der skal køre på
+meget store datasæt. Heldigvis kan vi se bort fra dette, da vi med store-O-analyse er ligeglade med den
+reelle udførelsestid, og i stedet er interesseret i vækstrater. Vækstraten for en algoritme er nemlig egns,
+ligegyldigt hvor langsomt hvert skridt er. På nogle punkter er det måske endda en fordel, at algoritmerne
+kører langsommere, da det vil gøre forskellen i udførelsestiderne større, og lettere at forholde sig til.
 4.2
 Implementering
-Implementering i Python er relativt simpelt. Python bruger dynamiske variabler [11], derfor er det ikke
+Implementering i Python er relativt simpelt. Python bruger dynamiske variabler [12], derfor er det ikke
 nødvendigt at fortælle Python, om en variabel f.eks. er et heltal eller en liste.
-
+4.3
 Test af Sorteringsalgoritmer
 For at teste sorteringsalgoritmerne fra afsnit 2, og se hvordan deres reelle udførelsestid som funktion af n,
 relaterer til deres teoretiske væksthastighed og store-O-analyse, skal algoritmerne køres på en kontroleret
@@ -384,20 +397,20 @@ med de algoritmer, der skal testes. I vores tilfælde indeholder den [insertions
 løkke tester vi funktionerne. Det at vi behandler algoritmerne ens, sikrer at de bliver testet på samme måde.
 Det næste vi gør er at definere lister til opbevarting af kardinaliteten af den liste som algoritmen sorterer
 (l. 4), og en til den reelle tid det tager for algoritmen at sortere listen (l. 6). I linje 9 sætter vi frøet for de
-pseudotilfældige tal [8], som vi senere skal bruge til at generere listerne som sorteringsalgoritmerne skal
+pseudotilfældige tal [9], som vi senere skal bruge til at generere listerne som sorteringsalgoritmerne skal
 sortere. Det er vigtigt af vi sætter frøet til den samme værdi, før vi tester hver algoritme, da vi på den måde
-
 sikrer os, at det er de samme pseudotilfældige lister, som algorimerne sorterer. Vi kan derfor med god vilje
+
 sammenligne algoritmernes køretider, da vi er sikre på at deres input, var det samme under testen. Efter
-denne initialisering begynder vi to løkker (l. 12 og 15). Den første sørger for at vi gentager den samme test
-flere gange. I vores tilfælde er variablen trials sat til 15, hvilket resulterer i at vi tester sorteringen af hver n
-lange liste 15 gange. Den indre løkke tæller fra i = 0 til i = 80. Vi bruger herefter i-værdien til at generere
-vores n-værdier i linje 18. Til det bruges formlen n = b1.1i e. Valget at test med exponentielt stigende n, er
-af to grunde: For det første kan det tage lang tid for en algoritme, at sortere lister med store n, så det gør
-hele processen meget hurtigere, hvis man ikke tester så mange sorteringer med store n. Den anden og nok
-bedre grund, er at vi er meget interesserede i at se hvordan algoritmerne måles med hinanden, når n ikke
-er stort. Det ville jo være interessant, hvis vi kunne identificere et n0 som i afsnit 1. Til dette skal vi bruge
-en punkttæthed, der ved store n ville være overflødig.
+denne pegerer (l. 12 og 15). Den første sørger for at vi gentager den samme test flere gange. I vores tilfælde
+er variablen trials sat til 15, hvilket resulterer i at vi tester sorteringen af hver n lange liste 15 gange. Den
+indre løkke tæller fra i = 0 til i = 80. Vi bruger herefter i-værdien til at generere vores n-værdier i linje
+18. Til det bruges formlen n = b1.1i e. Valget at test med exponentielt stigende n, er af to grunde: For det
+første kan det tage lang tid for en algoritme, at sortere lister med store n, så det gør hele processen meget
+hurtigere, hvis man ikke tester så mange sorteringer med store n. Den anden og nok bedre grund, er at vi er
+meget interesserede i at se hvordan algoritmerne måles med hinanden, når n ikke er stort. Det ville jo være
+interessant, hvis vi kunne identificere et n0 som i afsnit 1. Til dette skal vi bruge en punkttæthed, der ved
+store n ville være overflødig.
 Nu er det hele sat op, og vi kan teste algoritmen på en n lang liste med tilfældige tal. n-værdien og den tid
 sorteringen tog, gemmes i listerne, og eksporteres til en csv fil til brug i databehandlingen (se koden i bilag
 1 og 2).
@@ -411,7 +424,7 @@ er tættere på Θ(n2 ) end på Θ(n). Det er dog alligevel tydeligt at andengra
 insertionsorts gennemsnitlige køretid, hvis vi zoomer ind på plottet til højre på figur 4.2. Faktisk passer
 regressionen slet ikke på punkterne på dette stykke af grafen, hvilket tyder på at algoritmens udførelses-
 tid ikke bare kan beskrives med et andengradspolynomie. Hvad angår mergesort følger den regressionen
-rigtig godt. Det tyder på at antagelsen at mergesorts vækstrate altid er Θ(n log n) fra afsnit 3.8 må være sand.
+rigtig godt. Det tyder på at antagelsen at mergesorts vækstrate altid er Θ(n log n) fra afsnit 3.7 må være sand.
 En anden finurlighed kan findes i residualplottet (figur 4.3). Residualplottet for begge grafer er rigtig flot,
 med en jævn punktfordeling på begge sider af regressionen, men til aller sidst er der et par af insertionsorts
 punkter, der er langt under regressionen. Det kan være af flere grunde blandt andet at computerens styresys-
@@ -459,10 +472,10 @@ i hver delliste, stopper denne algoritme opdelingen så snart insertionsort kan 
 vigtigt at pointere, at algoritmernes udførelsestid er nogenlunde ens ved n ≈ 37, og at det derfor ikke ville
 være hurtigere, at splitte listen op med mergesort, til alle dellisterne havde en længde på 37, og derefter
 sortere med insertionsort. For at sikrer at insertionsort kun sorterer lister hvor den er hurtigst, splitter
-hybridalgoritmen inputtet, til dellisterne er højest 30 elementer lange.
+hybridalgoritmen inputtet, til dellisterne er højest 30 elementer lange (se linje 3 og 6 på figur 4.6).
 4.5.1
 Sammenligning af Optimerede Algoritmer
-Udførelsestiderne er plottet på figur 4.7.
+Udførelsestiderne er plottet på figur 4.7 på side 23.
 Når man ser på grafen er det klart, at hybridalgoritmen gennemsnitligt er hurtigst, men ikke i samme
 grad som mergesort var insertionsort overlegen ved høje n. Det ligner på grafen, at hybridalgoritmen lige-
 som mergesort gennemsnitligt kører med Θ(n · log n). Vi kan dog ikke være sikker på hybridalgoritmens
@@ -470,11 +483,10 @@ tidskompleksitet, da vi ikke har fortaget den teoretiske analyse af algoritmen. 
 hybridalgoritmen er hurtigere end mergesort på computeren som algoritmen er testet på. Det ser dog ud
 til at algoritmerne i hvert faldt gennemsnitligt, har nogenlunde samme vækstrate. En anden måde vi kan
 argumentere for at hybridalgoritmens tidskompleksitet i hvert fald ikke er mindre end O(n log n), er (som vi
-beviste i afsnit 3.6) at enhver sorteringsalgoritme der fungerer ved brug af sammenligninger, ikke kan have
+beviste i afsnit 3.5) at enhver sorteringsalgoritme der fungerer ved brug af sammenligninger, ikke kan have
 en mindre tidskompleksitet end O(n · log n). Hybridalgoritmen har enten den samme eller værre tidskom-
 pleksitet end mergesort. Det der skaber forskellen må være en et mindre led i hybridalgoritmens T (n) eller
 en konstant, der ganges på det dominerende led.
-
 Nu ser det ud som om at hybridalgoritmen altid er det bedste valg ved store n, men det kan vi faktisk ikke
 være sikre på. Problemet er, at det eneste vi ved om hybridalgoritmens tidskompleksitet, er at algoritmen i
 værste fald er Ω(n · log n) ligesom alle andre sammenlignings-sorterings-algoritmer. Det betyder, at vi ikke
@@ -490,20 +502,20 @@ graf på figur 4.7 være ret så ligegyldig, da et input med høj kardinalitet i
 lang tid. Den lille mængde tid hybridalgoritmen i gennemsnit sparer, ville da ikke være risikoen for meget
 lange udførelsestider værd.
 
-Konklusion
 Sorteringsalgoritmers reelle køretider er svære at regne med, selvom deres opgave lader til at være simpel.
-De sorterer data på baggrund af dataens attributter. Derfor inddeler vi dem i kompleksitsklasser ved hjælp af
-store-O-analyse og værste-tilfælde-vækstrate. Binære træer kunne bruges til at finde en generel nedre grænse
-for en sorteringsalgoritmes værste-tilfælde-vækstrate. Da denne grænse var en værste-tilfælde-grænse, havde
-det at insertionsort i bedste tilfælde har tidskompleksiteten Θ(n) ingen betydning. Sorteringsalgoritmerne
-insertionsort og mergesort, sorterer begge lister, men er gode til forskellige opgaver: mergesort er god til
-store input, hvilket forklares af dens tidskompleksitet der var Θ(n). Det viste sig i testen, at insertionsort
-i gennemsnit er hurtigere hvis n < 37 på computeren algoritmerne blev testet på. At insertionsort var
-langt værre til sortering af store lister, var ikke en overraskelse, da vi i afsnit 2.4, analyserede algoritmen,
-og kom frem til at algoritmen havde tidskompleksiteten O(n), hvilket er en meget højere værste-tilfælde-
-vækstrate end mergesorts. Hybridalgoritmen så ud til at være en optimisering af mergesort, men vi ved ikke
-tilstrækkeligt nok om algoritmens tidskompleksitet, til at kunne bestemme, om den altid er et bedre valg
-end mergesort, som dataen eller ser ud til at tyde på.
+De sorterer data på baggrund af dataens attributter. For at klassificere algoritmernes opførsel inddeler vi dem
+i kompleksitsklasser ved hjælp af store-O-analyse og værste-tilfælde-vækstrate. Binære træer kan bruges til
+at finde en generel nedre grænse for en sorteringsalgoritmes værste-tilfælde-vækstrate. Denne grænse er en
+værste-tilfælde-grænse, derfor har insertionsorts bedste-tilfælde-tidskompleksitet på Θ(n) ingen betydning.
+Sorteringsalgoritmerne insertionsort og mergesort, sorterer begge lister, men er gode til forskellige opgaver:
+mergesort er god til store input, hvilket forklares af dens tidskompleksitet på Θ(n · log n). Det viste sig i
+testen, at insertionsort i gennemsnit er hurtigere hvis n < 37, på computeren algoritmerne blev testet på.
+At insertionsort var langt værre til sortering af store lister, var ikke en overraskelse, da vi i afsnit 2.4, anal-
+yserede algoritmen, og kom frem til at algoritmen havde tidskompleksiteten O(n2 ). Det er en meget højere
+værste-tilfælde-vækstrate end mergesorts. På baggrund af denne analyse kunne de to algoritmer sammen-
+sættes til en hybridalgoritme, med det formål at optimere algoritmens udførelsestid. Hybridalgoritmen så
+ud til at være en optimeret version af mergesort, men vi ved ikke tilstrækkeligt om algoritmens tidskom-
+pleksitet, til at kunne bestemme, om den altid er et bedre valg end mergesort, som dataen ellers peger
+på.
 
-Chars:
-37446
+

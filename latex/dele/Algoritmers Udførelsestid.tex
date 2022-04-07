@@ -49,7 +49,7 @@ Vi kan nu bruge disse regler til at definere store-O-notation (se figur \ref{fig
 
 Når man siger at en algoritme er $O(n^2)$, menes der at vækstraten for $T(n)$ er en del af mængden $O(n^2)$, og at $T(n)$ i værste tilfælde har samme vækstrate som $n^2$. Man kan også sige at algoritmens \emph{tidskompleksitet} er $O(n^2)$ \cite{time-complexity-use}. Da det kun er vækstrate vi interesserer os for, betyder det, at det kun er leddet med den højeste vækstrate, der betyder noget, fordi de små led vil være ubetydelige ved store $n$-værdier. En funktion som $n! + n^3+\log n$ vil blive reduceret til tidskompleksiteten $O(n!)$, da $n!$ er leddet med den højeste vækstrate. Selv en funktion som $100 \cdot n!$, vil også have tidskompleksiteten $O(n!)$, da konstanten foran det størst voksende led ikke ændrer funktionens tidskompleksitet.\\
 
-$\Omega (f(n))$ indeholder modsat $O(f(n))$ alle funktioner der vokser \emph{mindst lige så hurtigt som} $f(n)$.\\ \red{[kilde]}
+$\Omega (f(n))$ indeholder modsat $O(f(n))$ alle funktioner der vokser \emph{mindst lige så hurtigt som} $f(n)$.\\ 
 
 Der er en enkel vækstrate som både $O(f(n))$ og $\Omega (f(n))$ indeholder: nemlig vækstraten af $f(n)$. For at beskrive \emph{præcis} denne mængde funktioner, bruger vi $\Theta (f(n))$. Hvis en algoritme er $\Theta (n^3)$, betyder det altså, at $T(n)$ \emph{altid} vil have samme vækstrate som $n^3$. Det ville også betyde at alle input af samme kardinalitet, vil resultere i lige lang teoretisk udførselsestid.
 
