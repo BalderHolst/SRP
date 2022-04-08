@@ -84,25 +84,25 @@
 
 	Det er vigtigt at pointere, at computere ikke kan "rykke"\ tal i en liste, men kun overskrive dem. Det er derfor at det ser ud som om at, computeren har dubleret $5$-tallet i figur \ref{fig:Indsæt element først i listen}. Det har den nemlig; den har taget de tre første elementer i listen, og skrevet dem over på andet, tredje og fjerde element. Computeren kan nu overskrive det første tal i listen, da det er en dublet.\\
 
-	Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første element i listen, sker følgende (se figur \ref{fig:Indsæt element hvor det passer i listen}): Algoritmen ser på tallet før elementet og spørger: "er dette tal større end elementet". Hvis det er, rykkes det til højre. Herefter stiller algoritmen samme spørgsmål til tallet \emph{to} pladser før elementet. Hvis dette tal er mindre and elementet, placerer algoritmen elementet efter dette tal i listen, hvis ikke stiller den samme spørgsmål til tallet 3 pladser før elementet og så videre. Det er vigtigt at pointere, at der altid vil være et tal, der er mindre end elementet, da elementet ellers ville være blevet placeret først i listen af den første del af proceduren (linje $5$-$10$).
+	Vi er nu nået til linje $11$. Hvis ikke elementet er mindre end det første element i listen, sker følgende (se figur \ref{fig:Indsæt element hvor det passer i listen} på side \pageref{fig:Indsæt element hvor det passer i listen}): Algoritmen ser på tallet før elementet og spørger: "er dette tal større end elementet". Hvis det er, rykkes det til højre. Herefter stiller algoritmen samme spørgsmål til tallet \emph{to} pladser før elementet. Hvis dette tal er mindre and elementet, placerer algoritmen elementet efter dette tal i listen, hvis ikke stiller den samme spørgsmål til tallet 3 pladser før elementet og så videre. Det er vigtigt at pointere, at der altid vil være et tal, der er mindre end elementet, da elementet ellers ville være blevet placeret først i listen af den første del af proceduren (linje $5$-$10$).
 
 
 	\begin{figure}[h]
 		\begin{center}
-			\padtable
-			\begin{tabular}{l|c|c}
-				Forklaring & Eksempel & Linje\\
-				\hline
-				Liste hvor \verb|e >= liste[0]| & $[\blue{4},\blue{5},\blue{7},\blue{9},\red{6},5,2]$ &$11$\\
-				Da $9 \geq 6$ rykkes tallet til højre & $[\blue{4},\blue{5},\blue{7},\blue{9},\blue{9},5,2]$ & $13$-$14$\\
-				Da $7 \geq 6$ rykkes tallet til højre & $[\blue{4},\blue{5},\blue{7},\blue{7},\blue{9},5,2]$ & $13$-$14$\\
-				Da $5 \ngeq 6$ sættes elementet ind efter $5$ & $[\blue{4},\blue{5},\red{6},\blue{7},\blue{9},5,2]$ & $13$ og $17$
-			\end{tabular}
-		\end{center}
-		\vspace{-3mm}
-		\caption{Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med \red{rødt}, og tal der allerede er sorterede er markeret med \blue{blåt}. Linjer refererer til figur \ref{fig:Pseudokode til insertionsort}.}
-		\label{fig:Indsæt element hvor det passer i listen}
-	\end{figure}
+		\padtable
+		\begin{tabular}{l|c|c}
+			Forklaring & Eksempel & Linje\\
+			\hline
+			Liste hvor \verb|e >= liste[0]| & $[\blue{4},\blue{5},\blue{7},\blue{9},\red{6},5,2]$ &$11$\\
+			Da $9 \geq 6$ rykkes tallet til højre & $[\blue{4},\blue{5},\blue{7},\blue{9},\blue{9},5,2]$ & $13$-$14$\\
+			Da $7 \geq 6$ rykkes tallet til højre & $[\blue{4},\blue{5},\blue{7},\blue{7},\blue{9},5,2]$ & $13$-$14$\\
+			Da $5 \ngeq 6$ sættes elementet ind efter $5$ & $[\blue{4},\blue{5},\red{6},\blue{7},\blue{9},5,2]$ & $13$ og $17$
+		\end{tabular}
+	\end{center}
+	\vspace{-3mm}
+	\caption{Procedure for at indsætte et element hvor det passer i den sorterede liste. Elementet er markeret med \red{rødt}, og tal der allerede er sorterede er markeret med \blue{blåt}. Linjer refererer til figur \ref{fig:Pseudokode til insertionsort}.}
+	\label{fig:Indsæt element hvor det passer i listen}
+\end{figure}
 
 
 
@@ -136,70 +136,70 @@ Her er begge argumenter ($a$ og $b$) sorterede lister, der flettes sammen til é
 
 
 \begin{figure}
-	\begin{center}
-		\begin{lstlisting}
-			funktion mergesort(liste) {
-				if liste.length == 1{ 		# hvis listen har en længde på 1: returner listen uændret
-					return(liste)
+\begin{center}
+	\begin{lstlisting}
+		funktion mergesort(liste) {
+			if liste.length == 1{ 		# hvis listen har en længde på 1: returner listen uændret
+				return(liste)
+			}
+			else {
+				# Her deler algoritmen først listen i to dele. Derefter kalder den sig selv på hver del. Dette gør den til listerne kun er indeholder et element. Derefter samles dellisterne til en samlet og sorteret liste af mergefunktionen
+				return(merge(mergesort(liste[0 ... n/2]), mergesort(liste[n/2 + 1 ... n])))
+			}
+		}
+
+		funktion merge(a,b) {
+			c = []							# Listen a og b flettes ind i
+
+			while(true) {					# Lykken kører til der returneres en værdi 
+				if a.length == 0 {		# Hvis der ikke er mere i a
+					return(c + b)			# Returnerer c sammenføjet med b
 				}
-				else {
-					# Her deler algoritmen først listen i to dele. Derefter kalder den sig selv på hver del. Dette gør den til listerne kun er indeholder et element. Derefter samles dellisterne til en samlet og sorteret liste af mergefunktionen
-					return(merge(mergesort(liste[0 ... n/2]), mergesort(liste[n/2 + 1 ... n])))
+				elif b.length == 0 {		# Ellers hvis der ikke er mere i b
+					return(c + a)			# Returnerer c sammenføjet med a
+				}
+				elif a[0] <= b[0] {		# Ellers hvis det første element i a er mindre end det i b
+					tilføj a[0] til c
+					fjern a[0] fra a
+				}
+				else {						# Ellers
+					tilføj b[0] til c
+					fjern b[0] fra b
 				}
 			}
+		}
 
-			funktion merge(a,b) {
-				c = []							# Listen a og b flettes ind i
-
-				while(true) {					# Lykken kører til der returneres en værdi 
-					if a.length == 0 {		# Hvis der ikke er mere i a
-						return(c + b)			# Returnerer c sammenføjet med b
-					}
-					elif b.length == 0 {		# Ellers hvis der ikke er mere i b
-						return(c + a)			# Returnerer c sammenføjet med a
-					}
-					elif a[0] <= b[0] {		# Ellers hvis det første element i a er mindre end det i b
-						tilføj a[0] til c
-						fjern a[0] fra a
-					}
-					else {						# Ellers
-						tilføj b[0] til c
-						fjern b[0] fra b
-					}
-				}
-			}
-
-		\end{lstlisting}
-	\end{center}
-	\vspace{-5mm}
-	\caption{Pseudokode til Mergesort \cite[s. 106]{aogd}.}
-	\label{fig:Pseudokode til mergesort}
+	\end{lstlisting}
+\end{center}
+\vspace{-5mm}
+\caption{Pseudokode til Mergesort \cite[s. 106]{aogd}.}
+\label{fig:Pseudokode til mergesort}
 \end{figure}
 
 
 
 \begin{figure}
-	\begin{center}
-		\padtable
-		\begin{tabular}{l|c|c|c|c}
-			Forklaring & $a$ & $b$ & $c$ & Linje\\
-			\hline
-			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{3},6,6]$ & $[\red{4},5,7,9]$ & [\:] & $18$-$21$\\
-			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},6]$ & $[\red{4},5,7,9]$ & $[\violet{3}]$ & $22$-$25$\\
-			 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},6]$ & $[\red{5},7,9]$ & $[\blue{3},\violet{4}]$ & $22$-$25$\\
-			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6},6]$ & $[\red{7},9]$ & $[\blue{3},\blue{4},\violet{5}]$ & $18$-$21$\\
-			 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6}]$ & $[\red{7},9]$ & $[\blue{3},\blue{4},\blue{5},\violet{6}]$ & $18$-$21$\\
-			 Da $a.length = 0$ føjes $b$ til $c$ & $\red{[\:]}$ & $[7,9]$ & $[\blue{3},\blue{4},\blue{5},\blue{6},\violet{6}]$ & $12$-$14$\\
-			 Returnerer $c$ & $[\:]$ & $[\:]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\blue{1},\violet{7},\violet{9}]$ & $13$\\
-		\end{tabular}
-	\end{center}
-	\caption{Eksempel med delfunktionen \emph{merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \red{røde } tal. \blue{Blå }tal er en del af den færdige $c$ liste, og \violet{lilla } tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref{fig:Pseudokode til mergesort}.}
-	\label{fig:merge i mergesort}
+\begin{center}
+	\padtable
+	\begin{tabular}{l|c|c|c|c}
+		Forklaring & $a$ & $b$ & $c$ & Linje\\
+		\hline
+		 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{3},6,6]$ & $[\red{4},5,7,9]$ & [\:] & $18$-$21$\\
+		 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},6]$ & $[\red{4},5,7,9]$ & $[\violet{3}]$ & $22$-$25$\\
+		 Da $a[0] \nleq b[0]$ føjes $b[0]$ til $c$ & $[\red{6},6]$ & $[\red{5},7,9]$ & $[\blue{3},\violet{4}]$ & $22$-$25$\\
+		 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6},6]$ & $[\red{7},9]$ & $[\blue{3},\blue{4},\violet{5}]$ & $18$-$21$\\
+		 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6}]$ & $[\red{7},9]$ & $[\blue{3},\blue{4},\blue{5},\violet{6}]$ & $18$-$21$\\
+		 Da $a.length = 0$ føjes $b$ til $c$ & $\red{[\:]}$ & $[7,9]$ & $[\blue{3},\blue{4},\blue{5},\blue{6},\violet{6}]$ & $12$-$14$\\
+		 Returnerer $c$ & $[\:]$ & $[\:]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\blue{1},\violet{7},\violet{9}]$ & $13$\\
+	\end{tabular}
+\end{center}
+\caption{Eksempel med delfunktionen \emph{merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \red{røde } tal. \blue{Blå }tal er en del af den færdige $c$ liste, og \violet{lilla } tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref{fig:Pseudokode til mergesort}.}
+\label{fig:merge i mergesort}
 \end{figure}
 
 Linjenumre i det næste afsnit refererer til pseudokoden til algoritmen på figur \ref{fig:Pseudokode til mergesort} på side \pageref{fig:Pseudokode til mergesort}.\\
 
-Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele algoritmen i betragtning. Mergesortfunktionen (l. $1$) tager en enkel liste som argument og checker først, om listen kun indeholder ét element (l. $2$). Hvis den gør, så returnerer den listen uændret (l. $3$). Dette giver intuitivt mening, da en liste med et enkelt element altid vil være sorteret. Hvis listen er \emph{mere} end $1$ lang, gør den det, som får hele algoritmen til at fungere (l. $5$-$8$): den deler listen i to, og kalder sig selv på hver halvdel. Herefter sættes de to dele sammen igen af $merge$-funktionen. Det er dog ikke helt så enkelt, som det lyder, idet $mergesort$ rekursivt kalder sig selv. Det leder til, at algoritmen splitter listen op igen og igen, indtil der kun er et element i de mange lister. Herefter samler $merge$ alle de små lister til en stor liste, hvor $merge$ løbende sørger for, at de lister den samler er sorterede (se figur \ref{fig:mergesort_procedure} på side \pageref{fig:mergesort_procedure}). De lister, der er samlet af $merge$, vil altid være sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-element-lister samles af $merge$ til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede lister. $merge$ får altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som output.
+Mergesorts kompleksitet kommer dog først rigtigt til udtryk, når vi tager hele algoritmen i betragtning. Mergesortfunktionen (l. $1$) tager en enkel liste som argument og checker først, om listen kun indeholder ét element (l. $2$). Hvis den gør, så returnerer den listen uændret (l. $3$). Dette giver intuitivt mening, da en liste med et enkelt element altid vil være sorteret. Hvis listen er \emph{mere} end $1$ lang, gør den det, som får hele algoritmen til at fungere (l. $5$-$8$): den deler listen i to, og kalder sig selv på hver halvdel. Herefter sættes de to dele sammen igen af $merge$-funktionen. Det er dog ikke helt så enkelt, som det lyder, idet $mergesort$ rekursivt kalder sig selv. Det leder til, at algoritmen splitter listen op igen og igen, indtil der kun er et element i de mange lister. Herefter samler $merge$ alle de små lister til en stor liste, hvor $merge$ løbende sørger for, at de lister den samler er sorterede (se figur \ref{fig:mergesort_procedure}). De lister, der er samlet af $merge$, vil altid være sorterede, da udgangspunktet er lister med et enkelt element. Disse enkelt-element-lister samles af $merge$ til lister med to elementer der er sorterede. Og disse sorterede lister sættes sammen med andre sorterede lister. $merge$ får altid to sorterede lister som input, og spytter derfor altid en samlet sorteret liste ud som output.
 
 
 \input{../img/mergesort_procedure.tex}
@@ -225,7 +225,7 @@ I dette afsnit gøres der brug af tidligere definerede begreber og koncepter fra
 Når man analyserer en algoritme teoretisk handler det ikke om den faktiske udførelsestid, men nærmere hvor mange operationer computeren skal køre for at fuldføre algoritmen. På den måde kan man abstrahere helt væk fra fysisk tid og regne med teoretiske operationer, hvis reelle udførelsestid ikke har nogen indflydelse. Det er fordi udførelsestiden er proportional med antallet af operationer, der kører på computerens cpu. Den eneste faktor for antallet af operationer, som en sorteringsalgoritme kører, er kardinaliteten af inputtet algoritmen udføres på. Dette gør det muligt at beskrive antallet af operationer (der er propportionalt med udførelsestiden) udelukkende som funktion af $n$ (inputtets kardinalitet). \cite[s. 42]{aogd}\\
 
 
-Insertionsort består af to løkker: en indre og en ydre. Den ydre løkke kører fra $i = 1$ til (og uden) $i = n$. Altså kører koden inde i løkken $n - 1$ gange. Den indre løkke kører i værste tilfælde fra $j = i$ til $j = 1$ for hver $i$ værdi i den ydre løkke. Det betyder, at operationerne, som den indre løkke udfører, stiger sammen med $i$ (se figur \ref{fig:Insertionsort Operationer i løkker}). Vi ender med at kunne beskrive det totale antal gange som koden i den indre løkke kører, som summen af alle $i$-værdierne, som den ydre løkke gennemgår. Koden i den indre lykke køres $i-1$ gange for hver $i$.
+Insertionsort består af to løkker: en indre og en ydre. Den ydre løkke kører fra $i = 1$ til (og uden) $i = n$. Altså kører koden inde i løkken $n - 1$ gange. Den indre løkke kører i værste tilfælde fra $j = i$ til $j = 1$ for hver $i$ værdi i den ydre løkke. Det betyder, at operationerne, som den indre løkke udfører, stiger sammen med $i$ (se figur \ref{fig:Insertionsort Operationer i løkker} på side \pageref{fig:Insertionsort Operationer i løkker}). Vi ender med at kunne beskrive det totale antal gange som koden i den indre løkke kører, som summen af alle $i$-værdierne, som den ydre løkke gennemgår. Koden i den indre lykke køres $i-1$ gange for hver $i$.
 
 $$\sum_{i=2}^{n}i-1$$
 

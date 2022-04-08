@@ -61,7 +61,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}De Reelle Udførelsestider}{18}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Hvornår er Insertionsort Hurtigst?}{18}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}Hvornår er Insertionsort Hurtigst?}{19}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}Optimering af Mergesort}{20}{section.4.5}%
 \defcounter {refsection}{0}\relax 
@@ -72,3 +72,5 @@
 \contentsline {chapter}{\nameref {ch:Bilag 1}}{25}{chapter*.27}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\nameref {ch:Bilag 2}}{29}{chapter*.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nameref {ch:Bilag 3}}{33}{chapter*.29}%

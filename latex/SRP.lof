@@ -39,9 +39,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Kode til test af algoritmerne. Variablen $functions$ er en liste med de to algoritmer der testes ([insertionsort,mergesort]).\relax }}{17}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Sammenligning af insertionsort og mergesort. Punkterne er de målte køretider og kurverne er regressioner. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \qopname \relax o{log}n$-regression for mergesort. Til venste ses figuren for alle $n$, og til højre ses samme plot zoomet ind til $n < 100$ \relax }}{19}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Sammenligning af insertionsort og mergesort. Punkterne er de målte køretider og kurverne er regressioner. Regressionerne er henholdsvis en andengradsregression for insertionsort, og en $a \cdot n \cdot \qopname \relax o{log}n$-regression for mergesort. Til venste ses figuren for alle $n$, og til højre ses samme plot zoomet ind til $n < 100$ \relax }}{18}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Residualplot for modellerne i figur \ref {fig:plot - to algoritmer}.\relax }}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Residualplot for modellen i figur \ref {fig:plot - to algoritmer}.\relax }}{19}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Dette er samme data som i figur \ref {fig:plot - to algoritmer}, men zoomet ind til indervallet $n \leq 100$. Her er regressionerne erstattet af en linje, der går mellem gennemsnittet af $t$ for hver $n$. Det interessante ved grafen er, at man tydeligt kan de, hvordan insertionsort gennemsnitligt er hurtigst indtil $n \approx 37$, hvorefter mergesort er hurtigst.\relax }}{20}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 

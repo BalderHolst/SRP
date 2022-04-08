@@ -44,23 +44,13 @@ Nu er det hele sat op, og vi kan teste algoritmen på en $n$ lang liste med tilf
 \section{De Reelle Udførelsestider}
 \label{sec:De Reelle Køretider}
 
-Algoritmernes udførelsestider er plottet i figur \ref{fig:plot - to algoritmer} på side \pageref{fig:plot - to algoritmer}.\\
+Algoritmernes udførelsestider er plottet i figur \ref{fig:plot - to algoritmer}.\\
 
 Som det tydeligt fremgår på graferne, er mergesort langt hurtigere end insertionsort ved store $n$. Vi kan også se, at algoritmerne nogenlunde følger deres regressioner, men hvorfor egentlig det? Det er kun i værste tilfælde, at $T_{insertionsort}(n) \in \Theta (n^2)$, ikke? Jo, men det lader til, at insertionsorts gennemsnitlige vækstrate er tættere på $\Theta (n^2)$ end på $\Theta (n)$. Det er dog alligevel tydeligt, at andengradsregression ikke passer helt på insertionsorts gennemsnitlige køretid, hvis vi zoomer ind på plottet til højre på figur \ref{fig:plot - to algoritmer}. Faktisk passer regressionen slet ikke på punkterne på dette stykke af grafen, hvilket tyder på, at algoritmens udførelsestid ikke bare kan beskrives med et andengradspolynomium. Hvad angår mergesort, følger den regressionen rigtig godt. Det tyder på, at antagelsen, at mergesorts vækstrate altid er $\Theta (n \log n)$ fra afsnit \ref{sec:Mergesort og Den Nedre Grænse}, må være sand.\\
 
-En anden finurlighed kan findes i residualplottet (figur \ref{fig:toAlgoritmerResidual}). Residualplottet for begge grafer er rigtig flot, med en jævn punktfordeling på begge sider af regressionen, men til allersidst er der et par af insertionsorts punkter, der er langt under regressionen. Det kan være af flere grunde, blandt andet at computerens styresystem lige i dette tilfælde, tildelte flere ressourcer til programmet. En anden grund kunne være, at algoritmen netop i disse tilfælde var heldig at få en delvist sorteret liste, der gjorde, at listen kunne sorteres langt hurtigere end $O(n^2)$. Dog tyder det tydelige nedadgående mønster i outlier-residualerne på, at afvigelsen ikke er en tilfældighed.\\
+En anden finurlighed kan findes i residualplottet (se figur \ref{fig:toAlgoritmerResidual} på side \pageref{fig:toAlgoritmerResidual}). Residualplottet for begge grafer er rigtig flot, med en jævn punktfordeling på begge sider af regressionen, men til allersidst er der et par af insertionsorts punkter, der er langt under regressionen. Det kan være af flere grunde, blandt andet at computerens styresystem lige i dette tilfælde, tildelte flere ressourcer til programmet. En anden grund kunne være, at algoritmen netop i disse tilfælde var heldig at få en delvist sorteret liste, der gjorde, at listen kunne sorteres langt hurtigere end $O(n^2)$. Dog tyder det tydelige nedadgående mønster i outlier-residualerne på, at afvigelsen ikke er en tilfældighed.\\
 
 Når man ser på residualplottene, er et andet mønster også tydeligt: variansen stiger. Udførelsestiderne har større og større usikkerhed, jo større $n$ er. Dette giver intuitivt mening, hvis man sætter det i kontekst. Hvis $10$ personer løber et $50$m løb, vil alle løbere afslutte inden for et forholdsvist lille tidinterval. Hvis vi herefter bad dem om at løbe et maraton, ville deres tider ikke bare variere med sekunder og minutter, men med timer. Variansen i deres tider øges altså af størrelsen på opgaven. Det samme er sandt for vores sorteringsalgoritmer, hvilket tydeliggøres af residualplottene. 
-
-
-\subsection{Hvornår er Insertionsort Hurtigst?}%
-\label{sub:Store-O er Værste Tilfælde}
-Det er tydeligt, at mergesort er langt bedre til at sortere store lister, men ved små $n$ kan vi også se, at insertionsort ikke er langt bagefter. Faktisk er den \emph{gennemsnitlige} sortering hurtigere eller nogenlunde ens før $n = 37$ (se figur \ref{fig:toAlgoritmerZoomedGns}). Det bekræfter teorien fra afsnit \ref{ch:Algoritmers Udførelsestid}, idet store-O ikke siger noget om algoritmens opførsel ved små $n$, men kun ved meget store. Her er det tydeligt, at en sådan form for analyse ikke er tilstrækkelig for at bedømme, hvilken algoritme der er bedst til hvilke problemer. Store-O-analyse er også blind overfor den gennemsnitlige udførelsestid. Ved små $n$ er den gennemsnitlige køretid brugbar, da den maksimale køretid aldrig bliver astronomisk stor, og vi kan derfor med god vilje bruge gennemsnitlig udførelsestid i disse overvejelser. Det ville gennemsnitligt være hurtigst, at bruge insertionsort ved små $n$ og mergesort ved store. Punktet der adskiller, hvilken algoritme der er hurtigst, er ca. $n = 37$. Dette punkt kan siges at svare til $n_0$ fra afsnit \ref{ch:Algoritmers Udførelsestid}, idet mergesort gennemsnitligt altid er hurtigere efter punktet. Alligevel er det ikke helt sandt, da $n_0$ fra afsnit \ref{ch:Algoritmers Udførelsestid} forholder sig til værste-tilfælde-udførelsestiden, men vi kan i denne reelle kontekst bruge $n_0$ som punktet, hvorefter mergesort \emph{gennemsnitligt} er hurtigst.
-
-%...grunden til at bruge algoritmens gennemsnitlige udførelsestid er...
-
-% mergesort kølrer altid med store Theta(n)
-
 
 \begin{figure} \centering
 	\includegraphics[width=0.45\textwidth]{../img/toAlgoritmer.png}
@@ -73,9 +63,19 @@ Det er tydeligt, at mergesort er langt bedre til at sortere store lister, men ve
 	\begin{center}
 		\includegraphics[width=0.75\textwidth]{../img/toAlgoritmerResidual.png}
 	\end{center}
-	\caption{Residualplot for modellerne i figur \ref{fig:plot - to algoritmer}.}
+	\caption{Residualplot for modellen i figur \ref{fig:plot - to algoritmer}.}
 	\label{fig:toAlgoritmerResidual}
 \end{figure}
+
+
+\subsection{Hvornår er Insertionsort Hurtigst?}%
+\label{sub:Store-O er Værste Tilfælde}
+Det er tydeligt, at mergesort er langt bedre til at sortere store lister, men ved små $n$ kan vi også se, at insertionsort ikke er langt bagefter. Faktisk er den \emph{gennemsnitlige} sortering hurtigere eller nogenlunde ens før $n = 37$ (se figur \ref{fig:toAlgoritmerZoomedGns} på side \pageref{fig:toAlgoritmerZoomedGns}). Det bekræfter teorien fra afsnit \ref{ch:Algoritmers Udførelsestid}, idet store-O ikke siger noget om algoritmens opførsel ved små $n$, men kun ved meget store. Her er det tydeligt, at en sådan form for analyse ikke er tilstrækkelig for at bedømme, hvilken algoritme der er bedst til hvilke problemer. Store-O-analyse er også blind overfor den gennemsnitlige udførelsestid. Ved små $n$ er den gennemsnitlige køretid brugbar, da den maksimale køretid aldrig bliver astronomisk stor, og vi kan derfor med god vilje bruge gennemsnitlig udførelsestid i disse overvejelser. Det ville gennemsnitligt være hurtigst, at bruge insertionsort ved små $n$ og mergesort ved store. Punktet der adskiller, hvilken algoritme der er hurtigst, er ca. $n = 37$. Dette punkt kan siges at svare til $n_0$ fra afsnit \ref{ch:Algoritmers Udførelsestid}, idet mergesort gennemsnitligt altid er hurtigere efter punktet. Alligevel er det ikke helt sandt, da $n_0$ fra afsnit \ref{ch:Algoritmers Udførelsestid} forholder sig til værste-tilfælde-udførelsestiden, men vi kan i denne reelle kontekst bruge $n_0$ som punktet, hvorefter mergesort \emph{gennemsnitligt} er hurtigst.
+
+%...grunden til at bruge algoritmens gennemsnitlige udførelsestid er...
+
+% mergesort kølrer altid med store Theta(n)
+
 
 
 
@@ -109,7 +109,7 @@ At insertionsort faktisk normalt er hurtigere end mergesort, hvis $n < n_0$, bet
 \end{figure}
 
 
-Her bruger vi insertionsort, hvis listens længde er under eller lig $37$, og mergesort hvis ikke. Det er en forbedring af algoritmen, men kun hvis $n < 37$. Dog er der en endnu mere snedig måde at inkorporere denne ide. Hvis vi tænker tilbage på mergesorts procedure fra afsnit \ref{ch:Sorteringsalgoritmer}, ved vi, at algoritmen deler en usorteret liste op, indtil der kun er lister med enkle elementer tilbage. Funktionen $merge$ sætter herefter listerne sammen igen og sørger for, at den samlede liste altid vil være sorteret, da den altid får sorterede lister som input. Vi ved dog nu, at denne process ikke er effektiv ved $n$-værdier under 37. Det er derfor en smart ide at bruge insertionsort til at sortere listerne, når mergesort har opdelt listen i tilstrækkeligt små bidder. Koden for denne hybridalgoritme kan ses på figur \ref{fig:hybridalgoritme i Python}. I stedet for at opdele listen helt til der kun er et enkelt element i hver delliste, stopper denne algoritme opdelingen, så snart insertionsort kan sortere listen hurtigere. Det er vigtigt at pointere, at algoritmernes udførelsestid er nogenlunde ens ved $n \approx 37$, og at det derfor ikke ville være hurtigere at splitte listen op med mergesort, til alle dellisterne havde en længde på $37$, og derefter sortere med insertionsort. For at sikre at insertionsort kun sorterer lister, hvor den er hurtigst, splitter hybridalgoritmen inputtet til dellisterne er højest $30$ elementer lange (se linje 3 og 6 på figur \ref{fig:hybridalgoritme i Python}).
+Her bruger vi insertionsort, hvis listens længde er under eller lig $37$, og mergesort hvis ikke. Det er en forbedring af algoritmen, men kun hvis $n < 37$. Dog er der en endnu mere snedig måde at inkorporere denne ide. Hvis vi tænker tilbage på mergesorts procedure fra afsnit \ref{ch:Sorteringsalgoritmer}, ved vi, at algoritmen deler en usorteret liste op, indtil der kun er lister med enkle elementer tilbage. Funktionen $merge$ sætter herefter listerne sammen igen og sørger for, at den samlede liste altid vil være sorteret, da den altid får sorterede lister som input. Vi ved dog nu, at denne process ikke er effektiv ved $n$-værdier under 37. Det er derfor en smart ide at bruge insertionsort til at sortere listerne, når mergesort har opdelt listen i tilstrækkeligt små bidder. Koden for denne hybridalgoritme kan ses på figur \ref{fig:hybridalgoritme i Python} på side \pageref{fig:hybridalgoritme i Python}. I stedet for at opdele listen helt til der kun er et enkelt element i hver delliste, stopper denne algoritme opdelingen, så snart insertionsort kan sortere listen hurtigere. Det er vigtigt at pointere, at algoritmernes udførelsestid er nogenlunde ens ved $n \approx 37$, og at det derfor ikke ville være hurtigere at splitte listen op med mergesort, til alle dellisterne havde en længde på $37$, og derefter sortere med insertionsort. For at sikre at insertionsort kun sorterer lister, hvor den er hurtigst, splitter hybridalgoritmen inputtet til dellisterne er højest $30$ elementer lange (se linje 3 og 6 på figur \ref{fig:hybridalgoritme i Python}).
 
 
 % TODO kommentarer
