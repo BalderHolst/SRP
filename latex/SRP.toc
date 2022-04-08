@@ -27,48 +27,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Mergesort Procedure}{8}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Tidskompleksiteten af Mergesort}{9}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Tidskompleksiteten af Mergesort}{10}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Store-O-Analyse af Insertionsort}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Store-O-Analyse af Insertionsort}{10}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Insertionsort i Værste Tilfælde}{11}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Insertionsort i Værste Tilfælde}{10}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Binære Træer}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Binære Træer}{12}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Hvad er et Træ}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Hvad er et Træ}{12}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Et Binært Træ}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Et Binært Træ}{12}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Blade i et Fuldt Binært Træ}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Blade i et Fuldt Binært Træ}{13}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Binære Træer og Sorteringsalgoritmer}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Binære Træer og Sorteringsalgoritmer}{13}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Det Mindste antal Sammenligninger}{15}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.1}Det Mindste antal Sammenligninger}{14}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Højden af et Binært Træ}{15}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Højden af et Binært Træ}{14}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Store-O er Værste Tilfælde}{16}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Store-O er Værste Tilfælde}{15}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Mergesort og Den Nedre Grænse}{16}{section.3.7}%
+\contentsline {section}{\numberline {3.7}Mergesort og Den Nedre Grænse}{15}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Implementering og Test}{17}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Implementering og Test}{16}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Python}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Python}{16}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Implementering}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Implementering}{16}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Test af Sorteringsalgoritmer}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Test af Sorteringsalgoritmer}{16}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}De Reelle Udførelsestider}{19}{section.4.4}%
+\contentsline {section}{\numberline {4.4}De Reelle Udførelsestider}{18}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Hvornår er Insertionsort Hurtigst?}{19}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}Hvornår er Insertionsort Hurtigst?}{18}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Optimering af Mergesort}{21}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Optimering af Mergesort}{20}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Sammenligning af Optimerede Algoritmer}{22}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.1}Sammenligning af Optimerede Algoritmer}{21}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Konklusion}{24}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Konklusion}{23}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nameref {ch:Bilag 1}}{26}{chapter*.27}%
+\contentsline {chapter}{\nameref {ch:Bilag 1}}{25}{chapter*.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nameref {ch:Bilag 2}}{30}{chapter*.28}%
+\contentsline {chapter}{\nameref {ch:Bilag 2}}{29}{chapter*.28}%
