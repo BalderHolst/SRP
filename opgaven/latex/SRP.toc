@@ -27,7 +27,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Mergesort Procedure}{8}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Tidskompleksiteten af Mergesort}{10}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Tidskompleksiteten af Mergesort}{9}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Store-O-Analyse af Insertionsort}{10}{section.2.4}%
 \defcounter {refsection}{0}\relax 

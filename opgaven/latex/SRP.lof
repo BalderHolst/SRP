@@ -21,7 +21,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Pseudokode til Mergesort \cite [s. 106]{aogd}.\relax }}{9}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Eksempel med delfunktionen \emph {merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \color {red}røde \color {black} tal. \color {blue}Blå \color {black}tal er en del af den færdige $c$ liste, og \color {violet}lilla \color {black} tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref {fig:Pseudokode til mergesort}.\relax }}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Eksempel med delfunktionen \emph {merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \color {red}røde \color {black} tal. \color {blue}Blå \color {black}tal er en del af den færdige $c$ liste, og \color {violet}lilla \color {black} tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref {fig:Pseudokode til mergesort}.\relax }}{10}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Hvordan mergesort først opdeler, og derefter samler listen med $merge$. \cite [s. 106]{aogd}\relax }}{10}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 

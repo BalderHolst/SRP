@@ -1,5 +1,4 @@
-	\chapter{Sorteringsalgoritmer}
-	\label{ch:Sorteringsalgoritmer}
+	\chapter{Sorteringsalgoritmer} \label{ch:Sorteringsalgoritmer}
 
 	\section{Hvad er sortering?}
 	\label{sec:Hvad er sortering?}
@@ -135,7 +134,7 @@ $$merge([1,3,4,8],[2,3,6,7,7]) \longrightarrow [1, 2, 3, 3, 4, 6, 7, 7, 8]$$
 Her er begge argumenter ($a$ og $b$) sorterede lister, der flettes sammen til én samlet sorteret liste.\\
 
 
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
 	\begin{lstlisting}
 		funktion mergesort(liste) {
@@ -178,7 +177,7 @@ Her er begge argumenter ($a$ og $b$) sorterede lister, der flettes sammen til é
 
 
 
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
 	\padtable
 	\begin{tabular}{l|c|c|c|c}
@@ -190,7 +189,7 @@ Her er begge argumenter ($a$ og $b$) sorterede lister, der flettes sammen til é
 		 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6},6]$ & $[\red{7},9]$ & $[\blue{3},\blue{4},\violet{5}]$ & $18$-$21$\\
 		 Da $a[0] \leq b[0]$ føjes $a[0]$ til $c$ & $[\red{6}]$ & $[\red{7},9]$ & $[\blue{3},\blue{4},\blue{5},\violet{6}]$ & $18$-$21$\\
 		 Da $a.length = 0$ føjes $b$ til $c$ & $\red{[\:]}$ & $[7,9]$ & $[\blue{3},\blue{4},\blue{5},\blue{6},\violet{6}]$ & $12$-$14$\\
-		 Returnerer $c$ & $[\:]$ & $[\:]$ & $[\blue{4},\blue{5},\blue{3},\blue{6},\blue{1},\violet{7},\violet{9}]$ & $13$\\
+		 Returnerer $c$ & $[\:]$ & $[\:]$ & $[\blue{3},\blue{4},\blue{5},\blue{6},\blue{6},\violet{7},\violet{9}]$ & $13$\\
 	\end{tabular}
 \end{center}
 \caption{Eksempel med delfunktionen \emph{merge} i mergesort. Her kalder vi merge($[3,6,6]$, $[4,5,7,9]$). I hvert trin sammenlignes de \red{røde } tal. \blue{Blå }tal er en del af den færdige $c$ liste, og \violet{lilla } tal er de tal der sidst blev føjet til $c$. Læg mærke til at den endelige $c$ liste er sorteret fordi listerne $a$ og $b$ på forhånd var sorterede. Linjer refererer til figur \ref{fig:Pseudokode til mergesort}.}
@@ -225,7 +224,7 @@ I dette afsnit gøres der brug af tidligere definerede begreber og koncepter fra
 Når man analyserer en algoritme teoretisk handler det ikke om den faktiske udførelsestid, men nærmere hvor mange operationer computeren skal køre for at fuldføre algoritmen. På den måde kan man abstrahere helt væk fra fysisk tid og regne med teoretiske operationer, hvis reelle udførelsestid ikke har nogen indflydelse. Det er fordi udførelsestiden er proportional med antallet af operationer, der kører på computerens cpu. Den eneste faktor for antallet af operationer, som en sorteringsalgoritme kører, er kardinaliteten af inputtet algoritmen udføres på. Dette gør det muligt at beskrive antallet af operationer (der er propportionalt med udførelsestiden) udelukkende som funktion af $n$ (inputtets kardinalitet). \cite[s. 42]{aogd}\\
 
 
-Insertionsort består af to løkker: en indre og en ydre. Den ydre løkke kører fra $i = 1$ til (og uden) $i = n$. Altså kører koden inde i løkken $n - 1$ gange. Den indre løkke kører i værste tilfælde fra $j = i$ til $j = 1$ for hver $i$ værdi i den ydre løkke. Det betyder, at operationerne, som den indre løkke udfører, stiger sammen med $i$ (se figur \ref{fig:Insertionsort Operationer i løkker} på side \pageref{fig:Insertionsort Operationer i løkker}). Vi ender med at kunne beskrive det totale antal gange som koden i den indre løkke kører, som summen af alle $i$-værdierne, som den ydre løkke gennemgår. Koden i den indre lykke køres $i-1$ gange for hver $i$.
+Insertionsort består af to løkker: en indre og en ydre. Den ydre løkke kører fra $i = 2$ til (og uden) $i = n$. Altså kører koden inde i løkken $n - 1$ gange. Den indre løkke kører i værste tilfælde fra $j = i$ til $j = 1$ for hver $i$ værdi i den ydre løkke. Det betyder, at operationerne, som den indre løkke udfører, stiger sammen med $i$ (se figur \ref{fig:Insertionsort Operationer i løkker} på side \pageref{fig:Insertionsort Operationer i løkker}). Vi ender med at kunne beskrive det totale antal gange som koden i den indre løkke kører, som summen af alle $i$-værdierne, som den ydre løkke gennemgår. Koden i den indre lykke køres $i-1$ gange for hver $i$.
 
 $$\sum_{i=2}^{n}i-1$$
 
